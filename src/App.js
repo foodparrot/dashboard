@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Dashboard from './components/Dashboard/Dashboard';
+import LiveOrders from './components/LiveOrders/LiveOrders';
+// import Parent from './components/Parent/Parent';
+import Sidebar from './components/Sidebar/Sidebar';
+// import $ from 'jquery';
+// import jQuery from 'jquery';
+class App extends React.Component {
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  render(){
+    return (
+      <BrowserRouter >
+       <Sidebar/>
+				<Switch>
+          <Route path="/dashboard"  exact component={Dashboard} />
+          <Route path="/liveorders"   component={LiveOrders} />
+				</Switch>
+
+			</BrowserRouter>
+    );
+  }
+ 
 }
 
 export default App;
