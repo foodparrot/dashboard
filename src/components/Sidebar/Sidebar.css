@@ -1,3 +1,6 @@
-.pro-sidebar{
-height:"100%"
+.pro-icon-wrapper {
+    width:49px !important;
+    height:49px !important;
+    align-self: center !important;
+    justify-self: center;
 }
