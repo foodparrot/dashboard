@@ -1,8 +1,8 @@
 import React from 'react'
-
+import './Parent.css';
 function Parent(props) {
     return (
-        <div className="container">
+        <div id="rootParentComponent">
             {props.children}
         </div>
     )

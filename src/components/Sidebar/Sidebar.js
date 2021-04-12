@@ -12,20 +12,44 @@ import { Link } from 'react-router-dom';
 import withSizes from 'react-sizes';
 import Collapse from './Collapse';
 import Navbarmobile from '../Navbarmobile/Navbarmobile';
-function Sidebar({ winHeight }) {
+function Sidebar({ winHeight,winWidth }) {
     const [collapseSidebar, setcollapseSidebar] = useState(false);
     const [mobileCollapseSidebar, setmobileCollapseSidebar] = useState(false);
     const onCollapseHandler = () => {
         setcollapseSidebar(!collapseSidebar);
     }
     const onMobileCollapseHandler = () => {
-        setcollapseSidebar(mobileCollapseSidebar);
-        setmobileCollapseSidebar(!mobileCollapseSidebar);
+        // setcollapseSidebar(mobileCollapseSidebar);
+        console.log(winWidth);
+        if(winWidth<=850){
+            setcollapseSidebar(false);
+            setmobileCollapseSidebar(!mobileCollapseSidebar);
+        }
+
     }
+    useEffect(()=>{
+        if(winWidth <= 850){
+            if(mobileCollapseSidebar){
+                window.$('#fixedsidebar').show();
+            }
+            else {
+                setTimeout(()=>{
+                    window.$('#fixedsidebar').hide();
+                    // call again if window is rotated/resized due to async operation
+                    setmobileCollapseSidebar(false);
+                },350);
+            }
+        }
+        else{
+            window.$('#fixedsidebar').show();
+        }
+
+
+    });
     return (
             <>
             <Navbarmobile onMobileCollapseHandler = {onMobileCollapseHandler} id="navbarmobile" style={{display:"none"}}/>
-            <ProSidebar collapsed={collapseSidebar} value={mobileCollapseSidebar} data-payload={collapseSidebar} id="fixedsidebar" style={{ height: `${winHeight}px`,overflow:"hidden" }}>
+            <ProSidebar collapsed={collapseSidebar} value={mobileCollapseSidebar} data-payload={collapseSidebar} id="fixedsidebar" style={{ height: `${winHeight}px`,overflow:"hidden" }} className={mobileCollapseSidebar ? "in-left" : (winWidth > 850 ? "" :"out-left" )}>
                 <SidebarHeader style={
                     {
                         // background: "url(/images/mainlogo.svg)   5px 5px no-repeat",
@@ -43,18 +67,18 @@ function Sidebar({ winHeight }) {
                 <SidebarContent style={{ overflow:"hidden" }} >
                     {/* <ProSidebar > */}
                         <Menu iconShape="circle" style={{ overflowY:"scroll",height:"100%" }}>
-                            <MenuItem icon={<AiOutlineDashboard style={{ fontSize: "2em" }} />}>Dashboard <Link to='/dashboard' /></MenuItem>
-                            <MenuItem icon={<RiSignalTowerFill style={{ fontSize: "2em" }} />}>Live Orders <Link to='/liveorders' /></MenuItem>
-                            <MenuItem icon={<FaPauseCircle style={{ fontSize: "2em" }} />}>Pause Orders <Link to='/liveorders' /></MenuItem>
-                            <MenuItem icon={<FaClipboardList style={{ fontSize: "2em" }} />}>Inventory <Link to='/liveorders' /></MenuItem>
-                            <MenuItem icon={<RiHistoryLine style={{ fontSize: "2em" }} />}>Order History <Link to='/liveorders' /></MenuItem>
-                            <MenuItem icon={<RiGroup2Fill style={{ fontSize: "2em" }} />}>Customers <Link to='/liveorders' /></MenuItem>
+                            <MenuItem icon={<AiOutlineDashboard style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Dashboard <Link to='/dashboard' /></MenuItem>
+                            <MenuItem icon={<RiSignalTowerFill style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Live Orders <Link to='/liveorders' /></MenuItem>
+                            <MenuItem icon={<FaPauseCircle style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Pause Orders <Link to='/liveorders' /></MenuItem>
+                            <MenuItem icon={<FaClipboardList style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Inventory <Link to='/liveorders' /></MenuItem>
+                            <MenuItem icon={<RiHistoryLine style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Order History <Link to='/liveorders' /></MenuItem>
+                            <MenuItem icon={<RiGroup2Fill style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Customers <Link to='/liveorders' /></MenuItem>
                             <SubMenu title="Menu" icon={<FaCubes style={{ fontSize: "2em" }} />}>
-                                <MenuItem icon={<MdAccountCircle style={{ fontSize: "1.5em" }} />}>Products<Link to="/dashboard" /> </MenuItem>
-                                <MenuItem icon={<MdAccountCircle style={{ fontSize: "1.5em" }} />}>Menus<Link to="/live" /></MenuItem>
+                                <MenuItem icon={<MdAccountCircle style={{ fontSize: "1.5em" }} />} onClick={onMobileCollapseHandler}>Products<Link to="/dashboard" /> </MenuItem>
+                                <MenuItem icon={<MdAccountCircle style={{ fontSize: "1.5em" }} />} onClick={onMobileCollapseHandler}>Menus<Link to="/live" /></MenuItem>
                             </SubMenu>
-                            <MenuItem icon={<FaStore style={{ fontSize: "2em" }} />}>Outlets <Link to='/liveorders' /></MenuItem>
-                            <MenuItem icon={<HiSpeakerphone style={{ fontSize: "2em" }} />}>Marketing <Link to='/liveorders' /></MenuItem>
+                            <MenuItem icon={<FaStore style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Outlets <Link to='/liveorders' /></MenuItem>
+                            <MenuItem icon={<HiSpeakerphone style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Marketing  <Link to='/liveorders' /></MenuItem>
                         </Menu>
                     {/* </ProSidebar> */}
                 </SidebarContent>
@@ -62,8 +86,8 @@ function Sidebar({ winHeight }) {
                     <footer className="footer">
                         <Menu iconShape="circle" style={{paddingTop: "5px"}} >
                             <SubMenu title="Account" icon={<FaUserCircle style={{ fontSize: "2em" }} />}>
-                                <MenuItem icon={<MdAccountCircle style={{ fontSize: "1.5em" }} />}>Profile<Link to="/dashboard" /> </MenuItem>
-                                <MenuItem icon={<FaPowerOff style={{ fontSize: "1.5em", color: "#6aac2e" }} />}>Logout<Link to="/live" /></MenuItem>
+                                <MenuItem icon={<MdAccountCircle style={{ fontSize: "1.5em" }} />} onClick={onMobileCollapseHandler}>Profile<Link to="/dashboard" /> </MenuItem>
+                                <MenuItem icon={<FaPowerOff style={{ fontSize: "1.5em", color: "#6aac2e" }} />} onClick={onMobileCollapseHandler}>Logout<Link to="/live" /></MenuItem>
                             </SubMenu>
                         </Menu>
                     </footer>
@@ -72,7 +96,8 @@ function Sidebar({ winHeight }) {
 </>
     )
 }
-const mapSizesToProps = ({ height }) => ({
-    winHeight: height
+const mapSizesToProps = ({ height, width }) => ({
+    winHeight: height,
+    winWidth: width
 })
 export default withSizes(mapSizesToProps)(Sidebar)
