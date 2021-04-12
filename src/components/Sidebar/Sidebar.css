@@ -89,7 +89,27 @@ div#fixedsidebar[value=true] {
     #navbarmobile{
         display: none;
     }
+    #fixedsidebar.collapsed > div.pro-sidebar-inner > div > div.pro-sidebar-header {
+        background-size: 220px !important;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* 

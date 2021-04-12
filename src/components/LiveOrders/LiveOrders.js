@@ -2,7 +2,7 @@ import React from 'react'
 
 function LiveOrders() {
     return (
-        <div>
+        <div className="container">
             LiveOrders
         </div>
     )

@@ -38,17 +38,21 @@ function Sidebar({ winHeight,winWidth }) {
                     // call again if window is rotated/resized due to async operation
                     setmobileCollapseSidebar(false);
                 },350);
+                // window.$('#fixedsidebar').fadeOut(350);
             }
         }
         else{
-            window.$('#fixedsidebar').show();
+            window.$('#fixedsidebar').removeClass('in-left');
+            window.$('#fixedsidebar').removeClass('out-left');
+            setTimeout(()=>{window.$('#fixedsidebar').show()},230);
+
         }
 
 
     });
     return (
             <>
-            <Navbarmobile onMobileCollapseHandler = {onMobileCollapseHandler} id="navbarmobile" style={{display:"none"}}/>
+            <Navbarmobile mobileCollapseSidebar={mobileCollapseSidebar} onMobileCollapseHandler = {onMobileCollapseHandler} id="navbarmobile" style={{display:"none"}}/>
             <ProSidebar collapsed={collapseSidebar} value={mobileCollapseSidebar} data-payload={collapseSidebar} id="fixedsidebar" style={{ height: `${winHeight}px`,overflow:"hidden" }} className={mobileCollapseSidebar ? "in-left" : (winWidth > 850 ? "" :"out-left" )}>
                 <SidebarHeader style={
                     {
