@@ -6,8 +6,9 @@ function Navbarmobile(props) {
     
     return (
         <div {...props} style={{height:"58px",position:"fixed",width:"100%",alignItems: "center",
-        justifyContent: "space-between",background:"linear-gradient(1deg, #cde548, #1fba1d26)"}}>
+        justifyContent: "space-between",background:"linear-gradient(1deg, #cde548, rgba(31, 186, 29, 0.95))"}}>
             <nav className="navbar d-flex">
+                {/* #1fba1d26 */}
             <span><img style={{width:"220px"}}src="/images/mainlogo.svg"/></span>
             <span >
                 {

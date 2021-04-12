@@ -44,7 +44,7 @@ function Sidebar({ winHeight,winWidth }) {
         else{
             window.$('#fixedsidebar').removeClass('in-left');
             window.$('#fixedsidebar').removeClass('out-left');
-            setTimeout(()=>{window.$('#fixedsidebar').show()},230);
+            setTimeout(()=>{window.$('#fixedsidebar').show()},500);
 
         }
 
