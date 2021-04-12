@@ -50,3 +50,31 @@ div.pro-sidebar-footer > footer > nav > ul > li > div.pro-inner-list-item.popper
     width: 10px !important;
     height: 16px !important;
 }
+@media (max-width:850px){
+#fixedsidebar {
+    display:none;
+}
+div#fixedsidebar[value=true] {
+    display:block;
+    width:100% !important;
+    position: fixed;
+    top:0px;
+    left:0px;
+
+}
+.collapse-toggle {
+    display: none;
+}
+.pro-sidebar-header {
+    width: 100% !important;
+
+}
+#navbarmobile{
+    display: block !important;
+}
+}
+@media (min-width: 851px){
+    #navbarmobile{
+        display: none;
+    }
+}

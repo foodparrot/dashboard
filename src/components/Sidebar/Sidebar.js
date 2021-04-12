@@ -11,13 +11,21 @@ import { MdAccountCircle } from "react-icons/md";
 import { Link } from 'react-router-dom';
 import withSizes from 'react-sizes';
 import Collapse from './Collapse';
+import Navbarmobile from '../Navbarmobile/Navbarmobile';
 function Sidebar({ winHeight }) {
     const [collapseSidebar, setcollapseSidebar] = useState(false);
+    const [mobileCollapseSidebar, setmobileCollapseSidebar] = useState(false);
     const onCollapseHandler = () => {
         setcollapseSidebar(!collapseSidebar);
     }
+    const onMobileCollapseHandler = () => {
+        setcollapseSidebar(mobileCollapseSidebar);
+        setmobileCollapseSidebar(!mobileCollapseSidebar);
+    }
     return (
-            <ProSidebar collapsed={collapseSidebar} data-payload={collapseSidebar} id="fixedsidebar" style={{ height: `${winHeight}px`,overflow:"hidden" }}>
+            <>
+            <Navbarmobile onMobileCollapseHandler = {onMobileCollapseHandler} id="navbarmobile" style={{display:"none"}}/>
+            <ProSidebar collapsed={collapseSidebar} value={mobileCollapseSidebar} data-payload={collapseSidebar} id="fixedsidebar" style={{ height: `${winHeight}px`,overflow:"hidden" }}>
                 <SidebarHeader style={
                     {
                         // background: "url(/images/mainlogo.svg)   5px 5px no-repeat",
@@ -61,7 +69,7 @@ function Sidebar({ winHeight }) {
                     </footer>
                 </SidebarFooter>
             </ProSidebar>
-
+</>
     )
 }
 const mapSizesToProps = ({ height }) => ({
