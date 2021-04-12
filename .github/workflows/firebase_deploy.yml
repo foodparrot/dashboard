@@ -1,8 +1,8 @@
 name: Build and Deploying to Firebase...
- on:
+on:
   push:
-   branches:
-     - master
+    branches:
+      - master
 # on:
 #  push:
 #     tags:
