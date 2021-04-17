@@ -1,0 +1,33 @@
+.header {
+    background: rgb(220, 215, 215);
+    justify-content: center;
+    font-size: 1.3em;
+    padding-top: 1%;
+}
+.month{
+    border: 1px solid;
+    color: #000;
+    
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+.anc-tag{
+    color: #000;
+}
+.row1{
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-top:20% ;
+    margin-right: 15%;
+    border: 1px solid;
+    justify-content: center;
+}
+.row2{
+    border: 1px solid;
+    padding:12%;
+    margin-right:15%;
+   justify-content: center;
+}
+.orders-table{
+    margin-top: 8%;
+}
