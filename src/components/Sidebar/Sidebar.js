@@ -79,7 +79,7 @@ function Sidebar({ winHeight,winWidth }) {
                             <MenuItem icon={<RiGroup2Fill style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Customers <Link to='/Customers' /></MenuItem>
                             <SubMenu title="Menu" icon={<FaCubes style={{ fontSize: "2em" }} />}>
                                 <MenuItem icon={<MdAccountCircle style={{ fontSize: "1.5em" }} />} onClick={onMobileCollapseHandler}>Products<Link to="/dashboard" /> </MenuItem>
-                                <MenuItem icon={<MdAccountCircle style={{ fontSize: "1.5em" }} />} onClick={onMobileCollapseHandler}>Menus<Link to="/live" /></MenuItem>
+                                <MenuItem icon={<MdAccountCircle style={{ fontSize: "1.5em" }} />} onClick={onMobileCollapseHandler}>Menus<Link to="/Menus" /></MenuItem>
                             </SubMenu>
                             <MenuItem icon={<FaStore style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Outlets <Link to='/liveorders' /></MenuItem>
                             <MenuItem icon={<HiSpeakerphone style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Marketing  <Link to='/liveorders' /></MenuItem>
