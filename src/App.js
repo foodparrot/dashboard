@@ -4,6 +4,8 @@ import Dashboard from './components/Dashboard/Dashboard';
 import LiveOrders from './components/LiveOrders/LiveOrders';
 import Parent from './components/Parent/Parent';
 import Sidebar from './components/Sidebar/Sidebar';
+import PauseOrders from './components/PauseOrders/PauseOrders';
+import Customers from './components/Customers/Customers';
 // import $ from 'jquery';
 // import jQuery from 'jquery';
 class App extends React.Component {
@@ -16,6 +18,8 @@ class App extends React.Component {
 				<Switch>
           <Route path="/dashboard"  exact component={Dashboard} />
           <Route path="/liveorders"   component={LiveOrders} />
+          <Route path="/PauseOrders" component={PauseOrders}/>
+          <Route path="/Customers" component={Customers}/>
 				</Switch>
         </Parent>
 			</BrowserRouter>

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+   
+}
+.container p{
+    font-size: 1.3em;
+}
+
+.gap2{
+  padding: 5%;
+}
+.switch{
+  margin-left: 15%;
+}
+.swtch p{
+  margin-left: -10%;
+  font-size: 1em;
+}
+.btn{
+  background: grey;
+  
+  border: 1px soild black;
+  box-shadow: grey;
+  color: black;
+  font-size: 0.7em;
+}
+
+input[type='radio']:after {
+  position: relative;
+  background-color: white;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -20%;
+  left: -10%;
+  position: relative;
+  background-color: rgb(69, 201, 69);
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 1.5px solid black;
+}
+
+
+
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ca2222;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 6%;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 60%;
+  width: 20%;
+  top: 20%;
+  left: 3%;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2ab934;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(55px);
+}
+
+.slider:after {
+  content:'OFF';
+  color: white;
+  display: block;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  font-size: 10px;
+  font-family: Verdana, sans-serif;
+}
+input:checked + .slider:after {
+  content:'ON';
+}
+
+@media screen and (min-width:768px){
+  .disp{
+    display: flex;
+    padding-bottom: 5%;
+  }
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 60%;
+}
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 60%;
+}
+@media (max-width:767px){
+  .swtch{
+    width: 150%;
+    height: 70%;
+    /*margin-right: 10%;*/
+    padding-right: 5%;
+  }
+  .swtch p{
+    margin-left: -22%;
+    margin-right: 5%;
+    font-size: 1em;
+  }
+  .disp1{
+    padding: 2% 0 2% 5%;
+  }
+}

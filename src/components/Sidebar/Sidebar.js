@@ -73,10 +73,10 @@ function Sidebar({ winHeight,winWidth }) {
                         <Menu iconShape="circle" style={{ overflowY:"scroll",height:"100%" }}>
                             <MenuItem icon={<AiOutlineDashboard style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Dashboard <Link to='/dashboard' /></MenuItem>
                             <MenuItem icon={<RiSignalTowerFill style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Live Orders <Link to='/liveorders' /></MenuItem>
-                            <MenuItem icon={<FaPauseCircle style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Pause Orders <Link to='/liveorders' /></MenuItem>
+                            <MenuItem icon={<FaPauseCircle style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Pause Orders <Link to='/PauseOrders' /></MenuItem>
                             <MenuItem icon={<FaClipboardList style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Inventory <Link to='/liveorders' /></MenuItem>
                             <MenuItem icon={<RiHistoryLine style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Order History <Link to='/liveorders' /></MenuItem>
-                            <MenuItem icon={<RiGroup2Fill style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Customers <Link to='/liveorders' /></MenuItem>
+                            <MenuItem icon={<RiGroup2Fill style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Customers <Link to='/Customers' /></MenuItem>
                             <SubMenu title="Menu" icon={<FaCubes style={{ fontSize: "2em" }} />}>
                                 <MenuItem icon={<MdAccountCircle style={{ fontSize: "1.5em" }} />} onClick={onMobileCollapseHandler}>Products<Link to="/dashboard" /> </MenuItem>
                                 <MenuItem icon={<MdAccountCircle style={{ fontSize: "1.5em" }} />} onClick={onMobileCollapseHandler}>Menus<Link to="/live" /></MenuItem>
