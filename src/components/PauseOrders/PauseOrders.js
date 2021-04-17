@@ -6,7 +6,7 @@ export class PauseOrders extends Component {
         
                 <div className='container-fluid'>
                     <p>Pause New Orders</p>
-                    <div className='card border-dark'>
+                    <div className='card border-dark card1'>
                         <div className='card-body'>
                             <div className='disp'>
                                 <div className='col-12 col-md-6'>
@@ -52,7 +52,7 @@ export class PauseOrders extends Component {
                 
                     {/* 2nd card */}
                     <div className='gap2'></div>
-                        <div className='col-12 card border-dark'>
+                        <div className='col-12 card border-dark card1'>
                             <div className='card-body'>
                                 <p>Test Hardwares</p>
                                 <button type="button" class="btn btn-secondary">Sound</button>

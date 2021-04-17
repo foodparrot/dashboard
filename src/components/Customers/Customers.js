@@ -5,9 +5,11 @@ export class Customers extends Component {
         return (
         
                 <div className='container'>
-                    <div className='row row1'>
-                        <p>Bismillah Outlet</p>                        
+
+                    <div className='row row3'>
+                        <p>Bismillah Outlet</p>          
                     </div>
+
                     <div className='col-12 col-md-6 p1'>
                         Customers
                     </div>
@@ -40,7 +42,7 @@ export class Customers extends Component {
                             </div>
                         </form>
                     </div>
-                    <div className='gap1'>
+                    <div className='gap12'>
                         <div class="table-responsive">
                             
                             <table class="table">
