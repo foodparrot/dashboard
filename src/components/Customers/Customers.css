@@ -19,33 +19,9 @@ body{
 }
 @media  screen and (max-width:575px) {
     .formgrp{
-        width: 70%;
+        width: 100%;
     }
-    input[type=text]{
-        width: 100%;
-        -webkit-transition: width .35s ease-in-out;
-        transition: width .35s ease-in-out;
-      }
-      input[type=text]:focus {
-        width: 160%;
-      }
-
-      input[type=email] {
-        width: 100%;
-        -webkit-transition: width .35s ease-in-out;
-        transition: width .35s ease-in-out;
-      }
-      input[type=email]:focus {
-        width: 160%;
-      }
-      input[type=tel] {
-        width: 100%;
-        -webkit-transition: width .35s ease-in-out;
-        transition: width .35s ease-in-out;
-      }
-      input[type=tel]:focus {
-        width: 160%;
-      }
+    
 }
 .gap12{
   padding: 5%;
@@ -69,6 +45,7 @@ table {
   table-layout: auto;
   overflow-x: scroll;
   font-size: 0.8em;
+  white-space: nowrap;
  }
 
 tr {
@@ -90,5 +67,32 @@ tr {
     width: fit-content;
     max-width: 100%;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, .1);
+  }
+  .form3 .searchicon{
+    display: none;
+  }
+  .searchbtn{
+    padding-left: 5%;
+  }
+}
+
+.form3 {
+  position: relative;
+}
+.form3 .searchicon{
+  position: absolute;
+  left: 101%;
+  bottom: 2%;
+  size: '2x';
+}
+
+
+.bttnarrow{
+    float: right;
+}
+
+@media screen and (min-width:768px){
+  .searchbtn{
+    display: none;
   }
 }
