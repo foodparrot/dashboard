@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import '../Customers/Customers.css';
+import { AiOutlineSearch } from "react-icons/ai";
+import { FaAngleDoubleLeft} from "react-icons/fa";
+import { FaAngleDoubleRight} from "react-icons/fa";
 export class Customers extends Component {
     render() {
         return (
@@ -33,10 +36,15 @@ export class Customers extends Component {
                                 </div>
 
                                 <div className='col-12 col-sm-4'>
-                                    <div className='form-group'>
+                                    <div className='form-group form3'>
                                         <label for="phone">Phone</label>
-                                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class='form-control'></input>
+                                        <input className='col-12' type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class='form-control'/>
+                                        <div className='searchicon'><AiOutlineSearch/></div>
                                     </div>
+                                </div>
+                                <div className='searchbtn'>
+                                <button type="button" class="btn btn-primary">Search</button>
+
                                 </div>
 
                             </div>
@@ -51,8 +59,8 @@ export class Customers extends Component {
                                     <th scope="col">Name</th>
                                     <th scope="col">Phone No</th>
                                     <th scope="col">Orders placed</th>
-                                    <th scope="col">First order placed at</th>
-                                    <th scope="col">Last order placed at</th>
+                                    <th scope="col">First order<br></br>placed at</th>
+                                    <th scope="col">Last order<br></br>placed at</th>
                                     <th scope="col">Total Revenue</th>
                                     </tr>
                                 </thead>
@@ -76,12 +84,19 @@ export class Customers extends Component {
                                     </tr>
 
                                     <tr>
-                                    <td colSpan='6' className='leftalign'>Showing from 1 to 2 of 2 records</td>
+                                    <td colSpan='6' className='leftalign'>Showing from 1 to 2 of 2 records
+                                    <div className='bttnarrow'>
+                            <button type="button" class="btn btn-outline-dark"><FaAngleDoubleLeft/></button>
+                            <button type="button" class="btn btn-outline-primary">1</button>
+                            <button type="button" class="btn btn-outline-dark"><FaAngleDoubleRight/></button>
+                        </div></td>
                                     
                                     </tr>
                                 </tbody>
                             </table>
+
                         </div>
+                        
                     </div>
                 
                 </div>
