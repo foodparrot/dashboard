@@ -61,7 +61,7 @@ function Dashboard() {
               <div className="table-responsive-md">
                    <table class="table orders-table">
                       <thead>
-                       <tr>
+                      <tr>
                            <th scope= "col"></th>
                            <th scope= "col">#of orders</th>
                            <th scope= "col">#of customers</th>

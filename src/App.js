@@ -6,6 +6,7 @@ import Parent from './components/Parent/Parent';
 import Sidebar from './components/Sidebar/Sidebar';
 import PauseOrders from './components/PauseOrders/PauseOrders';
 import Customers from './components/Customers/Customers';
+import Menus from './components/Menus/Menus';
 // import $ from 'jquery';
 // import jQuery from 'jquery';
 class App extends React.Component {
@@ -20,6 +21,7 @@ class App extends React.Component {
           <Route path="/liveorders"   component={LiveOrders} />
           <Route path="/PauseOrders" component={PauseOrders}/>
           <Route path="/Customers" component={Customers}/>
+          <Route path="/menu/menus" component={Menus}/>
 				</Switch>
         </Parent>
 			</BrowserRouter>

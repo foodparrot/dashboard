@@ -74,15 +74,15 @@ function Sidebar({ winHeight,winWidth }) {
                             <MenuItem icon={<AiOutlineDashboard style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Dashboard <Link to='/dashboard' /></MenuItem>
                             <MenuItem icon={<RiSignalTowerFill style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Live Orders <Link to='/liveorders' /></MenuItem>
                             <MenuItem icon={<FaPauseCircle style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Pause Orders <Link to='/PauseOrders' /></MenuItem>
-                            <MenuItem icon={<FaClipboardList style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Inventory <Link to='/liveorders' /></MenuItem>
-                            <MenuItem icon={<RiHistoryLine style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Order History <Link to='/liveorders' /></MenuItem>
+                            <MenuItem icon={<FaClipboardList style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Inventory <Link to='#' /></MenuItem>
+                            <MenuItem icon={<RiHistoryLine style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Order History <Link to='#' /></MenuItem>
                             <MenuItem icon={<RiGroup2Fill style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Customers <Link to='/Customers' /></MenuItem>
                             <SubMenu title="Menu" icon={<FaCubes style={{ fontSize: "2em" }} />}>
-                                <MenuItem icon={<MdAccountCircle style={{ fontSize: "1.5em" }} />} onClick={onMobileCollapseHandler}>Products<Link to="/dashboard" /> </MenuItem>
-                                <MenuItem icon={<MdAccountCircle style={{ fontSize: "1.5em" }} />} onClick={onMobileCollapseHandler}>Menus<Link to="/Menus" /></MenuItem>
+                                <MenuItem icon={<MdAccountCircle style={{ fontSize: "1.5em" }} />} onClick={onMobileCollapseHandler}>Products<Link to="#" /> </MenuItem>
+                                <MenuItem icon={<MdAccountCircle style={{ fontSize: "1.5em" }} />} onClick={onMobileCollapseHandler}>Menus<Link to="/menu/menus" /></MenuItem>
                             </SubMenu>
-                            <MenuItem icon={<FaStore style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Outlets <Link to='/liveorders' /></MenuItem>
-                            <MenuItem icon={<HiSpeakerphone style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Marketing  <Link to='/liveorders' /></MenuItem>
+                            <MenuItem icon={<FaStore style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Outlets <Link to='#' /></MenuItem>
+                            <MenuItem icon={<HiSpeakerphone style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Marketing  <Link to='#' /></MenuItem>
                         </Menu>
                     {/* </ProSidebar> */}
                 </SidebarContent>
@@ -90,8 +90,8 @@ function Sidebar({ winHeight,winWidth }) {
                     <footer className="footer">
                         <Menu iconShape="circle" style={{paddingTop: "5px"}} >
                             <SubMenu title="Account" icon={<FaUserCircle style={{ fontSize: "2em" }} />}>
-                                <MenuItem icon={<MdAccountCircle style={{ fontSize: "1.5em" }} />} onClick={onMobileCollapseHandler}>Profile<Link to="/dashboard" /> </MenuItem>
-                                <MenuItem icon={<FaPowerOff style={{ fontSize: "1.5em", color: "#6aac2e" }} />} onClick={onMobileCollapseHandler}>Logout<Link to="/live" /></MenuItem>
+                                <MenuItem icon={<MdAccountCircle style={{ fontSize: "1.5em" }} />} onClick={onMobileCollapseHandler}>Profile<Link to="#" /> </MenuItem>
+                                <MenuItem icon={<FaPowerOff style={{ fontSize: "1.5em", color: "#6aac2e" }} />} onClick={onMobileCollapseHandler}>Logout<Link to="#" /></MenuItem>
                             </SubMenu>
                         </Menu>
                     </footer>
