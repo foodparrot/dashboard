@@ -1,0 +1,49 @@
+.header {
+  background: rgb(220, 215, 215);
+  justify-content: center;
+  font-size: 1.3em;
+  padding-top: 1%;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.item1 {
+  font-size: 20px;
+}
+.table1 {
+  margin-top: 2%;
+  border: 2px ridge;
+  text-align: left;
+  width: 100%;
+  padding: 0%;
+  table-layout: auto;
+  overflow: scroll;
+}
+.btn1 {
+  margin: 3%;
+}
+.badge1 {
+  margin-left: 5%;
+}
+.text1 {
+  display: inline;
+  padding-right: 5%;
+}
+.btn {
+  background-color: aliceblue;
+}
+.btn4 {
+  background-color: rgb(247, 177, 47);
+  float: right;
+}
+.bi {
+  padding-right: 1%;
+}
+.cat {
+  background-color: rgba(153, 153, 153, 0.11);
+  margin-top: 2%;
+  padding: 1%;
+}
+.cart {
+}

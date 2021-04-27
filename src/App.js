@@ -7,6 +7,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 import PauseOrders from './components/PauseOrders/PauseOrders';
 import Customers from './components/Customers/Customers';
 import Menus from './components/Menus/Menus';
+import View from './components/View/View.js';
 import Outlets from './components/Outlets/Outlets';
 // import $ from 'jquery';
 // import jQuery from 'jquery';
@@ -23,6 +24,7 @@ class App extends React.Component {
           <Route path="/PauseOrders" component={PauseOrders}/>
           <Route path="/Customers" component={Customers}/>
           <Route path="/menu/menus" component={Menus}/>
+          <Route path="/View/View" component={View}/>
           <Route path="/outlets" component={Outlets}/>
 				</Switch>
         </Parent>
