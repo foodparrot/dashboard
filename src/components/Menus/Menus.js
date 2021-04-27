@@ -34,7 +34,7 @@ export class Menus extends Component {
                               <td></td>
                               <td>FoodParrot</td>
                               <td className="live" >Live</td>
-                              <td className="buttons"><button className="btn btn-primary btn-sm view">View</button><button className="btn btn-outline-danger btn-sm del">Delete</button></td>
+                              <td className="buttons"><a href="../View/View"><button className="btn btn-primary btn-sm view">View</button></a><button className="btn btn-outline-danger btn-sm del">Delete</button></td>
                           </tr>
                           <tr>
                               <td></td>
@@ -42,7 +42,7 @@ export class Menus extends Component {
                               <td></td>
                               <td>FoodParrot</td>
                               <td className="offline">Offline</td>
-                              <td className="buttons"><button className="btn btn-primary btn-sm view">View</button><button className="btn btn-outline-danger btn-sm del">Delete</button></td>
+                              <td className="buttons"><a href="../View/View"><button className="btn btn-primary btn-sm view">View</button></a><button className="btn btn-outline-danger btn-sm del">Delete</button></td>
                           </tr>
                       </tbody>
                    </table>
