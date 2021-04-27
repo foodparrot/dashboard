@@ -38,13 +38,13 @@ export class View extends Component {
                <div className="container cat ">
                     <span>Categories(2)</span>
                </div>
-               <div className=" cat">
+               {/*<div className=" cat">
                     <div class="cart">
                         <table>
 
                         </table>
                     </div>
-               </div>
+                /div>*/}
             </div>
             </div>
          
