@@ -4,7 +4,7 @@
     font-size: 1.3em;
     padding-top: 1%;
 }
-.flex-container{
+.flex-container-1{
     margin-top:5%;
     display: flex;
     justify-content: space-between;
@@ -57,7 +57,7 @@
      border: 2px ridge;
   }
    @media screen and (max-width: 767px){
-       .flex-container{
+       .flex-container-1{
            margin-bottom: 8%;
        }
        .table1{

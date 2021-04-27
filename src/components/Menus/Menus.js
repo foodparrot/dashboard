@@ -9,7 +9,7 @@ export class Menus extends Component {
                     </div>
             <div className="container">
           {/*first line*/}
-            <div className="flex-container">
+            <div className="flex-container flex-container-1">
                 <div className="flex-item item1"><b>Menu</b></div>
                 <div className="flex-item item2"><button type="button" class="btn btn-primary btn-lg btn-create">Create</button></div>
                </div>
