@@ -15,8 +15,8 @@ export class View extends Component {
            {/*table*/}  
                 <div className="table-responsive-md">
                    <table class="table table1  ">
-                      <tbody>
-                          <tr>
+                        <tbody>
+                          
                                 <td>
                                    Name:<br></br>
                                   Bismillah Outlet <span class="badge bg-success badge1">Live</span><br></br>
@@ -25,8 +25,8 @@ export class View extends Component {
                                 </td>
                                 <td>Platform:<br></br> FoodParrot
                                 </td>
-                          </tr>
-                      </tbody>
+                          
+                        </tbody>
                    </table>
                 </div>
                <div className="cunt" >
