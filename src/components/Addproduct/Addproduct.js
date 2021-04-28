@@ -63,16 +63,13 @@ function Addproduct() {
                <div className="col-12 col-md-5  mrp">
                    <div className="row row-mrp">
                    <label for="MRP">MRP</label>
-                   </div>
-                   <div className=" row row-mrp-rate">
-                    
+                     <input type="text" class="form-control" name="mrp" id="mrp" placeholder=""/>
                    </div>
                </div>
                <div className="col-12 col-md-5  selling-rate">
                    <div className="row row-sale-rate">
                    <label for="Selling price">Selling price</label>
-                   </div>
-                   <div className=" row row-mrp-rate">
+                   <input type="text" class="form-control" name="selling price" id="selling price" placeholder=""/>
                     
                    </div>
                </div>
@@ -110,18 +107,14 @@ function Addproduct() {
                <div className="col-11 col-md-3  size1">
                    <div className="row row-size1">
                    <label for="Size1">Size1</label>
-                   </div>
-                   <div className=" row row-content">
-                    
+                   <input type="text" class="form-control" name="size1" id="size1" placeholder=""/>
                    </div>
                </div>
 
                <div className="col-11 col-md-3 size-mrp">
                    <div className="row row-mrp">
                    <label for="mrp">MRP</label>
-                   </div>
-                   <div className=" row row-content">
-                    
+                   <input type="text" class="form-control" name="mrp" id="mrp" placeholder=""/>
                    </div>
                </div>
 
@@ -129,9 +122,7 @@ function Addproduct() {
                <div className="col-11 col-md-3  selling-rate">
                    <div className="row row-sale-rate">
                    <label for="Selling price">Selling price</label>
-                   </div>
-                   <div className=" row row-content">
-                    
+                   <input type="text" class="form-control" name="selling price" id="selling price" placeholder=""/>
                    </div>
                </div>
          </div>
@@ -165,9 +156,7 @@ function Addproduct() {
                   <div className="col-11 col-md-3  colour1">
                    <div className="row row-last-clr">
                    <label for="colour1">Colour1</label>
-                   </div>
-                   <div className=" row row-content-btm">
-                    
+                   <input type="text" class="form-control" name="colour1" id="colour1" placeholder=""/>
                    </div>
                </div>
              </div>
