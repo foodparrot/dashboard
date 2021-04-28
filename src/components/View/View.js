@@ -4,28 +4,25 @@ export class View extends Component {
     render(){
         return(
             <div className="container-fluid ">
-             <div className='row header'>
+                    <div className='row header'>
                         <p>Bismillah Outlet</p>                        
                     </div>
             <div className="container">
-          {/*first line*/}
-            <div className="flex-container">
-                <div className="flex-item item1"><b>Edit Menu</b></div>
-            </div>
-           {/*table*/}  
+                <div className="flex-container">
+                    <div className="flex-item item1"><b>Edit Menu</b>
+                    </div>
+                </div>
                 <div className="table-responsive-md">
                    <table class="table table1  ">
                         <tbody>
-                          
                                 <td>
                                    Name:<br></br>
-                                  Bismillah Outlet <span class="badge bg-success badge1">Live</span><br></br>
+                                  Bismillah Outlet <span class="badge  badge1">Live</span><br></br>
                                   <button type="button" class="btn  but2">Back</button>
                                   <button type="button" class="btn  btn1">Edit</button>
                                 </td>
                                 <td>Platform:<br></br> FoodParrot
                                 </td>
-                          
                         </tbody>
                    </table>
                 </div>
@@ -38,16 +35,11 @@ export class View extends Component {
                <div className="container cat ">
                     <span>Categories(2)</span>
                </div>
-               {/*<div className=" cat">
-                    <div class="cart">
-                        <table>
-
-                        </table>
-                    </div>
-                /div>*/}
+               
+                
+            
             </div>
-            </div>
-         
+        </div>         
         );
 
         
