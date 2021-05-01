@@ -4,9 +4,9 @@ export class Menus extends Component {
     render(){
         return(
             <div className="container-fluid ">
-             <div className='row header'>
+                 <div className='row header'>
                         <p>Bismillah Outlet</p>                        
-                    </div>
+                 </div>
             <div className="container">
           {/*first line*/}
             <div className="flex-container flex-container-1">
