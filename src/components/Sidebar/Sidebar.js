@@ -72,7 +72,7 @@ function Sidebar({ winHeight,winWidth }) {
                     {/* <ProSidebar > */}
                         <Menu iconShape="circle" style={{ overflowY:"scroll",height:"100%" }}>
                             <MenuItem icon={<AiOutlineDashboard style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Dashboard <Link to='/dashboard' /></MenuItem>
-                            <MenuItem icon={<RiSignalTowerFill style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Live Orders <Link to='#' /></MenuItem>
+                            <MenuItem icon={<RiSignalTowerFill style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Live Orders <Link to='/LiveOrders' /></MenuItem>
                             <MenuItem icon={<FaPauseCircle style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Pause Orders <Link to='/PauseOrders' /></MenuItem>
                             <MenuItem icon={<FaClipboardList style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Inventory <Link to='#' /></MenuItem>
                             <MenuItem icon={<RiHistoryLine style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Order History <Link to='#' /></MenuItem>
