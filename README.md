@@ -1,6 +1,6 @@
 # Dashboard
 
-[![Gitpod Write-Code-Online](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/foodparrot/dashboard)
+[![Gitpod Write-Code-Online](https://img.shields.io/badge/Gitpod-write--online--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/foodparrot/dashboard)
 
 # Getting Started with Create React Ap
 
