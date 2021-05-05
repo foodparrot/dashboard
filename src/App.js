@@ -11,6 +11,7 @@ import View from './components/View/View';
 import Products from './components/Products/Products';
 import Addproduct from './components/Addproduct/Addproduct';
 import Outlets from './components/Outlets/Outlets';
+import Details from './components/Details/Details';
 // import $ from 'jquery';
 // import jQuery from 'jquery';
 class App extends React.Component {
@@ -29,6 +30,7 @@ class App extends React.Component {
           <Route path="/View/View" component={View}/>
           <Route path="/Products/Products" component={Products}/>
           <Route path="/Addproduct/Addproduct" component={Addproduct}/>
+          <Route path="/Details/Details" component={Details}/>
           <Route path="/outlets" component={Outlets}/>
 				</Switch>
         </Parent>
