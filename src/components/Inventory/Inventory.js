@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../Inventory/Inventory.css';
 import { AiOutlineSearch } from "react-icons/ai";
-import { GiPaddles } from 'react-icons/gi';
 export class Inventory extends Component {
     render() {
         return (
@@ -9,20 +8,15 @@ export class Inventory extends Component {
                 <div className='upperdivInv'>
                     <p>Bismillah Outlet!</p>
                 </div>
-                <div class="btn-group dropright " style={{padding:'2% 0 '}}>
-                    <button type="button" class="btn btn-secondary">
-                        Outlet
-                    </button>
-                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="sr-only"></span>
-                    </button>
-                    <div class="dropdown-menu">
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Outlet-1</a></li>
-                        <li><a class="dropdown-item" href="#">Outlet-2</a></li>
-                        <li><a class="dropdown-item" href="#">Outlet-3</a></li>
-                        <li><a class="dropdown-item" href="#">Outlet-4</a></li>
-                    </ul>
+                <div className='row'style={{padding:'2% 0'}}>
+                    <p className='col-2'>Outlet </p>
+                    <div className='col-10'>
+                        <input list='outletsinv' class='form-control'placeholder=''style={{width:'30%'}}></input>
+                            <datalist id="outletsinv">
+                                <option value="Outlet-1"></option>
+                                <option value="Outlet-2"></option>
+                                <option value="Outlet-3"></option>
+                            </datalist>
                     </div>
                 </div>
                 
@@ -32,7 +26,7 @@ export class Inventory extends Component {
                         <div className="input-group inv1">
                             <input type="text" className="form-control" placeholder="Search for a product"></input>
                             <div className="input-group-append">
-                            <button className="btn btn-secondary" type="button">
+                            <button className="btn btn-secondary btninv" type="button">
                                 <i><AiOutlineSearch/></i>
                             </button>
                             </div>

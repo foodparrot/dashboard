@@ -3,6 +3,9 @@ body{
     font-family: 'Poppins', sans-serif;
    
 }
+.btninv{
+  background-color: rgb(201, 198, 198);
+}
 .upperdivInv p{
     background: rgb(220, 215, 215);
     justify-content: center;
