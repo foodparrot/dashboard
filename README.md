@@ -1,3 +1,7 @@
+# Dashboard
+
+[![Gitpod Write-Code-Online](https://img.shields.io/badge/Gitpod-write--online--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/foodparrot/dashboard)
+
 # Getting Started with Create React Ap
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +72,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
