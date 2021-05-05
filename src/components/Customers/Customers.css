@@ -4,7 +4,7 @@ body{
    
 }
 
-.row3 p{
+.row31 p{
     background: rgb(220, 215, 215);
     justify-content: center;
     text-align: center;
@@ -27,7 +27,7 @@ body{
   padding: 5%;
 }
 
-.box{
+.boxs{
     margin:0 auto; 
   width:90%;
   padding:2.5%;

@@ -74,8 +74,8 @@ function Sidebar({ winHeight,winWidth }) {
                             <MenuItem icon={<AiOutlineDashboard style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Dashboard <Link to='/dashboard' /></MenuItem>
                             <MenuItem icon={<RiSignalTowerFill style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Live Orders <Link to='#' /></MenuItem>
                             <MenuItem icon={<FaPauseCircle style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Pause Orders <Link to='/PauseOrders' /></MenuItem>
-                            <MenuItem icon={<FaClipboardList style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Inventory <Link to='#' /></MenuItem>
-                            <MenuItem icon={<RiHistoryLine style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Order History <Link to='#' /></MenuItem>
+                            <MenuItem icon={<FaClipboardList style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Inventory <Link to='/Inventory' /></MenuItem>
+                            <MenuItem icon={<RiHistoryLine style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Order History <Link to='/OrderHistory' /></MenuItem>
                             <MenuItem icon={<RiGroup2Fill style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Customers <Link to='/Customers' /></MenuItem>
                             <SubMenu title="Menu" icon={<FaCubes style={{ fontSize: "2em" }} />}>
                                 <MenuItem icon={<MdAccountCircle style={{ fontSize: "1.5em" }} />} onClick={onMobileCollapseHandler}>Products<Link to="/Products/Products" /> </MenuItem>

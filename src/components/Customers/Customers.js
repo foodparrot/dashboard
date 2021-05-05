@@ -9,7 +9,7 @@ export class Customers extends Component {
         
                 <div className='container'>
 
-                    <div className='row row3'>
+                    <div className='row row31'>
                         <p>Bismillah Outlet</p>          
                     </div>
 
@@ -17,7 +17,7 @@ export class Customers extends Component {
                         Customers
                     </div>
 
-                    <div className='box'>
+                    <div className='box boxs'>
                         <form action=''>
                             <div className='row formgrp'>
 
