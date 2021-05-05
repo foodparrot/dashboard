@@ -29,7 +29,7 @@ class App extends React.Component {
           <Route path="/View/View" component={View}/>
           <Route path="/Products/Products" component={Products}/>
           <Route path="/Addproduct/Addproduct" component={Addproduct}/>
-          <Route path="/outlets" component={Outlets}/>
+          <Route path="/Outlets" component={Outlets}/>
 				</Switch>
         </Parent>
 			</BrowserRouter>
