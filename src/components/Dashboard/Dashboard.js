@@ -31,9 +31,9 @@ function Dashboard() {
                        <a href="#" class="dropdown-item">November</a>
                        <a href="#" class="dropdown-item">December</a>
                     </div>
-                    </div>
-                    </div>
-              </div>  
+                </div>
+            </div>
+        </div>  
 
      {/*grids  */}
       <div className= "container grids">

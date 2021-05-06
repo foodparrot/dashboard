@@ -3,6 +3,21 @@ body{
     font-family: 'Poppins', sans-serif;
    
 }
+.p_inv{
+  padding-left:0%;
+}
+.outletinv{
+  border: 1px solid;
+  color: #000;  
+  padding-bottom: 2%;
+  padding-top: 2%;
+  width: 80%;
+  height: 80%;
+}
+.anc-tag-inv{
+  color: #000;
+
+}
 .btninv{
   background-color: rgb(201, 198, 198);
 }

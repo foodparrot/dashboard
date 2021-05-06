@@ -8,7 +8,7 @@ export class Inventory extends Component {
                 <div className='upperdivInv'>
                     <p>Bismillah Outlet!</p>
                 </div>
-                <div className='row'style={{padding:'2% 0'}}>
+                {/*<div className='row'style={{padding:'2% 0'}}>
                     <p className='col-2'>Outlet </p>
                     <div className='col-10'>
                         <input list='outletsinv' class='form-control'placeholder=''style={{width:'30%'}}></input>
@@ -18,7 +18,20 @@ export class Inventory extends Component {
                                 <option value="Outlet-3"></option>
                             </datalist>
                     </div>
+        </div>*/}
+            <div className="container nav navbar dropdown_cls_inv">
+            <div className="row">
+                <p className='col-6 p_inv'>Outlet </p>
+                <div className="col-6 outletinv dropdown">
+                <a href="#" class="dropdown-toggle anc-tag-inv " data-toggle="dropdown">Outlet</a>
+                    <div class="dropdown-menu">
+                       <a href="#" class="dropdown-item">Outlet-1</a>
+                       <a href="#" class="dropdown-item">Outlet-2</a>
+                       <a href="#" class="dropdown-item">Outlet-3</a>
+                    </div>
                 </div>
+            </div>
+        </div>  
                 
                 <p>Inventory</p>
                 <div className='row'>
