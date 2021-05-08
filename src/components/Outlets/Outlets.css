@@ -20,11 +20,15 @@
   background-color: aliceblue;
   padding-top: 3%;
   padding-bottom: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .txt3 {
   background-color: aliceblue;
   padding-top: 6%;
   padding-bottom: 6%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .tab9 {
   overflow-x: auto;
