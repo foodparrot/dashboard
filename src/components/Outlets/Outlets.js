@@ -11,10 +11,10 @@ export class Outlets extends Component {
                     <button type="button" class="btn col col-md-2 dis">Add new </button>
                 </div>
         </div>
-        <div className="tab0">
-        <table class="tab1">
+        <div className="tab9 ">
+        <table class=" tab1 ">
         <thead className="">
-          <tr className="rw1">
+          <tr className=" rw1">
             <th className="txt2">Outlet name</th>
             <th className="txt2">Status</th>
             <th className="txt2">Delivery</th>
@@ -22,9 +22,9 @@ export class Outlets extends Component {
             <th className="txt2">Dine-in</th>
           </tr>
         </thead>
-        <tbody className="tab2">
+        <tbody className="">
           <tr className="rw2">
-            <th className="txt3"><div className="smeln"><img src="cdvbc"></img></div><div className="smeln">Bismillah Outlet</div></th>
+            <th className="txt3"><div className="smeln"><img src="cdvbc"></img></div><div className="smeln9">Bismillah Outlet</div></th>
             <th className="txt3">Active</th>
             <th className="txt3">Enable</th>
             <th className="txt3">Enable</th>
@@ -33,7 +33,7 @@ export class Outlets extends Component {
         </tbody>
         </table>
         </div>
-        <div class="row rw0 container">
+        <div class="row rw9">
           <div className="col" >showing 1 out of 1 record</div>
            <button className="previous bn9">&laquo;</button>
            <button className="middle bn9">1</button>

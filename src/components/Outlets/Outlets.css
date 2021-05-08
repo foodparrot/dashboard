@@ -1,6 +1,6 @@
 .fst {
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .out1 {
   font-size: large;
@@ -17,20 +17,20 @@
   background-color: rgb(255, 196, 2);
 }
 .txt2 {
-  padding: 2%;
+  background-color: aliceblue;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 .txt3 {
-  padding: 5%;
+  background-color: aliceblue;
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
-.tab0 {
+.tab9 {
   overflow-x: auto;
 }
 .tab1 {
   border-width: 0ch;
-  overflow-x: auto;
-}
-.tab2 {
-  padding: 5%;
 }
 .rw1 {
   border-width: 0ch;
@@ -41,11 +41,15 @@
 }
 .smeln {
   display: inline;
-  margin-right: 10%;
+  margin-right: 5%;
 }
-.rw0 {
-  margin: 1%;
-  margin-top: 3%;
+.smeln9 {
+  display: inline;
+}
+.rw9 {
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 5%;
 }
 .previous {
   background-color: #f1f1f1;
@@ -55,10 +59,7 @@
   background-color: #ff4500;
   color: white;
 }
-.bn0 {
-  float: right;
-  display: inline;
-}
+
 .bn9 {
   border-width: 1.5px;
   border-style: solid;
