@@ -9,13 +9,13 @@ export class Menus extends Component {
                  </div>
             <div className="container">
           {/*first line*/}
-            <div className="flex-container flex-container-1">
-                <div className="flex-item item1"><b>Menu</b></div>
-                <div className="flex-item item2"><button type="button" class="btn btn-primary btn-lg btn-create">Create</button></div>
+            <div className="flex-container flex-container10">
+                <div className="flex-item item10"><b>Menu</b></div>
+                <div className="flex-item item20"><button type="button" class="btn btn-primary btn-lg btn-create">Create</button></div>
                </div>
            {/*table*/}  
                <div className="table-responsive-md">
-                   <table class="table table1">
+                   <table class="table table10">
                       <thead>
                        <tr>
                            <th scope= "col"></th>

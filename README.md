@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 # Dashboard
 ![Deploy](https://github.com/foodparrot/dashboard/actions/workflows/firebase_deploy.yml/badge.svg)
 
 [![Gitpod Write-Code-Online](https://img.shields.io/badge/Gitpod-write--online--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/foodparrot/dashboard)
 
+=======
+>>>>>>> parent of d894ed3 (update)
 # Getting Started with Create React Ap
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

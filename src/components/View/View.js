@@ -18,7 +18,7 @@ export class View extends Component {
                                 <td>
                                    Name:<br></br>
                                   Bismillah Outlet <span class="badge  badge1">Live</span><br></br>
-                                  <button type="button" class="btn  but2">Back</button>
+                                  <button type="button" class="btn  btn1">Back</button>
                                   <button type="button" class="btn  btn1">Edit</button>
                                 </td>
                                 <td>Platform:<br></br> FoodParrot

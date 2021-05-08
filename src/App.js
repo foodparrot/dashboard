@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Dashboard from './components/Dashboard/Dashboard';
 import LiveOrders from './components/LiveOrders/LiveOrders';
-import Details from "./components/Details/Details";
+
 import Parent from './components/Parent/Parent';
 import Sidebar from './components/Sidebar/Sidebar';
 import PauseOrders from './components/PauseOrders/PauseOrders';
@@ -26,7 +26,7 @@ class App extends React.Component {
 				<Switch>
           <Route path="/dashboard"  exact component={Dashboard} />
           <Route path="/liveorders"   component={LiveOrders} />
-          <Route path="/Details/Details" component={Details}/>
+          
           <Route path="/PauseOrders" component={PauseOrders}/>
           <Route path="/Customers" component={Customers}/>
           <Route path="/menu/menus" component={Menus}/>

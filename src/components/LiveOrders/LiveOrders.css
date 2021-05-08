@@ -10,9 +10,6 @@
     text-align: center;
     color: #aaa;
 }
-.btn-ord-outlets{
-    border:none; 
-}
 
 
 .s-byid{
@@ -114,22 +111,14 @@
     .right-container{
      margin-top:2%;
     }
+    .line{
+        border-bottom: 1px solid;
+    }
     .cust-det{
         font-size:14px;
     }
     .lvhead{
         font-size:14px;
-    }
-    .ord-outlet{
-        position:relative;
-        overflow-x: scroll;
-        font-size: 0.63em;
-        padding:5%; 
-    }
-    .btn-ord-outlets{
-        padding:2%;
-        margin-right: 3% !important;
-        
     }
 }
 @media screen and (min-width:768px) and (max-width: 1024px){
@@ -138,7 +127,6 @@
    }
    .btn-ref{
        margin-top:100% !important;
-      
    }
 
 }

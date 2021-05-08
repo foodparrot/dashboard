@@ -1,67 +1,65 @@
 .header {
-    background: rgb(220, 215, 215);
-    justify-content: center;
-    font-size: 1.3em;
-    padding-top: 1%;
+  background: rgb(220, 215, 215);
+  justify-content: center;
+  font-size: 1.3em;
+  padding-top: 1%;
 }
-.flex-container-1{
-    margin-top:5%;
-    display: flex;
-    justify-content: space-between;
+.flex-container10 {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
 }
-.item1{
-    font-size: 20px;
+.item10 {
+  font-size: 20px;
 }
-.btn-create{
-    background-color:#6A0888;
-    border-color: black;
+.btn-create {
+  background-color: #6a0888;
+  border-color: black;
+}
+.btn-create:hover {
+  background-color: #000000;
+  border-color: black;
+  color: white;
+}
 
+.buttons {
+  display: flex;
+  justify-content: space-between;
 }
-.btn-create:hover{
-    background-color:#000000;
-    border-color:black;
-    color:white;
+.view {
+  background-color: white;
+  border-color: #0040ff;
+  color: black;
+}
+.del {
+  background-color: white;
+  border-color: #ff0000;
+  color: black;
+}
+.live {
+  color: #ff8000;
+}
+.offline {
+  color: #0040ff;
+}
+.table10 {
+  margin-top: 8%;
+  border: 2px ridge;
+  text-align: center;
+  width: 100%;
+  padding: 0%;
+  table-layout: auto;
+  overflow: scroll;
 }
 
-  .buttons{
-      display: flex;
-      justify-content: space-between;
+.tr {
+  border: 2px ridge;
+}
+@media screen and (max-width: 767px) {
+  .flex-container10 {
+    margin-bottom: 8%;
   }
-  .view{
-      background-color:white;
-      border-color:#0040FF;
-      color:black;
+  .table10 {
+    margin-top: 12%;
   }
-  .del{
-    background-color:white;
-    border-color:#FF0000;
-    color:black;
-  }
-  .live{
-      color:#FF8000;
-  }
-  .offline{
-    color:#0040FF;
-  }
-  .table1{ 
-    margin-top: 8%;
-    border: 2px ridge;
-    text-align: center;
-    width:100%;
-    padding: 0%;
-    table-layout: auto;
-    overflow: scroll;
-   }
-  
-  .tr {
-     border: 2px ridge;
-  }
-   @media screen and (max-width: 767px){
-       .flex-container-1{
-           margin-bottom: 8%;
-       }
-       .table1{
-           margin-top: 12%;
-       }
-   }
-  
+}

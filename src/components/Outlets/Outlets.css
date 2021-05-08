@@ -10,13 +10,11 @@
 
   font-size: medium;
 }
-.btn {
+.dis {
+  float: right;
   margin-left: 0.5%;
   font-size: medium;
   background-color: rgb(255, 196, 2);
-}
-.dis {
-  float: right;
 }
 .txt2 {
   padding: 2%;
