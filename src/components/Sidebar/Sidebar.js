@@ -63,7 +63,8 @@ function Sidebar({ winHeight,winWidth }) {
                         // padding:"30px 10px 25px 10px",
                         padding: "30px",
                         // backgroundColor: "rgba(240, 168, 105,1)",
-                        backgroundColor: "rgb(152 198 147 / 31%)",
+                        // backgroundColor: "rgb(152 198 147 / 31%)",
+                        backgroundColor: "#979292",
                         width: "225px"
                     }}>
                 </SidebarHeader>
