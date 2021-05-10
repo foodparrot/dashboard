@@ -45,7 +45,7 @@ export class Inventory extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className='col-md-3 inv1'><p>Availability</p></div>                    
+                    <div className='col-md-3 inv1 invp'><p>Availability</p></div>                    
                 </div>
 
                 <hr></hr>
