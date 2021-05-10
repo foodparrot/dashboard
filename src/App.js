@@ -14,6 +14,7 @@ import Addproduct from './components/Addproduct/Addproduct';
 import Outlets from './components/Outlets/Outlets';
 import OrderHistory from './components/OrderHistory/OrderHistory';
 import Inventory from './components/Inventory/Inventory'
+import Details from "./components/Details/Details";
 // import $ from 'jquery';
 // import jQuery from 'jquery';
 class App extends React.Component {
@@ -26,7 +27,7 @@ class App extends React.Component {
 				<Switch>
           <Route path="/dashboard"  exact component={Dashboard} />
           <Route path="/liveorders"   component={LiveOrders} />
-          
+          <Route path="/Details/Details" component={Details}/>
           <Route path="/PauseOrders" component={PauseOrders}/>
           <Route path="/Customers" component={Customers}/>
           <Route path="/menu/menus" component={Menus}/>

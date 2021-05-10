@@ -1,29 +1,30 @@
 import React from 'react'
 import '../LiveOrders/LiveOrders.css';
 import { BsSearch } from "react-icons/bs";
+import {Link } from "react-router-dom";
 
 function LiveOrders() {
     return (
-        <div className="container-fluid ">
-            <div className="row lvhead ">
-                    <div className="col-4 col-md-2 line">
-                     All(0)
+        <div className="container-fluid " style={{height: "-webkit-fill-available"}}>
+            <div className="row lvhead ord-outlet">
+                    <div className=" col-2 col-md-2 line">
+                     <button className=" all btn-ord-outlets">All(0)</button>
                      </div>   
-                     <div className="col-4 col-md-2 line ">
-                     New(0)
+                     <div className="col-2 col-md-2 line ">
+                     <button className=" all btn-ord-outlets">New(0)</button>
                      </div>   
-                     <div className="col-4 col-md-2 line">
-                     In outlet(0)
+                     <div className="col-3 col-md-2 line">
+                     <button className=" all btn-ord-outlets">In outlet(0)</button>
                      </div>   
-                     <div className="col-6 col-md-3">
-                    In Route/Ready(0)
+                     <div className=" col-3 col-md-3 line">
+                    <button className=" all btn-ord-outlets">In Route/Ready(0)</button>
                      </div>     
-                     <div className="col-4 col-md-2">
-                     Delivered/Picked up
+                     <div className="col-2 col-md-3 line">
+                     <button className=" all btn-ord-outlets">Delivered/Picked up</button>
                      </div>                             
                     </div>
-            <div className="container-fluid big-container">
-                <div className="row row-main-od">
+            <div className="container-fluid big-container" style={{height: "-webkit-fill-available"}}>
+                <div className="row row-main-od" style={{height: "-webkit-fill-available"}}>
 
                     <div className="col-12 col-md-4 vert-div">
 
@@ -40,7 +41,7 @@ function LiveOrders() {
                         </div>
                         <div className="row row-order-det2">
                             <div className="col-6 col-md-6">3min ago</div>
-                            <div className="col-6 col-md-6"><button className="details details-red">Details</button></div>
+                            <div className="col-6 col-md-6"><Link to={"../Details/Details"}><button className="details details-red">Details</button></Link></div>
                         </div>
                        </div>
                     </div>
@@ -53,7 +54,7 @@ function LiveOrders() {
                         </div>
                         <div className="row row-order-det2">
                             <div className="col-6 col-md-6">3min ago</div>
-                            <div className="col-6 col-md-6"><button className="details details-org">Details</button></div>
+                            <div className="col-6 col-md-6"><Link to={"../Details/Details"}><button className="details details-org">Details</button></Link></div>
                         </div>
                        </div>
                     </div>
@@ -64,7 +65,7 @@ function LiveOrders() {
                    
 
 
-                       <div className="col-12 col-md-7 right-container">
+                       <div id="right-cont" className=" col-12 col-md-7 right-container d-none d-sm-block" >
                            <div className="container">
                            <div className="row">Order#12345</div>
                            <div className="row">Today,10:45</div>
@@ -167,47 +168,7 @@ function LiveOrders() {
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    
-            
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <script src="../Details/Details"></script>
 
     {/*end div*/}
         </div>
