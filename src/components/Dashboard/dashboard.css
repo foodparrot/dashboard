@@ -1,32 +1,77 @@
-.header {
-    background: rgb(220, 215, 215);
-    justify-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+   
+}
+.headerd {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 109%;
+    color: #1D1D1B;
     font-size: 1.3em;
-    padding-top: 1%;
+    padding-top: 3%;
+    margin-left: 1%;
+}
+.heading{
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 109%;
+    color: #1D1D1B;
+    padding-top: 2%;
+
+}
+.dashboard{
+    background: #F9F9F9;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    
 }
 .month{
-    border: 1px solid;
-    color: #000;  
+    border-radius: 3%;  
     padding-bottom: 5%;
     padding-top: 5%;
+    background: linear-gradient(94.08deg, #FFE13B 0.84%, #FF2525 115.93%);
 }
-.anc-tag{
-    color: #000;
+.anc-tag-d{
+    color: #FFFFFF;
+
 }
-.row1{
+
+.carddashboard{
+    color: black;
+    font-weight: 550;
+    font-size: 1em;
+    line-height: 119%;
+    justify-content: center;
+    text-align: center;
+    width: 90px;
+    -moz-box-shadow: 0 0 2% 2% #888;
+    -webkit-box-shadow: 0 0 2% 2%#888;
+    box-shadow: 0 0 2px 2px #888;
+}
+.rowd1{
     padding-bottom: 5%;
     padding-top: 5%;
-    margin-top:20% ;
-    margin-right: 15%;
-    border: 1px solid;
+    margin:1% 0;
+    margin-right: 0%;
+    margin-left: 0%;
     justify-content: center;
 }
-.row2{
-    border: 1px solid;
-    padding:12%;
-    margin-right:15%;
-   justify-content: center;
-}
+
 .orders-table{
-    margin-top: 8%;
+    margin-top: 5%;
+    -moz-box-shadow: 0 0 2% 2% #888;
+    -webkit-box-shadow: 0 0 2% 2%#888;
+    box-shadow: 0 0 3px 3px #888;
+}
+.orders-table tr{
+    color: black;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 109%;
+
+
 }

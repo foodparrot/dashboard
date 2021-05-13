@@ -3,7 +3,7 @@ import '../OrderHistory/OrderHistory.css';
 export class OrderHistory extends Component {
     render() {
         return (
-                <div className='container-fluid'>
+                <div className='container-fluid os'>
                     <div className='upperdiv'>
                         <p>Bismillah Outlet!</p>
                     </div>
