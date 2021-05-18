@@ -53,7 +53,7 @@ export class Customers extends Component {
                     <div className='gap12'>
                         <div class="table-responsive">
                             
-                            <table class="table">
+                            <table class="table t">
                                 <thead>
                                     <tr>
                                     <th scope="col">Name</th>

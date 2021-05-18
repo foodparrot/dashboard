@@ -6,36 +6,47 @@ import {Link } from "react-router-dom";
 function LiveOrders() {
     return (
         <div className="container-fluid " style={{height: "-webkit-fill-available"}}>
-            <div className="row lvhead ord-outlet">
-                    <div className=" col-2 col-md-2 line">
-                     <button className=" all btn-ord-outlets">All(0)</button>
+            <div className="row lvhead ord-outlet scroll-bar">
+                    <div className="col-2 col-md-2 ">
+                     <button className="top-btns"><a href='#' >All(0)</a></button>
                      </div>   
-                     <div className="col-2 col-md-2 line ">
-                     <button className=" all btn-ord-outlets">New(0)</button>
+                     <div className="col-2 col-md-2  ">
+                     <button className="top-btns"><a href='#'>New(0)</a></button>
                      </div>   
-                     <div className="col-3 col-md-2 line">
-                     <button className=" all btn-ord-outlets">In outlet(0)</button>
+                     <div className="col-3 col-md-2 ">
+                     <button className="top-btns"><a href="#">In outlet(0)</a></button>
                      </div>   
-                     <div className=" col-3 col-md-3 line">
-                    <button className=" all btn-ord-outlets">In Route/Ready(0)</button>
+                     <div className="col-3 col-md-3">
+                    <button className="top-btns"><a href='#'>In Route/Ready(0)</a></button>
                      </div>     
-                     <div className="col-2 col-md-3 line">
-                     <button className=" all btn-ord-outlets">Delivered/Picked up</button>
-                     </div>                             
-                    </div>
+                     <div className="col-2 col-md-3">
+                     <button className="top-btns"><a href='#'>Delivered/Picked up</a></button>
+                     </div>                               
+    </div>
+             {/*
+                            <table class="table   lvhead ord-outlet ">
+                                <thead className="tab-head">
+                                    <tr>
+                                    <th scope="col">All(0)</th>
+                                    <th scope="col">New(0)</th>
+                                    <th scope="col">In outlet(0)</th>
+                                    <th scope="col">In Route/Ready(0)</th>
+                                    <th scope="col">Delivered/Picked up</th>
+                                    </tr>
+                                </thead></table>*/}
             <div className="container-fluid big-container" style={{height: "-webkit-fill-available"}}>
                 <div className="row row-main-od" style={{height: "-webkit-fill-available"}}>
 
                     <div className="col-12 col-md-4 vert-div">
 
-                    <div className="row row-od1">
+                    <div className="row row-od1 class-bg">
                     <input type="search" placeholder="Search by order id..." aria-describedby="button-od" className="s-byid"/>
                     <button className="button-od btn-order"><BsSearch/></button>
                     </div>
 
-                    <div className="row row-red">
+                    <div className="row row-red class-bg">
                         <div className="container cont-red">
-                        <div className="row row-order-det1">
+                        <div className="row row-order-det1 ">
                             <div className="col-6 col-md-6">Order#12345</div>
                             <div className="col-6 col-md-6">Apr 09,21</div>
                         </div>
@@ -46,9 +57,9 @@ function LiveOrders() {
                        </div>
                     </div>
 
-                    <div className="row row-org">
+                    <div className="row row-org class-bg">
                         <div className="container cont-org">
-                        <div className="row row-order-det1">
+                        <div className="row row-order-det1 ">
                             <div className="col-6 col-md-6">Order#12345</div>
                             <div className="col-6 col-md-6">Apr 09,21</div>
                         </div>
@@ -67,7 +78,7 @@ function LiveOrders() {
 
                        <div id="right-cont" className=" col-12 col-md-7 right-container d-none d-sm-block" >
                            <div className="container">
-                           <div className="row">Order#12345</div>
+                           <div className="row order-big"><b>Order#12345</b></div>
                            <div className="row">Today,10:45</div>
                            </div>
             {/*item image and quantity*/}
@@ -88,12 +99,14 @@ function LiveOrders() {
                             </div>
                             </div>
                             
-                            <div className="red-line"></div>
+                            
                {/*Item details*/}
                         <div className="container">
+                        <div className="bill-det-head"><b>Bill</b></div>
+                            <div className="red-line"></div>
                         <div className="row row-itm-det1 row-det">
-                            <div className="col-8 col-md-11">Item total</div>
-                            <div className="col-4 col-md-1">250/-</div>
+                            <div className="col-7 col-md-11">Item total</div>
+                            <div className="col-5 col-md-1">250/-</div>
                         </div>
 
                         <div className="row row-itm-det2 row-det">
@@ -107,43 +120,42 @@ function LiveOrders() {
                         </div>
                         </div>
                {/*customer details*/}
-                        <div className="red-line"></div>
-                        <div className="container">
-                          <div><b><i>CUSTOMER DETAILS</i></b></div>
-
+               <div className="container">
+                          <div className="bill-det-head"><b>Customer Details</b></div>
+                          <div className="red-line"></div>
                            <div className="container cust-det">
                           <div className="row row-cus-det1">
-                              <div className="col-3 col-md-4">Name</div>
+                              <div className="col-3 col-md-4"><b>Name</b></div>
                               <div className="col-2 col-md-2">:</div>
                               <div className="col-7 col-md-6">Ram Mishra</div>
                           </div>
                           <div className="row row-cus-det2">
-                              <div className="col-3 col-md-4">Mobile</div>
+                              <div className="col-3 col-md-4"><b>Mobile</b></div>
                               <div className="col-2 col-md-2">:</div>
                               <div className="col-7 col-md-6">6303065650</div>
                           </div>
                           <div className="row row-cus-det1">
-                              <div className="col-3 col-md-4">Address</div>
+                              <div className="col-3 col-md-4"><b>Address</b></div>
                               <div className="col-2 col-md-2">:</div>
                               <div className="col-7 col-md-6">23-6-236/9/A,Warangal</div>
                           </div>
                           <div className="row row-cus-det1">
-                              <div className="col-3 col-md-4">Pincode</div>
+                              <div className="col-3 col-md-4"><b>Pincode</b></div>
                               <div className="col-2 col-md-2">:</div>
                               <div className="col-7 col-md-6">506002</div>
                           </div>
                           <div className="row row-cus-det1">
-                              <div className="col-3 col-md-4">Payment</div>
+                              <div className="col-3 col-md-4"><b>Payment</b></div>
                               <div className="col-2 col-md-2">:</div>
                               <div className="col-7 col-md-6">Cash on delivery</div>
                           </div>
                           <div className="row row-cus-det1">
-                              <div className="col-3 col-md-4">Outlet</div>
+                              <div className="col-3 col-md-4"><b>Outlet</b></div>
                               <div className="col-2 col-md-2">:</div>
                               <div className="col-7 col-md-6">Bismillah Outlet</div>
                           </div>
                           <div className="row row-cus-det1">
-                              <div className="col-3 col-md-4">Order type</div>
+                              <div className="col-3 col-md-4"><b>Order type</b></div>
                               <div className="col-2 col-md-2">:</div>
                               <div className="col-7 col-md-6">Pickup</div>
                           </div>
