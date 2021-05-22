@@ -21,25 +21,25 @@ export class Customers extends Component {
                         <form action=''>
                             <div className='row formgrp'>
 
-                                <div className='col-12 col-sm-4'>
+                                <div className='col-12 col-sm-4 c-inp'>
                                     <div className='form-group'>
                                         <label for='name'>Name</label>
-                                        <input type='text' name='name' id='name' class='form-control'></input>
+                                        <input type='text' name='name' id='name' class='form-control'style={{width:'100%'}}></input>
                                     </div>
                                 </div>
 
-                                <div className='col-12 col-sm-4'>
+                                <div className='col-12 col-sm-4 c-inp'>
                                     <div className='form-group'>
                                         <label for='email'>Email</label>
                                         <input type='email' name='email' id='email' class='form-control'></input>
                                     </div>
                                 </div>
 
-                                <div className='col-12 col-sm-4'>
+                                <div className='col-12 col-sm-4 c-inp1'>
                                     <div className='form-group form3'>
                                         <label for="phone">Phone</label>
                                         <input className='col-12' type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class='form-control'/>
-                                        <div className='searchicon'><AiOutlineSearch/></div>
+                                        <div className='searchicon'><AiOutlineSearch size={20}/></div>
                                     </div>
                                 </div>
                                 <div className='searchbtn'>

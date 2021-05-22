@@ -103,8 +103,10 @@ body{
 .form3 .searchicon{
   position: absolute;
   left: 101%;
-  bottom: 2%;
+  bottom: 8%;
   size: '2x';
+  size: 2cm;
+  height:1.5em;
 }
 
 
@@ -112,6 +114,9 @@ body{
     float: right;
 }
 
+.gap12{
+  filter: drop-shadow(  0 0 0.4rem rgba(0, 0, 0, 0.5));
+}
 
 .cust-borderless tr, .cust-borderless td, .cust-borderless th, .customers-table{
   border: none !important;
@@ -120,5 +125,11 @@ body{
 @media screen and (min-width:768px){
   .searchbtn{
     display: none;
+  }
+  .c-inp{
+    padding: 0% 1%;
+  }
+  .c-inp1{
+    padding: 0 3% 0 1%;
   }
 }
