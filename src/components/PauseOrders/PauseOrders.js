@@ -3,11 +3,11 @@ import '../PauseOrders/PauseOrders.css';
 export class PauseOrders extends Component {
     render() {
         return (
-        
-                <div className='container-fluid'>
-                    <p>Pause New Orders</p>
-                    <div className='card border-dark card1'>
-                        <div className='card-body'>
+            <div className='container'>
+                <div className='container ps'>
+                    <p className='paraps'>Pause New Orders</p>
+                    <div className='card border-dark cardps1'>
+                        <div className='card-body cardps11'>
                             <div className='disp'>
                                 <div className='col-12 col-md-6'>
                                     Bismillah outlet1
@@ -51,14 +51,15 @@ export class PauseOrders extends Component {
                     </div>
                 
                     {/* 2nd card */}
-                    <div className='gap2'></div>
-                        <div className='col-12 card border-dark card1'>
+                    <div className='gapps'></div>
+                        <div className='col-12 card border-dark cardps1'>
                             <div className='card-body'>
-                                <p>Test Hardwares</p>
-                                <button type="button" class="btn btn-secondary">Sound</button>
+                                <p style={{fontSize:'1.2em',fontWeight:'600'}}>Test Hardwares</p>
+                                <button type="button" class="btn btn-secondary btnps">Sound</button>
                             </div>
                         </div>
-                    </div>
+                </div>
+            </div>
             
         );
     }

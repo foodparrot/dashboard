@@ -7,17 +7,17 @@ export class Customers extends Component {
     render() {
         return (
         
-                <div className='container'>
+                <div className='container-fluid'>
 
-                    <div className='row row31'>
+                    <div className='container-fluid row row31'>
                         <p>Bismillah Outlet</p>          
                     </div>
-
-                    <div className='col-12 col-md-6 p1'>
+                    <div className='container-fluid customers'>
+                    <div className='container p1'>
                         Customers
                     </div>
 
-                    <div className='box boxs'>
+                    <div className='container-fluid box boxs'>
                         <form action=''>
                             <div className='row formgrp'>
 
@@ -43,7 +43,7 @@ export class Customers extends Component {
                                     </div>
                                 </div>
                                 <div className='searchbtn'>
-                                <button type="button" class="btn btn-primary">Search</button>
+                                <button type="button" class="btn btn-primary"  style={{background:'linear-gradient(94.08deg, #FFE13B 0.84%, #FF2525 115.93%)'}}>Search</button>
 
                                 </div>
 
@@ -51,9 +51,9 @@ export class Customers extends Component {
                         </form>
                     </div>
                     <div className='gap12'>
-                        <div class="table-responsive">
+                        <div class="table-responsive cust-borderless">
                             
-                            <table class="table t">
+                            <table class="table customers-table" style={{fontWeight:'600'}}>
                                 <thead>
                                     <tr>
                                     <th scope="col">Name</th>
@@ -65,7 +65,7 @@ export class Customers extends Component {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    <tr style={{background:'white'}}>
                                     <td>Azhar</td>
                                     <td><a href="tel:=917997289947">+917997289947</a></td>
                                     <td>4</td>
@@ -74,7 +74,7 @@ export class Customers extends Component {
                                     <td>₹555.00</td>
                                     </tr>
 
-                                    <tr>
+                                    <tr  style={{background:'#D7D4D1'}}>
                                     <td>Srikar</td>
                                     <td><a href="tel:+916303065650">+916303065650</a></td>
                                     <td>1</td>
@@ -83,12 +83,13 @@ export class Customers extends Component {
                                     <td>₹5.00</td>
                                     </tr>
 
-                                    <tr>
+                                    <tr style={{background:'white'}}>
                                     <td colSpan='6' className='leftalign'>Showing from 1 to 2 of 2 records
                                     <div className='bttnarrow'>
-                            <button type="button" class="btn btn-outline-dark"><FaAngleDoubleLeft/></button>
-                            <button type="button" class="btn btn-outline-primary">1</button>
-                            <button type="button" class="btn btn-outline-dark"><FaAngleDoubleRight/></button>
+                            <button type="button" class="btn btn-outline-dark cust-btn-1"  style={{background:'white',margin:'0 2% 0 0',boxShadow:'0 2px 2px gray'}}><FaAngleDoubleLeft/></button>
+                            <button type="button" class="btn btn-outline-dark cust-btn-2" style={{background:'linear-gradient(94.08deg, #FFE13B 0.84%, #FF2525 115.93%)',margin:'0 2% 0 0',width:'30%',
+                            boxShadow:'0 2px 2px gray',border:'none'}}>1</button>
+                            <button type="button" class="btn btn-outline-dark cust-btn-3" style={{background:'white',boxShadow:'0 2px 2px gray'}}><FaAngleDoubleRight/></button>
                         </div></td>
                                     
                                     </tr>
@@ -98,7 +99,7 @@ export class Customers extends Component {
                         </div>
                         
                     </div>
-                
+                    </div>
                 </div>
             
         );

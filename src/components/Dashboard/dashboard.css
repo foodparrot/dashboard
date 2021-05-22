@@ -72,6 +72,14 @@ body{
     font-weight: 600;
     font-size: 1em;
     line-height: 109%;
-
-
+}
+.clrtable tr, .clrtable td, .clrtable th, .clrtable{
+    border: none !important;
+   }
+@media screen and (max-width:767px){
+    .orders-table{
+        -moz-box-shadow: 0 0 2% 2% #888;
+        -webkit-box-shadow: 0 0 2% 2%#888;
+        box-shadow: 0 0 5px 3px #888;
+    }
 }
