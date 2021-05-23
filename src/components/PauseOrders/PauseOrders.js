@@ -4,6 +4,9 @@ export class PauseOrders extends Component {
     render() {
         return (
             <div className='container'>
+                <div className='container-fluid row rowps-1'>
+                    <p>Bismillah Outlet</p>          
+                </div>
                 <div className='container ps'>
                     <p className='paraps'>Pause New Orders</p>
                     <div className='card border-dark cardps1'>
