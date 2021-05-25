@@ -3,6 +3,8 @@ import '../Addproduct/Addproduct.css';
 import { IconContext } from "react-icons";
 import { FaPencilAlt } from "react-icons/fa";
 import { HiInformationCircle } from "react-icons/hi";
+import {MdArrowDropUp} from "react-icons/md";
+
 
 
 function Addproduct() {
@@ -25,9 +27,13 @@ function Addproduct() {
 
             
         <div className="row row-6">
-            <div className="col-6 col-md-1 imge">
-                <img src="#" alt="img1" className="img-1"/>
+            <div className="col-6 col-md-3 col-lg-3  imge">
+                <img src="/images/add-prod-square-img1.png" alt="img1" className="img-1"/>
             </div>
+            <div className="col-6  col-md-3 col-lg-3 imge">
+                <img src="/images/add-prod-sq-img2.png" alt="img1" className="img-1"/>
+            </div>
+
         </div>
     </div>
        
@@ -96,7 +102,10 @@ function Addproduct() {
                                    <div className="vertical-alignment-helper">
                                     <div className="modal-dialog vertical-align-center">
                                      <div className="modal-content">
-                                        <div className="modal-header"><h2>Choose Product unit</h2></div>
+                                        <div className="modal-header">
+                                            <h2>Choose Product unit</h2>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                             </div>
                                         <div className="modal-body">
                                          {/*1*/}<button className="modal-btns">piece</button>
                                          {/*2*/}<button className="modal-btns">kg</button>
@@ -135,7 +144,8 @@ function Addproduct() {
                                     </div>
                                    </div>                
             </div>
-            
+           
+
             
         
               
@@ -178,8 +188,9 @@ function Addproduct() {
          {/*variant*/}
          <div className="container flex nav navbar variant ">
             <div className="row row-sizes">
-              <div className=" col-11 add-vars">
-               <a class="btn" href="#collapseExample" data-toggle="collapse">variant</a>
+              <div className=" col-11  add-vars btn-col-dd">
+               <a  className="btn " href="#collapseExample" data-toggle="collapse">variant<FaPencilAlt /></a> 
+                <span className="btn btn-dup" href="#collapseExample" data-toggle="collapse"><MdArrowDropUp/></span>
                 </div>
             </div>
             </div>
@@ -230,8 +241,9 @@ function Addproduct() {
 
          <div className="container nav navbar colors ">
             <div className="row row-clrs">
-              <div className=" add-clrs dropup">
-               <a class="btn" href="#collapseExample2" data-toggle="collapse">Add colours</a>
+              <div className=" add-clrs dropup btn-col-dd">
+               <a class="btn " href="#collapseExample2" data-toggle="collapse">Add colours </a>
+               <span className="btn btn-dup btn-dup-clr" href="#collapseExample2" data-toggle="collapse"><MdArrowDropUp/></span>
                 </div>
             </div>
             </div>
@@ -263,9 +275,9 @@ function Addproduct() {
            {/*addons*/}
            <div className="container nav navbar addons ">
            <div className="row row-clrs">
-              <div className=" add-clrs dropup">
-              <a class="btn" href="#collapseExample3" data-toggle="collapse">Addons</a>
-                    
+              <div className=" add-clrs dropup btn-col-dd">
+              <a class="btn " href="#collapseExample3" data-toggle="collapse">Addons </a>
+              <span className="btn btn-dup btn-dup-add" href="#collapseExample3" data-toggle="collapse" ><MdArrowDropUp/></span>    
                 </div>
             </div></div>
             
@@ -296,10 +308,17 @@ function Addproduct() {
 
 </div>
  {/*last button-Products*/}
-        <div className="last-prod">
-            <button className="btn  btn-last" type="submit">Add Product</button>
+       <div className="prod-last-btns">
+           <div className="row">
+        <div className=" offset-md-3 col-5  col-md-4 cancel-prod">
+            <button className="btn  btn-cancel" type="submit">Cancel</button>
         </div>
 
+        <div className="last-prod col-5 col-md-4 ">
+            <button className="btn btn-last-prod" type="submit">Add Product</button>
+        </div>
+        </div>
+      </div>
 
 
 
@@ -307,9 +326,9 @@ function Addproduct() {
 
 
 
-
-
+        
 
         </div>
+        
     )}
     export default Addproduct

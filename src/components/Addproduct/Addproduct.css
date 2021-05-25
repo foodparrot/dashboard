@@ -27,6 +27,7 @@
     border:1px solid;
     margin-right: 1%;
     padding:1.2%;
+    
 
 }
 .prod-info{
@@ -74,7 +75,17 @@
 .check-b{
     margin-top:2%;
 }
-
+.btn-col-dd{
+    display: inline;
+    white-space:nowrap;
+}
+.btn-dup{
+    margin-left: 290% !important;
+    background:none !important;
+}
+.btn-dup-clr{
+    margin-left:219% !important;
+}
 .rates{
     margin-top:2%;
 }
@@ -128,20 +139,35 @@
     margin-top: 1%;
     margin-bottom: 1%;
 }
-
-.btn-last{
+.btn-cancel{
     background: none;
-    padding: 1% 3% 1% 3%;
+    padding: 3% 16%;
+    background-color:#FFD08E;
+    color:black;
+    opacity: 5px;
+    border-radius:4%;
+    margin-top:2%;
+    margin-left:30% !important;
+    border-color:#FBBD2E;
+}
+.btn-cancel:hover{
+    background-color:#FBBD2E;
+    border-color:#000;
+    opacity:8px;
+}
+.btn-last-prod{
+    background: none;
+    padding: 3% 10%;
     background-color:#A9F5A9;
     color:black;
     opacity: 5px;
     border-radius:4%;
     margin-top:2%;
-    margin-left: 70%;
+    margin-left:-20%;
     border-color:#01DF3A;
     
 }
-.btn-last:hover{
+.btn-last-prod:hover{
     background-color:#04B431;
     border-color:#000;
     opacity:8px;
@@ -199,6 +225,30 @@
    .row-ano-clr{
        margin-left: -32%;
    }
-
-    
+   .btn-dup{
+       margin-left:20% !important;
+   }
+   .btn-dup-clr{
+       margin-left:9% !important;
+   }
+   .btn-dup-add{
+       margin-left:24% !important;
+   }
+   .prod-last-btns{
+       margin-left:12%;
+   }
+   .btn-last-prod{
+       padding: 3% 3% !important;
+   }
+    .btn-cancel{
+        padding: 3% 10%;
+    }
+}
+@media  screen and (min-width:768px ) and (max-width :1024px){
+.btn-dup{
+    margin-left:165% !important;
+}
+.btn-dup-clr{
+    margin-left:120% !important;
+}
 }
