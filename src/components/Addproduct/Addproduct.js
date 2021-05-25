@@ -1,6 +1,9 @@
 import React from 'react'
 import '../Addproduct/Addproduct.css';
 import { IconContext } from "react-icons";
+import { FaPencilAlt } from "react-icons/fa";
+import { HiInformationCircle } from "react-icons/hi";
+
 
 function Addproduct() {
     return (
@@ -38,24 +41,104 @@ function Addproduct() {
     	        <label for="Product Name">Product name</label>
 		        <input type="text" class="form-control" name="product name" id="product name" placeholder="Enter product name"/> 
 	        </div>
-      {/*slect category*/}
-            < div class="category col-5">
-    	        <label for=" col-12 Choose category">Choose category</label>
+      {/*select category*/}
+         < div class="  category row">
+            
+             
+               <div className=" col-12 col-md-2 dropdown">
 
+                <div className="chose-cat row">
+                <div className="col-12"><label for=" col-12 Choose category">Select menu</label></div></div>
 
-        <div className="container nav navbar ">
-            <div className="row">
-              <div className=" select-cat dropdown">
-               <div  class=" col-12 dropdown-toggle" type="button" data-toggle="dropdown">Select category</div>
+                
+               <div  className="select-cat sel-men dropdown-toggle nav navbar" type="button" data-toggle="dropdown">Menu</div>
+                    <div className="dropdown-menu">
+                       <a href="#" class="dropdown-item">Menu-1</a>
+                       <a href="#" class="dropdown-item">Menu-2</a>
+                       <a href="#" class="dropdown-item">Menu-3</a>
+                    </div>
+                </div>
+                
+                 
+                <div className=" col-11 col-md-3  dropdown ">
+                <div className="chose-cat row">
+                <div className="col-12"><label for=" col-12 Choose category">Choose category</label></div></div>
+
+               <div  class=" row select-cat sel-cat dropdown-toggle nav navbar" type="button" data-toggle="dropdown">Select category</div>
                     <div class="dropdown-menu">
                        <a href="#" class="dropdown-item">Cat-1</a>
                        <a href="#" class="dropdown-item">Cat-2</a>
                        <a href="#" class="dropdown-item">Cat-3</a>
                     </div>
                 </div>
+
+                <div className=" col-10  offset-md-1 col-md-5 ">
+                    <div className=" chose-cat row">
+                    <div className="col-12"><label for=" col-12 Choose category quantity">Quantity</label></div>
+                    </div>
+
+                    <div className="row unit">
+                    <input type="text" class="form-control col-3" name="quantity" id=" quantity" placeholder=""/>
+                    <button type="button" class="btn btn-unit col-3 " data-toggle="modal" data-target="#exampleModalCenter">
+                            unit</button>
+                     <div className="offset-1">per (q) (unit)</div>
+                    </div>
+                    
+                    
+                </div>
+
+                
+
             </div>
-        </div>  
-              </div>
+            {/*modal for unit*/}
+            <div className="modal fade" id="exampleModalCenter">
+                                  
+                                   <div className="vertical-alignment-helper">
+                                    <div className="modal-dialog vertical-align-center">
+                                     <div className="modal-content">
+                                        <div className="modal-header"><h2>Choose Product unit</h2></div>
+                                        <div className="modal-body">
+                                         {/*1*/}<button className="modal-btns">piece</button>
+                                         {/*2*/}<button className="modal-btns">kg</button>
+                                         {/*3*/}<button className="modal-btns">gm</button>
+                                         {/*4*/}<button className="modal-btns">ml</button>
+                                         {/*5*/}<button className="modal-btns">litre</button>
+                                         {/*6*/}<button className="modal-btns">mm</button>
+                                         {/*7*/}<button className="modal-btns">ft</button>
+                                         {/*8*/}<button className="modal-btns">meter</button>
+                                         {/*9*/}<button className="modal-btns">sq.ft.</button>
+                                         {/*10*/}<button className="modal-btns">set</button>
+                                         {/*11*/}<button className="modal-btns">hour</button>
+                                         {/*12*/}<button className="modal-btns">day</button>
+                                         {/*13*/}<button className="modal-btns">bunch</button>
+                                         {/*14*/}<button className="modal-btns">bundle</button>
+                                         {/*15*/}<button className="modal-btns">month</button>
+                                         {/*16*/}<button className="modal-btns">year</button>
+                                         {/*17*/}<button className="modal-btns">service</button>
+                                         {/*18*/}<button className="modal-btns">work</button>
+                                         {/*19*/}<button className="modal-btns">packet</button>
+                                         {/*20*/}<button className="modal-btns">box</button>
+                                         {/*21*/}<button className="modal-btns">pound</button>
+                                         {/*22*/}<button className="modal-btns">dozen</button>
+                                         {/*23*/}<button className="modal-btns">gunta</button>
+                                         {/*24*/}<button className="modal-btns">pair</button>
+                                         {/*25*/}<button className="modal-btns">minute</button>
+                                         {/*26*/}<button className="modal-btns">quintal</button>
+                                         {/*27*/}<button className="modal-btns">ton</button>
+                                         {/*28*/}<button className="modal-btns">capsule</button>
+                                         {/*29*/}<button className="modal-btns">tablet</button>
+                                         {/*30*/}<button className="modal-btns">plate</button>
+                                         {/*31*/}<button className="modal-btns">inch</button>
+                                            
+                                        </div>
+                                     </div>
+                                    </div>
+                                   </div>                
+            </div>
+            
+            
+        
+              
 		    
         {/*rates*/}
         <div className="container rates">
@@ -83,30 +166,30 @@ function Addproduct() {
 
          </div>
 
-         {/*sizes*/}
-         
+         {/*checkboxes*/}
+           <div className=" container  flex check-b">
+           
+           <label className="checkbox-inline check-row" ><input type="checkbox"  value="" checked/> variant<FaPencilAlt/></label>
+           <label className="checkbox-inline check-row" ><input type="checkbox" value="" checked/> color</label>
+           <label className="checkbox-inline check-row"><input type="checkbox" value="" checked/> addon</label>
+            <button className="info-btn checkbox-inline "><HiInformationCircle/></button>
+           </div>
 
-
-         
-        <div className="container nav navbar sizes ">
+         {/*variant*/}
+         <div className="container flex nav navbar variant ">
             <div className="row row-sizes">
-              <div className=" add-sizes dropup">
-               <div  className=" col-12 dropdown-toggle" type="button" data-toggle="dropdown">Add sizes</div>
-                    <div className="  dropdown-menu">
-                       <a href="#" class="dropdown-item">Cat-1</a>
-                       <a href="#" class="dropdown-item">Cat-2</a>
-                       <a href="#" class="dropdown-item">Cat-3</a>
-                    </div>
+              <div className=" col-11 add-vars">
+               <a class="btn" href="#collapseExample" data-toggle="collapse">variant</a>
                 </div>
             </div>
             </div>
            
         
-        <div className="container three-set">
+        <div className=" collapse container three-set" id="collapseExample">
         <div className="row row-three-set ">
-               <div className="col-11 col-md-3  size1">
+               <div className="col-11 col-md-3  size1 row-var">
                    <div className="row row-size1">
-                   <label for="Size1">Size1</label>
+                   <label for="Size1">variant </label>
                    <input type="text" class="form-control" name="size1" id="size1" placeholder=""/>
                    </div>
                </div>
@@ -132,26 +215,28 @@ function Addproduct() {
          </div>
          
          <div className="row row-ano-size">
-         <button class="ano-size-btn"  type="button">Add another size </button> 
+         <button class="ano-btn add-ano-var"  type="button">Add another variant </button> 
         </div>
     </div>
+
+
+         
+        
+           
+        
+        
 
          {/*colors div*/}
 
          <div className="container nav navbar colors ">
             <div className="row row-clrs">
               <div className=" add-clrs dropup">
-               <div  className=" col-12 dropdown-toggle" type="button" data-toggle="dropdown">Add colors</div>
-                    <div className="  dropdown-menu">
-                       <a href="#" class="dropdown-item">Cat-1</a>
-                       <a href="#" class="dropdown-item">Cat-2</a>
-                       <a href="#" class="dropdown-item">Cat-3</a>
-                    </div>
+               <a class="btn" href="#collapseExample2" data-toggle="collapse">Add colours</a>
                 </div>
             </div>
             </div>
            
-            <div className="container last-row">
+            <div className="container collapse last-row" id="collapseExample2">
                 <div className="row row-last-row ">
                   <div className="col-11 col-md-3  colour1">
                    <div className="row row-last-clr">
@@ -159,13 +244,53 @@ function Addproduct() {
                    <input type="text" class="form-control" name="colour1" id="colour1" placeholder=""/>
                    </div>
                </div>
+               <button class=" red-rem-btn" type="button">REMOVE </button> 
+               <div className="col-11 offset-md-3 col-md-3  colour2">
+                   <div className="row row-last-clr">
+                   <label for="colour2 ">Colour2</label>
+                   <input type="text" class="form-control" name="colour2" id="colour2" placeholder=""/>
+                   </div>
+               </div>
+               <button class="red-rem-btn" type="button">REMOVE </button> 
              </div>
-               <div className="row flex-container-rem">
-                 <button class="remove-btn-2" type="button">REMOVE </button> 
-                 </div>
+               
          
                 <div className="row row-ano-clr">
-                  <button class="ano-clr-btn" type="button">Add another colour </button> 
+                  <button class="ano-btn add-ano-clr" type="button">Add another colour </button> 
+                </div>
+           </div>
+
+           {/*addons*/}
+           <div className="container nav navbar addons ">
+           <div className="row row-clrs">
+              <div className=" add-clrs dropup">
+              <a class="btn" href="#collapseExample3" data-toggle="collapse">Addons</a>
+                    
+                </div>
+            </div></div>
+            
+           
+            <div className="container collapse last-row" id="collapseExample3">
+                <div className="row row-last-row ">
+                  <div className="col-11 col-md-5  colour1">
+                   <div className="row row-last-clr">
+                   <label for="colour1">Item name</label>
+                   <input type="text" class="form-control" name="colour1" id="colour1" placeholder=""/>
+                   </div>
+               </div>
+
+               <div className="col-11  col-md-3 colour1 ">
+                   <div className="row row-last-clr">
+                   <label for="colour1">Price</label>
+                   <input type="text" class="form-control" name="colour1" id="colour1" placeholder=""/>
+                   </div>
+               </div>
+               <button class="red-rem-btn" type="button">REMOVE </button> 
+             </div>
+               
+         
+                <div className="row row-ano-adon">
+                  <button class="ano-btn add-ano-btn" type="button">Add another Addon </button> 
                 </div>
            </div>
 

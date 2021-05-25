@@ -88,7 +88,7 @@
 
 .btn-ref{
     padding:4%;
-    margin-top:75%;
+    margin-top:75% !important;
     background-color: #fff  !important;
     color:#F86853  !important;
     border-color:#F86853;
@@ -169,13 +169,7 @@
        width:85%;
    }
    .btn-ref{
-       margin-top:100% !important;
-      
+       margin-top:100% !important;  
    }
 
-}
-@media screen and (min-width:1025px){
-    .btn-ref{
-        margin-top:55.8%;
-    }
 }
