@@ -86,11 +86,11 @@ export class Customers extends Component {
                                     <tr style={{background:'white'}}>
                                     <td colSpan='6' className='leftalign'>Showing from 1 to 2 of 2 records
                                     <div className='bttnarrow'>
-                            <button type="button" class="btn btn-outline-dark cust-btn-1"  style={{background:'white',margin:'0 2% 0 0',boxShadow:'0 2px 2px gray'}}><FaAngleDoubleLeft/></button>
-                            <button type="button" class="btn btn-outline-dark cust-btn-2" style={{background:'linear-gradient(94.08deg, #FFE13B 0.84%, #FF2525 115.93%)',margin:'0 2% 0 0',width:'30%',
-                            boxShadow:'0 2px 2px gray',border:'none'}}>1</button>
-                            <button type="button" class="btn btn-outline-dark cust-btn-3" style={{background:'white',boxShadow:'0 2px 2px gray'}}><FaAngleDoubleRight/></button>
-                        </div></td>
+                                        <button type="button" class="btn btn-outline-dark cust-btn-1"  style={{background:'white',margin:'0 2% 0 0',boxShadow:'0 2px 2px gray'}}><FaAngleDoubleLeft/></button>
+                                        <button type="button" class="btn btn-outline-dark cust-btn-2" style={{background:'linear-gradient(94.08deg, #FFE13B 0.84%, #FF2525 115.93%)',margin:'0 2% 0 0',width:'30%',
+                                        boxShadow:'0 2px 2px gray',border:'none'}}>1</button>
+                                        <button type="button" class="btn btn-outline-dark cust-btn-3" style={{background:'white',boxShadow:'0 2px 2px gray'}}><FaAngleDoubleRight/></button>
+                                    </div></td>
                                     
                                     </tr>
                                 </tbody>

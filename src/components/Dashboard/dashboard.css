@@ -48,9 +48,9 @@ body{
     justify-content: center;
     text-align: center;
     width: 90px;
-    -moz-box-shadow: 0 0 2% 2% #888;
-    -webkit-box-shadow: 0 0 2% 2%#888;
-    box-shadow: 0 0 2px 2px #888;
+    -moz-box-shadow: 0 0 2% 3% #888;
+    -webkit-box-shadow: 0 0 2% 3%#888;
+    box-shadow: 0 0 9px 0px #888;
 }
 .rowd1{
     padding-bottom: 5%;
@@ -63,9 +63,10 @@ body{
 
 .orders-table{
     margin-top: 5%;
-    -moz-box-shadow: 0 0 2% 2% #888;
-    -webkit-box-shadow: 0 0 2% 2%#888;
-    box-shadow: 0 0 3px 3px #888;
+    width: 95%;
+    -moz-box-shadow: 0 0 2% 3% #888;
+    -webkit-box-shadow: 0 0 2% 3%#888;
+    box-shadow: 0 0 10px 0px #888;
 }
 .orders-table tr{
     color: black;
@@ -73,14 +74,14 @@ body{
     font-size: 1em;
     line-height: 109%;
 }
-.clrtable tr, .clrtable td, .clrtable th, .clrtable{
+.clrtable tr, .clrtable td, .clrtable th, .clrtable, .orders-table{
     border: none !important;
    }
 
-@media screen and (max-width:767px){
+/*@media screen and (max-width:767px){
     .orders-table{
         -moz-box-shadow: 0 0 2% 2% #888;
         -webkit-box-shadow: 0 0 2% 2%#888;
         box-shadow: 0 0 5px 3px #888;
     }
-}
+}*/

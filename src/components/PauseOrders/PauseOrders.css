@@ -30,7 +30,8 @@ body{
 .cardps1{
   -moz-box-shadow: 0 0 2% 2% #888;
     -webkit-box-shadow: 0 0 2% 2%#888;
-    box-shadow: 0 0 3px 1px #888;
+    box-shadow: 0 0 10px 0px #888;
+    border: none;
 }
 .gapps{
   padding-top: 5%;
