@@ -67,6 +67,7 @@ body{
     -moz-box-shadow: 0 0 2% 3% #888;
     -webkit-box-shadow: 0 0 2% 3%#888;
     box-shadow: 0 0 10px 0px #888;
+    margin-bottom: 5%;
 }
 .orders-table tr{
     color: black;
@@ -77,6 +78,7 @@ body{
 .clrtable tr, .clrtable td, .clrtable th, .clrtable, .orders-table{
     border: none !important;
    }
+
 
 /*@media screen and (max-width:767px){
     .orders-table{
