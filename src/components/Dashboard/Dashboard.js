@@ -61,7 +61,7 @@ function Dashboard() {
                         </div>
                     </div>
         
-
+              <div className='cust'>
               <div className="table-responsive clrtable">
                    <table class="table orders-table">
                       <thead>
@@ -109,6 +109,7 @@ function Dashboard() {
                          </tr>
                       </tbody>
                    </table>
+               </div>
                </div>
 
        </div>
