@@ -27,11 +27,11 @@ function Addproduct() {
 
             
         <div className="row row-6">
-            <div className="col-6 col-md-3 col-lg-3  imge">
-                <img src="/images/add-prod-square-img1.png" alt="img1" className="img-1"/>
+            <div className="col-5 col-md-3 col-lg-2  imge">
+                <img src="/images/1.jpg" alt="img1" className="img-1"/>
             </div>
-            <div className="col-6  col-md-3 col-lg-3 imge">
-                <img src="/images/add-prod-sq-img2.png" alt="img1" className="img-1"/>
+            <div className="col-5  col-md-3 col-lg-2 imge">
+                <img src="/images/2.jpg" alt="img1" className="img-1"/>
             </div>
 
         </div>
