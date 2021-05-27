@@ -11,11 +11,11 @@ export class Menus extends Component {
           {/*first line*/}
             <div className="flex-container flex-container10">
                 <div className="flex-item item10"><b>Menu</b></div>
-                <div className="flex-item item20"><button type="button" class="btn btn-primary btn-lg btn-create">Create</button></div>
+                <div className="flex-item item20"><button type="button" class="grad">Create</button></div>
                </div>
            {/*table*/}  
-               <div className="table-responsive-md">
-                   <table class="table table10">
+               <div className="table-responsive-md ">
+                   <table class="table table10 menutab">
                       <thead>
                        <tr>
                            <th scope= "col"></th>

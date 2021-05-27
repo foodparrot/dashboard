@@ -12,16 +12,20 @@
 .item10 {
   font-size: 20px;
 }
-.btn-create {
-  background-color: #6a0888;
-  border-color: black;
+.menutab{
+  border: none !important;
+  box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.75);
+border-radius: 10px;
 }
-.btn-create:hover {
-  background-color: #000000;
-  border-color: black;
-  color: white;
+.grad{
+  background: linear-gradient(94.08deg, #FFE13B 0.84%, #FF2525 115.93%);
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
 }
-
 .buttons {
   display: flex;
   justify-content: space-between;

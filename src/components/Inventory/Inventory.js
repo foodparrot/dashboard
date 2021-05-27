@@ -19,56 +19,80 @@ export class Inventory extends Component {
                             </datalist>
                     </div>
         </div>*/}
-            <div className="container nav navbar dropdown_cls_inv">
-            <div className="row">
-                <p className='col-6 p_inv'>Outlet </p>
-                <div className="col-6 outletinv dropdown">
-                <a href="#" class="dropdown-toggle anc-tag-inv " data-toggle="dropdown">Outlet</a>
-                    <div class="dropdown-menu">
-                       <a href="#" class="dropdown-item">Outlet-1</a>
-                       <a href="#" class="dropdown-item">Outlet-2</a>
-                       <a href="#" class="dropdown-item">Outlet-3</a>
-                    </div>
-                </div>
-            </div>
-        </div>  
-                
-                <p>Inventory</p>
-                <div className='row'>
-                    <div className='col-md-9'>
-                        <div className="input-group inv1">
-                            <input type="text" className="form-control" placeholder="Search for a product"></input>
-                            <div className="input-group-append">
-                            <button className="btn btn-secondary btninv" type="button">
-                                <i><AiOutlineSearch/></i>
-                            </button>
+                <div className="container nav navbar dropdown_cls_inv">
+                    <div className="row">
+                        <p className='col-6 p_inv'>Outlet </p>
+                        <div className="col-6 outletinv dropdown">
+                            <a href="#" class="dropdown-toggle anc-tag-inv " data-toggle="dropdown">Outlet</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Outlet-1</a>
+                                <a href="#" class="dropdown-item">Outlet-2</a>
+                                <a href="#" class="dropdown-item">Outlet-3</a>
                             </div>
                         </div>
                     </div>
-                    <div className='col-md-3 inv1 invp'><p>Availability</p></div>                    
                 </div>
 
-                <hr></hr>
-                <div className='row rowinv'>               
-                    <p className='col-3'>Dosa</p>
-                    <p className='col-3'>30/-</p>
-                    <p className='col-1'></p>
-                    <label class="switch swtchinv">
-                    <input type="checkbox"></input>
-                    <span class="sliderinv round"></span>
-                    </label>
+                <p>Inventory</p>
+                <div className='row'>
+                    <div className='col-md-6'>
+                        <div className="input-group inv1">
+                            <input type="text" className="form-control" placeholder="Search for a product"></input>
+                            <div className="input-group-append">
+                                <button className="btn btn-secondary btninv" type="button">
+                                    <i><AiOutlineSearch /></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <hr></hr>
-                <div className=' row rowinv'>               
-                    <p className='col-3'>Noodles</p>
-                    <p className='col-3'>50/-</p>
-                    <p className='col-1'></p>
-                    <label class="switch swtchinv">
-                    <input type="checkbox"></input>
-                    <span class="sliderinv round"></span>
-                    </label>
-                </div>
-                <hr></hr>
+              
+                <table class="table table-striped tableinventory">
+                    <thead>
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Availability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">Dosa</td>
+                            <td>30/-</td>
+                            <td>
+                                <label class="switch swtchinv">
+                                    <input type="checkbox"></input>
+                                    <span class="sliderinv round"></span>
+                                </label>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td scope="row">Dosa</td>
+                            <td>30/-</td>
+                            <td>
+                                <label class="switch swtchinv">
+                                    <input type="checkbox"></input>
+                                    <span class="sliderinv round"></span>
+                                </label>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td scope="row">Dosa</td>
+                            <td>30/-</td>
+                            <td>
+                                <label class="switch swtchinv">
+                                    <input type="checkbox"></input>
+                                    <span class="sliderinv round"></span>
+                                </label>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         );
     }
