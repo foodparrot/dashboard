@@ -14,7 +14,7 @@ import Addproduct from './components/Addproduct/Addproduct';
 import Outlets from './components/Outlets/Outlets';
 import OrderHistory from './components/OrderHistory/OrderHistory';
 import Inventory from './components/Inventory/Inventory'
-import Details from "./components/Details/Details";
+import Details from "./components/LiveOrders/Details"; 
 // import $ from 'jquery';
 // import jQuery from 'jquery';
 class App extends React.Component {

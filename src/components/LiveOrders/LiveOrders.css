@@ -49,8 +49,9 @@
 
 .img-cls{
     padding:4%;
-    border:1px solid;
-    margin-right:4%;
+    width:100px;
+    height: 100px;
+    margin-right:5%;
 }
 .badge{
     
@@ -87,8 +88,8 @@
 }
 
 .btn-ref{
-    padding:4%;
-    margin-top:75% !important;
+    position: absolute;
+    bottom: 5%;
     background-color: #fff  !important;
     color:#F86853  !important;
     border-color:#F86853;
@@ -101,6 +102,7 @@
     color: #DF0101 !important;
     background-color:#F5A9A9 !important;
     border:none;
+
 }
 .btn-rej:hover{
     background-color:white !important;
@@ -116,6 +118,7 @@
     color:#7CFC00 !important;
     background-color:#fff !important;
 }
+
 .class-bg{
     background-color:#FBF6F6;
     margin-top:4%;
@@ -132,7 +135,20 @@
 .right-container{
     margin-top:1%;
    background-color:#FBF6F6;
-   margin-left:4%;
+   border: 1px solid;
+}
+.details-buttons{
+    position: sticky;
+    margin: 10px auto;
+    border: solid blue;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 5px;
+    bottom: 0px;
+}
+.details-buttons > button {
+    outline: none !important;
+    border: none !important;
 }
 @media screen and (max-width:767px){
     .s-byid{

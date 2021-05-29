@@ -14,22 +14,22 @@ return(
 {/*item image and quantity*/}
 <div className="container">
     <div className="row badge-row">
-        <div className="col-6 col-md-2  img-cls">
-        <img src="#" alt="img"/></div>
+        <div className="col-6 col-md-4  ">
+        <img className="img-cls" src="https://s3.amazonaws.com/company-photo.theladders.com/2262/4dadaf63-837d-414e-ae95-edd81a72a486.png"></img></div>
+    <div className="col-6  col-md-8">    
+         <div className="d-flex" style={{flexDirection:"column", justifyContent:"space-between"}}>
+            <div className="row ">item 1</div>
 
-     <div className="col-6  col-md-6">    
-         <div className="container">
-            <div className="row row-right-item">item 1</div></div>
-
-            <div className="row row-right-no-of-item">
-                <div className="col-8 col-md-10"><span class="badge badge-light">1</span>X250</div>
-                <div className="col-4  col-md-2 amt">250/-</div>
+            <div className="row " style={{justifyContent:"space-between"}}>
+                <span><span class="badge badge-light">1</span>&ensp; X250</span>
+                <span>250/-</span>
              </div>
          </div>
-     </div>
-     </div>
+         </div>
+    </div>
+    </div>
      
-     <div className="red-line"></div>
+    <div className="red-line"></div>
 {/*Item details*/}
  <div className="container">
  <div className="row row-itm-det1 row-det">
@@ -92,13 +92,9 @@ return(
 </div>
 
 {/*bottom right buttons*/}
-<div  className="row">
-<div className="col-6 col-md-6">
-<button type="button" className="btn btn-lg  btn-block btn-danger btn-lv btn-rej"><h5>Reject</h5></button>
-</div>
-<div className="col-6 col-md-6">
-<button type="button" className="btn btn-lg  btn-block btn-success btn-lv btn-suc"><h5>Accept</h5></button>
-</div>
+<div  className="details-buttons">
+<button type="button" className="btn btn-lg   btn-danger  btn-rej"><h5>Reject</h5></button>
+<button type="button" className="btn btn-lg   btn-success  btn-suc"><h5>Accept</h5></button>
 </div>
 </div>
 

@@ -83,34 +83,34 @@ function Dashboard() {
                       </thead>
                       <tbody>
                       <tr>
-                         <td data-label="" style={{textAlign:'left'}}>New</td>
-                         <td data-label="#oforders">0</td>
-                         <td data-label="#of customers">0</td>
-                         <td data-label="% of customers">0%</td>
-                         <td data-label="Avg basket">₹0.00</td>
-                         <td data-label="Total sales">₹0.00</td>
-                         <td data-label="%of total orders">0%</td>
-                         <td data-label="ACV">₹0.00</td>
+                         <td className="dashboard-items" data-label="" style={{textAlign:'left'}}>New</td>
+                         <td className="dashboard-items" data-label="#oforders">0</td>
+                         <td className="dashboard-items" data-label="#of customers">0</td>
+                         <td className="dashboard-items" data-label="% of customers">0%</td>
+                         <td className="dashboard-items" data-label="Avg basket">₹0.00</td>
+                         <td className="dashboard-items" data-label="Total sales">₹0.00</td>
+                         <td className="dashboard-items" data-label="%of total orders">0%</td>
+                         <td className="dashboard-items" data-label="ACV">₹0.00</td>
                          </tr>
                          <tr style={{background:'#D7D4D6'}}>
-                         <td data-label="" style={{textAlign:'left'}}>Returning</td>
-                         <td data-label="#oforders">0</td>
-                         <td data-label="#of customers">0</td>
-                         <td data-label="% of customers">0%</td>
-                         <td data-label="Avg basket">₹0.00</td>
-                         <td data-label="Total sales">₹0.00</td>
-                         <td data-label="%of total orders">0%</td>
-                         <td data-label="ACV">₹0.00</td>
+                         <td className="dashboard-items" data-label="" style={{textAlign:'left'}}>Returning</td>
+                         <td className="dashboard-items" data-label="#oforders">0</td>
+                         <td className="dashboard-items" data-label="#of customers">0</td>
+                         <td className="dashboard-items" data-label="% of customers">0%</td>
+                         <td className="dashboard-items" data-label="Avg basket">₹0.00</td>
+                         <td className="dashboard-items" data-label="Total sales">₹0.00</td>
+                         <td className="dashboard-items" data-label="%of total orders">0%</td>
+                         <td className="dashboard-items" data-label="ACV">₹0.00</td>
                          </tr>
                          <tr>
-                         <td data-label=""style={{textAlign:'left'}}>Total</td>
-                         <td data-label="#oforders">0</td>
-                         <td data-label="#of customers">0</td>
-                         <td data-label="% of customers">0%</td>
-                         <td data-label="Avg basket">₹0.00</td>
-                         <td data-label="Total sales">₹0.00</td>
-                         <td data-label="%of total orders">0%</td>
-                         <td data-label="ACV">₹0.00</td>
+                         <td className="dashboard-items" data-label=""style={{textAlign:'left'}}>Total</td>
+                         <td className="dashboard-items" data-label="#oforders">0</td>
+                         <td className="dashboard-items" data-label="#of customers">0</td>
+                         <td className="dashboard-items" data-label="% of customers">0%</td>
+                         <td className="dashboard-items" data-label="Avg basket">₹0.00</td>
+                         <td className="dashboard-items" data-label="Total sales">₹0.00</td>
+                         <td className="dashboard-items" data-label="%of total orders">0%</td>
+                         <td className="dashboard-items" data-label="ACV">₹0.00</td>
                          </tr>
                       </tbody>
                    </table>
