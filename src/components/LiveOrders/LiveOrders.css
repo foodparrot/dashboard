@@ -48,10 +48,13 @@
 }
 
 .img-cls{
-    padding:4%;
+    /* padding:4%;
     width:100px;
     height: 100px;
-    margin-right:5%;
+    margin-right:5%; */
+    max-width: 100%;
+    height: auto;
+    min-width: 70px;
 }
 .badge{
     
@@ -139,12 +142,13 @@
 }
 .details-buttons{
     position: sticky;
-    margin: 10px auto;
-    border: solid blue;
+    margin: 10px auto 3px auto;
+    /* border: solid blue; */
     display: grid;
     grid-template-columns: 50% 50%;
     grid-column-gap: 5px;
     bottom: 0px;
+    background: #fbf6f6;
 }
 .details-buttons > button {
     outline: none !important;
