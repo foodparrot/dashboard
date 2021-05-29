@@ -1,7 +1,10 @@
 import React from 'react'
  import '../Dashboard/dashboard.css';
-
 function Dashboard() {
+    window.$(".dropdown-item").click(function(){
+        window.$(this).parents(".dropdown").find('.dropdown-toggle').html(window.$(this).text());
+        window.$(this).parents(".dropdown").find('.dropdown-toggle').val(window.$(this).data('value'));
+      });
     return (
        
         <div className="container-fluid ">
@@ -9,8 +12,10 @@ function Dashboard() {
                         <p>Bismillah Outlet</p>                        
                     </div>
             
-            <div className="container-fluid dashboard">
+              <div className="container-fluid dashboard">
                 <p className="heading">Dashboard</p>
+             {/* dropdown */}
+    
 
                 {/* current month*/}
                 <div className="container nav navbar dropdown_cls">
@@ -18,18 +23,18 @@ function Dashboard() {
                         <div className="col-12 month dropdown">
                         <a href="#" class="dropdown-toggle anc-tag-d " data-toggle="dropdown">current month</a>
                             <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">January</a>
-                            <a href="#" class="dropdown-item">February</a>
-                            <a href="#" class="dropdown-item">March</a>
-                            <a href="#" class="dropdown-item">April</a>
-                            <a href="#" class="dropdown-item">May</a>
-                            <a href="#" class="dropdown-item">June</a>
-                            <a href="#" class="dropdown-item">July</a>
-                            <a href="#" class="dropdown-item">August</a>
-                            <a href="#" class="dropdown-item">September</a>
-                            <a href="#" class="dropdown-item">October</a>
-                            <a href="#" class="dropdown-item">November</a>
-                            <a href="#" class="dropdown-item">December</a>
+                            <a href="#" class="dropdown-item" value="January">January</a>
+                            <a href="#" class="dropdown-item" value="February">February</a>
+                            <a href="#" class="dropdown-item" value="March">March</a>
+                            <a href="#" class="dropdown-item" value="April">April</a>
+                            <a href="#" class="dropdown-item" value="May">May</a>
+                            <a href="#" class="dropdown-item" value="June">June</a>
+                            <a href="#" class="dropdown-item" value="July">July</a>
+                            <a href="#" class="dropdown-item" value="August">August</a>
+                            <a href="#" class="dropdown-item" value="September">September</a>
+                            <a href="#" class="dropdown-item" value="October">October</a>
+                            <a href="#" class="dropdown-item" value="November">November</a>
+                            <a href="#" class="dropdown-item" value="December">December</a>
                             </div>
                         </div>
                     </div>
@@ -62,7 +67,7 @@ function Dashboard() {
                     </div>
         
               <div className='cust'>
-              <div className="table-responsive clrtable">
+              <div className="table-responsive clrtable" style={{display:"flex",justifyContent:"center"}}>
                    <table class="table orders-table">
                       <thead>
                       <tr>
