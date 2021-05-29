@@ -33,18 +33,18 @@ return(
 {/*Item details*/}
  <div className="container">
  <div className="row row-itm-det1 row-det">
-     <div className="col-8 col-md-9 col-lg-10">Item total</div>
-     <div className="col-4 col-md-3 col-lg-2">25000000/-</div>
+     <div className="col-8 col-md-9 col-lg-10 p-0">Item total</div>
+     <div className="col-4 col-md-3 col-lg-2 p-0">2500000/-</div>
  </div>
 
  <div className="row row-itm-det2 row-det">
- <div className="col-8 col-md-9 col-lg-10">Delivery</div>
-     <div className="col-4 col-md-3 col-lg-2 free"><b>FREE</b></div>
+ <div className="col-8 col-md-9 col-lg-10 p-0">Delivery</div>
+     <div className="col-4 col-md-3 col-lg-2 free p-0"><b>FREE</b></div>
  </div>
 
  <div className="row row-itm-det3 row-det">
- <div className="col-8 col-md-9 col-lg-10">Grand Total</div>
- <div className="col-4 col-md-3 col-lg-2">2500000/-</div>
+ <div className="col-8 col-md-9 col-lg-10 p-0">Grand Total</div>
+ <div className="col-4 col-md-3 col-lg-2 p-0">2500000/-</div>
  </div>
  </div>
 {/*customer details*/}
