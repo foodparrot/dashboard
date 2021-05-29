@@ -14,15 +14,15 @@ return(
 {/*item image and quantity*/}
 <div className="container">
     <div className="row badge-row">
-        <div className="col-6 col-md-4  ">
+        <div className="col-4 col-md-4  ">
         <img className="img-cls" src="https://s3.amazonaws.com/company-photo.theladders.com/2262/4dadaf63-837d-414e-ae95-edd81a72a486.png"></img></div>
     <div className="col-6  col-md-8">    
-         <div className="d-flex" style={{flexDirection:"column", justifyContent:"space-between"}}>
-            <div className="row ">item 1</div>
+         <div className="d-flex" style={{flexWrap:'wrap', flexDirection:"column", justifyContent:"space-between"}}>
+            <div>item 1</div>
 
-            <div className="row " style={{justifyContent:"space-between"}}>
-                <span><span class="badge badge-light">1</span>&ensp; X250</span>
-                <span>250/-</span>
+            <div className="row m-0" style={{alignItems:"center", justifyContent:"space-between"}}>
+                <span className="col-3 p-0" style={{minWidth: "max-content"}}><span class="badge badge-light">1</span>&ensp; X25000000</span>
+                <span className="col-3 p-0" style={{fontWeight:"700"}}>2500000/-</span>
              </div>
          </div>
          </div>
@@ -33,18 +33,18 @@ return(
 {/*Item details*/}
  <div className="container">
  <div className="row row-itm-det1 row-det">
-     <div className="col-8 col-md-11">Item total</div>
-     <div className="col-4 col-md-1">250/-</div>
+     <div className="col-8 col-md-9 col-lg-10">Item total</div>
+     <div className="col-4 col-md-3 col-lg-2">25000000/-</div>
  </div>
 
  <div className="row row-itm-det2 row-det">
- <div className="col-8 col-md-11">Delivery</div>
-     <div className="col-4 col-md-1 free"><b>FREE</b></div>
+ <div className="col-8 col-md-9 col-lg-10">Delivery</div>
+     <div className="col-4 col-md-3 col-lg-2 free"><b>FREE</b></div>
  </div>
 
  <div className="row row-itm-det3 row-det">
- <div className="col-8 col-md-11">Grand Total</div>
- <div className="col-4 col-md-1">250/-</div>
+ <div className="col-8 col-md-9 col-lg-10">Grand Total</div>
+ <div className="col-4 col-md-3 col-lg-2">2500000/-</div>
  </div>
  </div>
 {/*customer details*/}
