@@ -37,17 +37,18 @@ function LiveOrders({...props}) {
                         </div>
                     <Productoutput/>
                     <Productoutput/>
-
+                    <button type="button" className="btn btn-lg btn-ref"><h5>Refresh</h5></button>
                     </div>
                     {/* right side details */}
-                    <Details />
+                    {(props.winWidth < 768)?<></>:
+                    <Details />}
                 </div>
-                {/* <div><button type="button" className="btn btn-lg btn-block btn-lv btn-ref"><h5>Refresh</h5></button></div> */}
             </div>
         </div>
     )
 }
-const mapSizesToProps = ({ height }) => ({
-    winHeight:height
+const mapSizesToProps = ({ height,width }) => ({
+    winHeight:height,
+    winWidth:width,
   })
   export default withSizes(mapSizesToProps)(LiveOrders)

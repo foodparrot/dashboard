@@ -22,6 +22,7 @@
 .top-btns a {
     color:black;
     text-decoration:none;
+    white-space: nowrap;
 }
 
 .top-btns a:active{
@@ -88,11 +89,12 @@
 }
 
 .btn-ref{
-    position: absolute;
-    bottom: 5%;
+    position: sticky;
+    bottom: 10%;
     background-color: #fff  !important;
     color:#F86853  !important;
     border-color:#F86853;
+    width: 100%;
 }
 .btn-ref:hover{
     color:#fff !important;
@@ -103,6 +105,9 @@
     background-color:#F5A9A9 !important;
     border:none;
 
+}
+.vert-div{
+    padding: 0 2%;
 }
 .btn-rej:hover{
     background-color:white !important;
@@ -135,12 +140,10 @@
 .right-container{
     margin-top:1%;
    background-color:#FBF6F6;
-   border: 1px solid;
 }
 .details-buttons{
     position: sticky;
     margin: 10px auto;
-    border: solid blue;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-column-gap: 5px;
