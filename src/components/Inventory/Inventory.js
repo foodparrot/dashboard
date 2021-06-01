@@ -5,23 +5,13 @@ export class Inventory extends Component {
     render() {
         return (
             <div className='container-fluid'>
+                <p style={{fontWeight:'500', fontSize:'1.3em'}}>Bismillah Outlet</p> 
                 <div className='upperdivInv'>
-                    <p>Bismillah Outlet!</p>
-                </div>
-                {/*<div className='row'style={{padding:'2% 0'}}>
-                    <p className='col-2'>Outlet </p>
-                    <div className='col-10'>
-                        <input list='outletsinv' class='form-control'placeholder=''style={{width:'30%'}}></input>
-                            <datalist id="outletsinv">
-                                <option value="Outlet-1"></option>
-                                <option value="Outlet-2"></option>
-                                <option value="Outlet-3"></option>
-                            </datalist>
-                    </div>
-        </div>*/}
+                    
+                
                 <div className="container nav navbar dropdown_cls_inv">
                     <div className="row">
-                        <p className='col-6 p_inv'>Outlet </p>
+                        <p className='col-6 p_inv' style={{fontSize:'1em', fontWeight:'600'}}>Outlet </p>
                         <div className="col-6 outletinv dropdown">
                             <a href="#" class="dropdown-toggle anc-tag-inv " data-toggle="dropdown">Outlet</a>
                             <div class="dropdown-menu">
@@ -33,13 +23,13 @@ export class Inventory extends Component {
                     </div>
                 </div>
 
-                <p>Inventory</p>
-                <div className='row'>
+                <p className='container'style={{fontSize:'1em', fontWeight:'600'}}>Inventory</p>
+                <div className='container row'>
                     <div className='col-md-6'>
                         <div className="input-group inv1">
                             <input type="text" className="form-control" placeholder="Search for a product"></input>
                             <div className="input-group-append">
-                                <button className="btn btn-secondary btninv" type="button">
+                                <button className="btn btn-secondary btninv" type="button" style={{background:' linear-gradient(94.08deg, #FFE13B 0.84%, #FF2525 115.93%)'}}>
                                     <i><AiOutlineSearch /></i>
                                 </button>
                             </div>
@@ -47,7 +37,7 @@ export class Inventory extends Component {
                     </div>
                 </div>
               
-                <table class="table table-striped tableinventory">
+                <table class=" container table table-striped tableinventory"style={{width:'96%'}}>
                     <thead>
                         <tr>
                             <th scope="col">Product</th>
@@ -93,6 +83,7 @@ export class Inventory extends Component {
                         </tr>
                     </tbody>
                 </table>
+                </div>
             </div>
         );
     }

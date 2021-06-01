@@ -4,13 +4,13 @@ export class OrderHistory extends Component {
     render() {
         return (
                 <div className='container-fluid'>
-                    <div className='upperdiv'>
-                        <p>Bismillah Outlet!</p>
-                    </div>
+                    <p style={{fontWeight:'500', fontSize:'1.3em'}}>Bismillah Outlet</p>
+                    <div className='ohpallette'>
                     <div className='col-12 col-md-6 po1'>
                         Customers
                     </div>
                     {/* Form */}
+                    <div className='container'>
                     <div className='box boxstyling'>
                         <form action=''>
                             <div className='row formgrping'>
@@ -68,11 +68,12 @@ export class OrderHistory extends Component {
                                 </div>
                             </div>
                         </form>
+                        </div>
                     </div>
                     {/* Table*/}
-                    <div className='gapoh2'>
-                        <div className='table-responsive'>
-                            <table class="table table-bordered">
+                    <div className=' container gapoh2'>
+                        <div className='table-responsive tableoh'>
+                            <table class="table table-bordered ">
                                 <thead>
                                     <tr>
                                     <th scope="col">ID</th>
@@ -127,6 +128,7 @@ export class OrderHistory extends Component {
                                 </tbody>
                             </table>
                         </div>
+                    </div>
                     </div>
                 </div>
         );
