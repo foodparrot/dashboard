@@ -11,10 +11,10 @@ function Products() {
     return ( 
         
     <div className="container-fluid ">
-        <div className='row header'>
-            <p>Bismillah Outlet</p>                        
-        </div>
-            
+        
+            <p style={{fontSize:'1.2em', fontWeight:'600'}}>Bismillah Outlet</p>                        
+        
+        <div className='propal'>    
         <div className="container catalouge">
             <p className="heading"><b>Catalouge</b></p>
         </div>
@@ -50,7 +50,7 @@ function Products() {
               </div>
             </div>
         
-
+            </div>
     
           
    </div>

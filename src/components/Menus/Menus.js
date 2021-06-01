@@ -4,10 +4,10 @@ export class Menus extends Component {
     render(){
         return(
             <div className="container-fluid ">
-                 <div className='row header'>
-                        <p>Bismillah Outlet</p>                        
-                 </div>
-            <div className="container">
+                 
+                        <p style={{fontSize:'1.2em', fontWeight:'600'}}>Bismillah Outlet</p>                        
+            <div></div>     
+            <div className="container menupal">
           {/*first line*/}
             <div className="flex-container flex-container10">
                 <div className="flex-item item10"><b>Menu</b></div>
