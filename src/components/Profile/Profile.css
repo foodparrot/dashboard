@@ -1,0 +1,59 @@
+.inner{
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 30px 30px 30px 30px;
+}
+.para{
+    padding-left: 30px;
+    font-size: 25px;
+}
+.info{
+    display:flex;
+}
+.epara{
+    padding-left: 30px;
+}
+input{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-top: 10px;
+}
+
+.innercomponent{
+    padding-left:30px;
+}
+.upbtn{
+    border-radius:5px;
+    border: 1px solid orange;
+    background-color:#feecda; 
+    text-align: center;
+    padding:6px 17px;
+    font-size: 10px;
+    margin-left: 40px;
+}
+.sparabtn{
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 60px
+}
+.empara{
+    font-size:13px;
+    padding-top:5px;
+}
+.spass{
+    margin-left: 30px;
+    margin-top: 0px;
+    width: 200px;
+}
+.security{
+    display:flex;
+    flex-direction:column;
+}
+.rolediv{
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 400px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+
+}

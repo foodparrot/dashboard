@@ -91,8 +91,8 @@ function Sidebar({ winHeight,winWidth }) {
                     <footer className="footer">
                         <Menu iconShape="circle" style={{paddingTop: "5px"}} >
                             <SubMenu title="Account" icon={<FaUserCircle style={{ fontSize: "2em" }} />}>
-                                <MenuItem icon={<MdAccountCircle style={{ fontSize: "1.5em" }} />} onClick={onMobileCollapseHandler}>Profile<Link to="#" /> </MenuItem>
-                                <MenuItem icon={<FaPowerOff style={{ fontSize: "1.5em", color: "#6aac2e" }} />} onClick={onMobileCollapseHandler}>Logout<Link to="#" /></MenuItem>
+                                <MenuItem icon={<MdAccountCircle style={{ fontSize: "1.5em" }} />} onClick={onMobileCollapseHandler}>Profile<Link to="/profile" /> </MenuItem>
+                                <MenuItem icon={<FaPowerOff style={{ fontSize: "1.5em", color: "#6aac2e" }} />} onClick={onMobileCollapseHandler}>Logout<Link to="/logout" /></MenuItem>
                             </SubMenu>
                         </Menu>
                     </footer>
