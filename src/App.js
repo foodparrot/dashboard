@@ -26,7 +26,8 @@ class App extends React.Component {
        <Sidebar/>
        <Parent>
 				<Switch>
-          <Route path="/dashboard"  exact component={Dashboard} />
+	  <Route path="/"  exact component={Dashboard} />
+          <Route path="/dashboard"  component={Dashboard} />
           <Route path="/liveorders"   component={LiveOrders} />
           <Route path="/Details/Details" component={Details}/>
           <Route path="/PauseOrders" component={PauseOrders}/>
