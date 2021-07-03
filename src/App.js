@@ -14,7 +14,7 @@ import Addproduct from './components/Addproduct/Addproduct';
 import Outlets from './components/Outlets/Outlets';
 import OrderHistory from './components/OrderHistory/OrderHistory';
 import Inventory from './components/Inventory/Inventory'
-import Details from "./components/LiveOrders/Details"; 
+import Details from "./components/LiveOrders/Details";
 import Profile from './components/Profile/Profile';
 // import $ from 'jquery';
 // import jQuery from 'jquery';

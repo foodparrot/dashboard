@@ -1,0 +1,43 @@
+.details{
+    margin: 15px 20px;
+}
+.det{
+    margin-bottom: 0px;
+    font-family: Poppins;
+    font-style: normal;
+    line-height: 191.5%;
+}
+.restaurant{
+   color: black;
+   font-weight: 600;
+   font-size: 15px;
+}
+.area{
+    color: #BDBDBD;
+    font-weight: normal;
+    font-size: 10px;
+}
+.loc{
+    width: 325px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start;
+    flex-direction: row !important;
+    border-radius: 5px;
+    border-width: 2px;
+    border: 1px solid #ff9900;
+    padding: 2% 2% 2% 2%;
+    margin: 0 0% 2% 0%;
+}
+.icon{
+    margin-right: 10px;
+}
+.address{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 0px;
+}
+

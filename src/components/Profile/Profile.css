@@ -1,14 +1,36 @@
 .inner{
-    border-radius: 5px;
-    border: 1px solid black;
     margin: 30px 30px 30px 30px;
+    background: #F9F9F9;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
 }
 .para{
-    padding-left: 30px;
+    padding: 20px;
     font-size: 25px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 109%;
+    color: #000000;
+}
+.para1{
+    padding: 30px 0px 20px 30px;
+    font-size: 25px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 109%;
+    color: #000000;
+    margin-bottom: 0px;
 }
 .info{
+    margin: 0px 100px;
     display:flex;
+    justify-content: space-between;
+    
+    flex-direction: column;
 }
 .epara{
     padding-left: 30px;
@@ -18,23 +40,60 @@ input{
     border-radius: 5px;
     padding-top: 10px;
 }
-
-.innercomponent{
-    padding-left:30px;
+.border{
+    border: 1px solid #dee2e6 !important;
+    background-color: #E0E0E0;
+    width: 800px;
+}
+.innercomponent {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+    margin-top: 20px;
+}
+.input1{
+    width: 325px;
+    background: #F2F2F2;
+    border: 1px solid #666666;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .upbtn{
     border-radius:5px;
     border: 1px solid orange;
     background-color:#feecda; 
     text-align: center;
-    padding:6px 17px;
-    font-size: 10px;
-    margin-left: 40px;
+    padding:6px 15px;
+    font-size: 12px;
+    color: #828282;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+}
+.ebtn{
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 .sparabtn{
     width: 150px;
-    margin-top: 20px;
-    margin-left: 60px
+
 }
 .empara{
     font-size:13px;
@@ -45,15 +104,38 @@ input{
     margin-top: 0px;
     width: 200px;
 }
-.security{
-    display:flex;
-    flex-direction:column;
-}
+
 .rolediv{
     border-radius: 10px;
     border: 1px solid black;
-    width: 400px;
+    width: 1000px;
     margin-left: 40px;
     margin-bottom: 20px;
+}
+.r1{
+    padding: 20px 0px 0px 0px;
+}
+.acc{
+    color: #BDBDBD;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+.role1{
+    /*padding: 30px 0px 20px 30px; */
+    margin: 30px 0px 0px 0px;
+    /*margin-left: 0px;*/
+}
 
+.addoutlet{
+    border: 1px solid orange;
+    background: #FFEBCC;
+    opacity: 0.5;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.inneroutlet{
+   /*margin-bottom: 30px;*/
 }
