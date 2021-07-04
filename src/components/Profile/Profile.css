@@ -26,10 +26,9 @@
     margin-bottom: 0px;
 }
 .info{
-    margin: 0px 100px;
+    margin: 0px 0px;
     display:flex;
     justify-content: space-between;
-    
     flex-direction: column;
 }
 .epara{
@@ -55,7 +54,6 @@ input{
     margin-top: 20px;
 }
 .input1{
-    width: 325px;
     background: #F2F2F2;
     border: 1px solid #666666;
     box-sizing: border-box;
@@ -77,7 +75,7 @@ input{
 .upbtn{
     border-radius:5px;
     border: 1px solid orange;
-    background-color:#feecda; 
+    background-color:#feecda;
     text-align: center;
     padding:6px 15px;
     font-size: 12px;
@@ -113,7 +111,7 @@ input{
     margin-bottom: 20px;
 }
 .r1{
-    padding: 20px 0px 0px 0px;
+padding: 0px;
 }
 .acc{
     color: #BDBDBD;
@@ -137,5 +135,30 @@ input{
     text-align: center;
 }
 .inneroutlet{
-   /*margin-bottom: 30px;*/
+    margin-right: 70px;
+   margin-bottom: 30px;
+}
+.rest{
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:baseline;
+}
+
+.home{
+    font-size: 1.5em;
+}
+
+.add{
+    margin-bottom: 0px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
 }

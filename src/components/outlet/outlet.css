@@ -25,7 +25,7 @@
     flex-direction: row !important;
     border-radius: 5px;
     border-width: 2px;
-    border: 1px solid #ff9900;
+    border: 1.5px solid #ff9900;
     padding: 2% 2% 2% 2%;
     margin: 0 0% 2% 0%;
 }
@@ -39,5 +39,8 @@
     font-size: 12px;
     line-height: 18px;
     margin-bottom: 0px;
+}
+.down{
+    margin-bottom: 5px;
 }
 

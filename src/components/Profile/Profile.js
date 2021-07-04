@@ -1,6 +1,7 @@
 import React from 'react';
 import './Profile.css';
 import Outlet from '../outlet/outlet';
+import { FiHome } from 'react-icons/fi';
 
 function Profile() {
     return (
@@ -14,17 +15,17 @@ function Profile() {
                  <div className="info">
                   <div class="container">
                    <div class="row">
-                    <div className="col-sm innercomponent">
+                    <div className="col-12 col-md-5 innercomponent">
                         <label>Full name</label><br></br>
                         <input className="input1" type="text" name="fullname" id="full_name" placeholder="Enter your name here" />
                     </div>
-                    <div className="col-sm innercomponent">
+                    <div className="col-12 col-md-5 innercomponent">
                         <label>Mobile</label><br></br>
                         <input className="input1" type="text" name="mobile" id="mobile" placeholder="Enter your number here" />
                     </div>
                     </div>
                     <div class="row">
-                    <div className="col-sm innercomponent">
+                    <div className="col-12 col-md-5 innercomponent">
                         <label>Email</label><br></br>
                         <input className="input1" type="text" name="mobile" id="mobile" placeholder="Enter your email here" />
                     </div>
@@ -75,7 +76,7 @@ function Profile() {
                   <p className="para1">Role</p>
                     <div className="info">
                       <div class="container">
-                        <p className="para1 r1">Bismillah Restuarant</p>
+                        <span className="rest"><FiHome className="home"/><p className="para1 r1">Bismillah Restuarant</p></span>
                         <p className="para1 acc">Account Owner</p>
 
                         <div className="container role1">
@@ -91,8 +92,8 @@ function Profile() {
                             <div className="col-12 col-md-5 inneroutlet">
                               <Outlet imgSrc='\images\outlet3.jpg' restaurant="Bismillah Restaurant" area="SriNagar"/>
                             </div>
-                            <div className="col-sm addoutlet">
-                               <p>Add New Outlet</p>
+                            <div className="col-12 col-md-5 inneroutlet addoutlet">
+                                <p className="add">Add New Outlet</p>
                             </div>
                           </div>
                         </div>
