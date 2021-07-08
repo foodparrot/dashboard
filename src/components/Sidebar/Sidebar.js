@@ -83,7 +83,7 @@ function Sidebar({ winHeight,winWidth }) {
                                 <MenuItem icon={<MdAccountCircle style={{ fontSize: "1.5em" }} />} onClick={onMobileCollapseHandler}>Menus<Link to="/menu/menus" /></MenuItem>
                             </SubMenu>
                             <MenuItem icon={<FaStore style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Outlets <Link to='/outlets' /></MenuItem>
-                            <MenuItem icon={<HiSpeakerphone style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Marketing  <Link to='#' /></MenuItem>
+                            <MenuItem icon={<HiSpeakerphone style={{ fontSize: "2em" }} />} onClick={onMobileCollapseHandler}>Marketing  <Link to='/marketing' /></MenuItem>
                         </Menu>
                     {/* </ProSidebar> */}
                 </SidebarContent>

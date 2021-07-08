@@ -9,8 +9,8 @@ const Outlet = ({imgSrc,restaurant,area,...props}) => {
 
         <div>
             <div className="row down">
-                <div className="image">
-                   <img className="img" variant="none" src={imgSrc} />
+                <div>
+                   <img variant="none" src={imgSrc} />
                 </div>
                 <div className="details">
                     <p className="restaurant det">{restaurant}</p>
