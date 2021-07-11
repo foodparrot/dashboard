@@ -21,7 +21,7 @@ export class OrderHistory extends Component {
                                     <input className='col-12' type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class='form-control gapoh1' placeholder='Phone No'/>
                                 </div>
                                 <div className='col-12 col-sm-3 gapoh'>
-                                    <input list='outlets' class='form-control gapoh1'placeholder='Outlet'></input>
+                                    <input list='outlets' class='form-control gapoh1' placeholder='Outlet'></input>
                                         <datalist id="outlets">
                                             <option value="outlet-1"></option>
                                             <option value="outlet-2"></option>

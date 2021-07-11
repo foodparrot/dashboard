@@ -10,7 +10,7 @@
 }
 
 .inner{
-    margin: 30px 30px 30px 30px;
+    margin: 30px 30px 30px 20px;
     background: #F9F9F9;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
@@ -40,14 +40,25 @@ img{
 .outer{
     margin: 25px 10px;
 }
+.btn{
+    padding: 0px;
+}
+.btn:hover{
+    text-decoration: none !important;
+}
 .down{
     padding: 10px;
     margin-bottom: 5px;
     border-radius: 10px;
     border: 1px solid #ff9900;
    margin-right: 5px;
+   background-color: white;
+   width: 350px;
+   outline: none !important;
 }
-
+.down:hover{
+    box-shadow: 0px 0px 10px 0px #ff99008c;
+}
 
 @media only screen and  (min-width:850px) {
     .content{
@@ -71,5 +82,8 @@ img{
     }
     .outer{
         margin: 15px 10px;
+    }
+    .down{
+        width: 250px;
     }
 }

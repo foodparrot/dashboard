@@ -6,11 +6,11 @@ import { FaAngleDoubleRight} from "react-icons/fa";
 export class Customers extends Component {
     render() {
         return (
-        
+
                 <div className='container-fluid'>
 
                     <div className='container-fluid row row31'>
-                        <p>Bismillah Outlet</p>          
+                        <p>Bismillah Outlet</p>
                     </div>
                     <div className='container-fluid customers'>
                     <div className='container p1'>
@@ -52,7 +52,7 @@ export class Customers extends Component {
                     </div>
                     <div className='gap12'>
                         <div class="table-responsive cust-borderless">
-                            
+
                             <table class="table customers-table" style={{fontWeight:'600'}}>
                                 <thead>
                                     <tr>

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
-   
 }
 .headerd {
     font-family: Poppins;
@@ -14,7 +13,6 @@ body{
     margin-left: 1%;
 }
 .heading{
-    
     font-style: normal;
     font-weight: 600;
     font-size: 1.2em;
@@ -27,10 +25,9 @@ body{
     background: #F9F9F9;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-    
 }
 .month{
-    border-radius: 5px;  
+    border-radius: 5px;
     padding-bottom: 5%;
     padding-top: 5%;
     width: 150px;
@@ -47,8 +44,6 @@ body{
 }
 .anc-tag-d{
     color: #FFFFFF;
-
-
 }
 
 .carddashboard{

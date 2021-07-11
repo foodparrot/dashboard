@@ -17,6 +17,7 @@ import Inventory from './components/Inventory/Inventory'
 import Details from "./components/LiveOrders/Details";
 import Profile from './components/Profile/Profile';
 import Marketing from './components/Marketing/Marketing';
+import CreateCoupon from './components/Marketing/createCoupon';
 
 // import $ from 'jquery';
 // import jQuery from 'jquery';
@@ -43,6 +44,7 @@ class App extends React.Component {
           <Route path="/Inventory" component={Inventory}/>
           <Route path="/profile" component={Profile}/>
           <Route path="/marketing" component={Marketing}/>
+          <Route path="/createcoupon/createcoupon" component={CreateCoupon}/>
 				</Switch>
         </Parent>
 			</BrowserRouter>

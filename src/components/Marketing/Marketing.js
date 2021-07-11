@@ -1,5 +1,6 @@
 import React from 'react';
 import './Marketing.css';
+import { Link } from "react-router-dom";
 
 function Marketing() {
     return(
@@ -9,46 +10,46 @@ function Marketing() {
             <div className="content">
                 <div className="row">
                  <div className="col-12 col-md-5 outer">
-                  <div className="row down">
+                   <button className="row down">
                     <div>
                       <img variant="none" src='\images\marketing1.jpg' />
                     </div>
                     <div className=".head">
                       <p className="marketing">Marketing Designs</p>
                     </div>
-                  </div>
+                  </button>
                  </div>
                  <div className="col-12 col-md-5 outer">
-                  <div className="row down">
+                   <Link to={"/createcoupon/createcoupon"} className="btn"><button className="row down">
                     <div>
                       <img variant="none" src='\images\marketing2.jpg' />
                     </div>
                     <div className=".head">
                       <p className="marketing">Discount Coupons</p>
                     </div>
-                  </div>
+                  </button></Link>
                  </div>
                 </div>
                 <div className="row">
                  <div className="col-12 col-md-5 outer">
-                  <div className="row down">
+                   <button className="row down">
                     <div>
                       <img variant="none" src='\images\marketing3.jpg' />
                     </div>
                     <div className=".head">
                       <p className="marketing">Store QR Code</p>
                     </div>
-                  </div>
+                  </button>
                  </div>
                  <div className="col-12 col-md-5 outer">
-                  <div className="row down">
+                   <button className="row down">
                     <div>
                       <img variant="none" src='\images\marketing4.jpg' />
                     </div>
                     <div className=".head">
                       <p className="marketing">Sales Channels</p>
                     </div>
-                  </div>
+                  </button>
                  </div>
                 </div>
             </div>

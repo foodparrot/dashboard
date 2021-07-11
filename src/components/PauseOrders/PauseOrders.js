@@ -5,7 +5,7 @@ export class PauseOrders extends Component {
         return (
             <div className='container'>
                 <div className='container-fluid row rowps-1'>
-                    <p>Bismillah Outlet</p>          
+                    <p>Bismillah Outlet</p>
                 </div>
                 <div className='container ps'>
                     <p className='paraps'>Pause New Orders</p>
@@ -52,7 +52,7 @@ export class PauseOrders extends Component {
                             </div>
                         </div>
                     </div>
-                
+
                     {/* 2nd card */}
                     <div className='gapps'></div>
                         <div className='col-12 card border-dark cardps1'>
@@ -63,7 +63,6 @@ export class PauseOrders extends Component {
                         </div>
                 </div>
             </div>
-            
         );
     }
 }
