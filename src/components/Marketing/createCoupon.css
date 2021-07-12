@@ -1,7 +1,7 @@
 .heading{
     padding: 20px;
     font-size: 25px;
-    font-family: Poppins;
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -139,6 +139,16 @@ input[type="checkbox"] {
 }
 .date{
     width: 300px;
+    border-radius: 10px;
+    outline: none !important;
+    padding: 15px 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 109%;
+    color: #000000;
+    border: 1px solid #828282;
 }
 .uses{
     border: 1px solid #FF692E;

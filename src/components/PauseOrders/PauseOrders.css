@@ -47,9 +47,11 @@ body{
 .btnps{
 
   background: linear-gradient(94.08deg, #FFE13B 0.84%, #FF2525 115.93%);
-  box-shadow: grey;
+  box-shadow: 1px 1px 10px 1px grey;
   color:white;
   font-size: 0.7em;
+  padding: 5px 10px !important;
+  border-radius: 8px;
 }
 
 input[type='radio']:after {

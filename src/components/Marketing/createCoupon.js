@@ -137,12 +137,12 @@ function CreateCoupon() {
                     </div>
                     <div className="col-12 col-md-4 out">
                       <label className="code" for="time">Start time*</label>
-                      <input list='time' className="date" placeholder='00:00' />
-                          <datalist id="time">
-                              <option value=""></option>
-                              <option value=""></option>
-                              <option value=""></option>
-                          </datalist>
+                      <div>
+                      <select id="Select" className="date" placeholder="00:00">
+                        <option selected>00:00</option>
+                        <option>Sample2</option>
+                      </select>
+                      </div>
                     </div>
                    </div>
                    <div className="row type">
@@ -162,12 +162,10 @@ function CreateCoupon() {
                     </div>
                     <div className="col-12 col-md-4 out">
                       <label className="code" for="time">End time*</label>
-                      <input list='time' className=' date uses' placeholder='23:59'></input>
-                         <datalist id="time">
-                              <option value=""></option>
-                              <option value=""></option>
-                              <option value=""></option>
-                          </datalist>
+                      <select id="Select" className="date uses" >
+                        <option selected>23:59</option>
+                        <option>Sample2</option>
+                      </select>
                     </div>
                    </div>
                    <div className="row type">
