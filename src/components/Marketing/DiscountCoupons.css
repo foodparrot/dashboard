@@ -1,0 +1,71 @@
+.heading{
+    padding: 20px;
+    font-size: 25px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 109%;
+    color: #000000;
+}
+.inner{
+    margin: 20px 30px 30px 20px;
+    background: #F9F9F9;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+.name{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 109%;
+    color: #BDBDBD;
+    padding: 30px;
+    padding-top: 50px;
+    margin-bottom: 0px;
+}
+.search1{
+    position: absolute;
+    margin: 15px 20px;
+    color: #828282;
+    height: 1.3em;
+    width: 1.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button2{
+    background: #FFEBCC;
+    border-radius: 8px;
+    border: 1px solid #ff9900;
+    color: #828282;
+    padding: 10px 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    outline: none !important;
+    margin: 0px;
+}
+
+.input2{
+    font-size: 20px;
+    padding-left: 50px;
+}
+.inside1{
+    justify-content: space-between;
+    padding: 0px 10%;
+    margin-bottom: 50px;
+}
+.inside2{
+    justify-content:space-around;
+    padding: 0px 8%;
+}
+.inside3{
+    padding: 0px;
+}
+.button1{
+    margin: 0px;
+    border-radius: 8px;
+    padding: 10px 40px;
+}

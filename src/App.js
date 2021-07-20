@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Dashboard from './components/Dashboard/Dashboard';
 import LiveOrders from './components/LiveOrders/LiveOrders';
-
 import Parent from './components/Parent/Parent';
 import Sidebar from './components/Sidebar/Sidebar';
 import PauseOrders from './components/PauseOrders/PauseOrders';
@@ -18,6 +17,9 @@ import Details from "./components/LiveOrders/Details";
 import Profile from './components/Profile/Profile';
 import Marketing from './components/Marketing/Marketing';
 import CreateCoupon from './components/Marketing/createCoupon';
+import DiscountCoupons from './components/Marketing/DiscountCoupons';
+import Channel from './components/Marketing/SaleChannel';
+import Store from './components/Marketing/QRCode';
 
 // import $ from 'jquery';
 // import jQuery from 'jquery';
@@ -44,13 +46,15 @@ class App extends React.Component {
           <Route path="/Inventory" component={Inventory}/>
           <Route path="/profile" component={Profile}/>
           <Route path="/marketing" component={Marketing}/>
-          <Route path="/createcoupon/createcoupon" component={CreateCoupon}/>
+          <Route path="/createcoupon" component={CreateCoupon}/>
+          <Route path="/discountcoupons" component={DiscountCoupons}/>
+          <Route path="/saleschannels" component={Channel}/>
+          <Route path="/storeQRCode" component={Store}/>
 				</Switch>
         </Parent>
 			</BrowserRouter>
     );
   }
- 
 }
 
 export default App;

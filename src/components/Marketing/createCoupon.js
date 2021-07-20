@@ -15,7 +15,7 @@ function CreateCoupon() {
                     <input type="text" name="coupon_code" id="coupon_code"/>
                   </div>
                   <div className="col-12 col-md-5">
-                    <button className="button">Generate</button>
+                    <button className="button1">Generate</button>
                   </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@ function CreateCoupon() {
                     </div>
                   </div>
                   <div className="uses2">
-                  <img className="icon" width={5} height={5} src={Cross} />
+                  <img className="icon1" width={5} height={5} src={Cross} />
                    <div style={{marginBottom: 10}}>
                     <input type="checkbox" checked/>
                     <label className="code3 color">Azhar’s Restaurant</label>
@@ -152,7 +152,7 @@ function CreateCoupon() {
                     </div>
                     <div className="col-12 col-md-4 out">
                      <input type="radio" />
-                     <label className="code2" >Never expires</label>
+                     <label className="code2">Never expires</label>
                     </div>
                    </div>
                    <div className="row type">
@@ -174,8 +174,8 @@ function CreateCoupon() {
                       <input className="discount uses" type="text" value="100"/>
                     </div>
                    </div>
-                   <div className="row ">
-                     <button className="button create">Create</button>
+                   <div className="row">
+                     <button className="button1 create">Create</button>
                    </div>
                  </div>
             </div>

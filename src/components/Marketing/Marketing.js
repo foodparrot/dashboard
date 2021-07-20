@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 function Marketing() {
     return(
        <div>
-          <p className="heading">Bismillah Restuarant</p>
+          <p className="heading">Bismillah Restaurant</p>
           <div className="inner">
             <div className="content">
                 <div className="row">
                  <div className="col-12 col-md-5 outer">
                    <button className="row down">
                     <div>
-                      <img variant="none" src='\images\marketing1.jpg' />
+                      <img className="image" variant="none" src='\images\marketing1.jpg' />
                     </div>
                     <div className=".head">
                       <p className="marketing">Marketing Designs</p>
@@ -20,9 +20,9 @@ function Marketing() {
                   </button>
                  </div>
                  <div className="col-12 col-md-5 outer">
-                   <Link to={"/createcoupon/createcoupon"} className="btn"><button className="row down">
+                  <Link to={"/discountcoupons"} className="btn"><button className="row down">
                     <div>
-                      <img variant="none" src='\images\marketing2.jpg' />
+                      <img className="image" variant="none" src='\images\marketing2.jpg' />
                     </div>
                     <div className=".head">
                       <p className="marketing">Discount Coupons</p>
@@ -32,24 +32,24 @@ function Marketing() {
                 </div>
                 <div className="row">
                  <div className="col-12 col-md-5 outer">
-                   <button className="row down">
+                 <Link to={"/storeQRCode"} className="btn"><button className="row down">
                     <div>
-                      <img variant="none" src='\images\marketing3.jpg' />
+                      <img className="image" variant="none" src='\images\marketing3.jpg' />
                     </div>
                     <div className=".head">
                       <p className="marketing">Store QR Code</p>
                     </div>
-                  </button>
+                  </button></Link>
                  </div>
                  <div className="col-12 col-md-5 outer">
-                   <button className="row down">
+                  <Link to={"/saleschannels"} className="btn"><button className="row down">
                     <div>
-                      <img variant="none" src='\images\marketing4.jpg' />
+                      <img className="image" variant="none" src='\images\marketing4.jpg' />
                     </div>
                     <div className=".head">
                       <p className="marketing">Sales Channels</p>
                     </div>
-                  </button>
+                  </button></Link>
                  </div>
                 </div>
             </div>

@@ -1,0 +1,68 @@
+.border1{
+    border: 1px solid #FF692E;
+    background: white;
+    border-radius: 10px;
+    width: 400px;
+    padding: 15px;
+}
+
+.code1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.offer{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #BDBDBD;
+    margin-top: 5px;
+}
+.times{
+    display: flex;
+    justify-content:left;
+    margin-bottom: 10px;
+}
+
+.t1{
+    width: 150px;
+    flex-wrap: nowrap;
+}
+.t2{
+    margin-right: 60px;
+}
+.t1 p{
+    font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 22px;
+color: #BDBDBD;
+margin-bottom: 0px;
+}
+.sharecoupon p{
+    margin-bottom: 0px;
+}
+.t3{
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    color: #000000 !important;
+}
+.sharecoupon{
+    border-top: 1px dashed #FF692E;
+    padding-top: 15px;
+}
+.icon{
+    margin-right: 5px;
+}
+.color{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FF692E;
+    text-align: center;
+}

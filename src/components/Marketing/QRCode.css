@@ -1,0 +1,62 @@
+.storeCode{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.QR{
+    background: #FFEBCC;
+    border: 2px solid #FF692E;
+    width: 440px;
+    height: 784px;
+    border-radius: 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.insideCircle{
+    border-radius: 50%;
+    background-color: white ;
+    width: 674px;
+    height: 674px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0px;
+}
+.online{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 109%;
+    color: #333333;
+}
+.online1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 109%;
+    color: #333333;
+    margin: 20px 0px;
+}
+.online2{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 109%;
+    background: linear-gradient(to right, #FF692E 0%, #FFC537 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.insideCircle .storecode{
+    border: 3px solid #FDA342;
+    margin: 40px 0px;
+}
+
+.insideCircle img{
+    margin: 20px 0px;
+}

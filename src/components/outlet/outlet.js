@@ -6,9 +6,8 @@ import './outlet.css';
 const Outlet = ({imgSrc,restaurant,area,...props}) => {
     return(
 
-
         <div>
-            <div className="row down">
+            <div className="row down1">
                 <div>
                    <img variant="none" src={imgSrc} />
                 </div>
@@ -17,9 +16,9 @@ const Outlet = ({imgSrc,restaurant,area,...props}) => {
                     <p className="area det">{area}</p>
                 </div>
             </div>
-            <div className="row down">
+            <div className="row down1">
                 <div className="col loc">
-                    <img className="icon" width={18} height={22} src={Marker} />
+                    <img className="icon" width={18} height={18} src={Marker} />
                     <p className="address" >2-15-2, Lalitha Nagar, Near Railway Station, Road no : 2, Secunderabad.</p>
                 </div>
             </div>
