@@ -6,7 +6,17 @@ const Coupon = ({code,offer,...props}) => {
     return(
       <div className="border1">
           <div className="top">
-            <p className="code1">{code}</p>
+            <div className="row toggle">
+              <div className="col">
+                <p className="code1">{code}</p>
+              </div>
+              <div className="col">
+                <label class="switch togl">
+                    <input type="checkbox"></input>
+                    <span class="sliderd round"></span>
+                </label>
+              </div>
+            </div>
             <p className="offer">{offer}</p>
             <div className="times">
                 <div className="t1 t2">

@@ -12,6 +12,8 @@
     font-size: 20px;
     line-height: 30px;
     color: #000000;
+    justify-content: flex-start;
+    margin-bottom: 0px;
 }
 
 .offer{
@@ -66,3 +68,57 @@ margin-bottom: 0px;
     color: #FF692E;
     text-align: center;
 }
+.top .toggle{
+    display: flex;
+}
+
+.togl {
+    position: absolute;
+    width: 45px;
+    height:22px;
+    display: inline-block;
+    justify-content: end;
+    margin-left: 60%;
+  }
+  .toggle label{
+      margin-bottom: 0px;
+  }
+  .sliderd {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .sliderd:before {
+    position: absolute;
+    content: "";
+    height: 65%;
+    width: 30%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked + .sliderd {
+    background-color:rgb(87, 198, 87);
+  }
+  input:focus + .sliderd{
+    box-shadow: 0 0 1px rgb(87, 198, 87);
+  }
+  input:checked + .sliderd:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  .sliderd.round {
+    border-radius: 34px;
+  }
+  .sliderd.round:before {
+    border-radius: 50%;
+  }
