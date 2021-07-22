@@ -17,7 +17,7 @@
 
 }
 .insideCircle{
-    border-radius: 50%;
+    border-radius: 31%;
     background-color: white ;
     width: 674px;
     height: 674px;
@@ -54,10 +54,37 @@
 }
 .insideCircle .storecode{
     /*border: 3px solid #FDA342;*/
-    margin: 40px 0px;
-    border-image-slice: ;
+
 }
 
-.insideCircle img{
-    margin: 20px 0px;
+.BorderCorner {
+    border: 3px solid #FDA342;
+    display: inline-block;
+    margin: 25px auto;
+    position: relative;
+    width: auto;
+}
+.BorderCorner::before {
+    width: calc(100% + 50px + 50px - 120px);
+    height: calc(100% + 10px);
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .BorderCorner::after {
+    height: calc(100% + 50px + 50px - 120px);
+    width: calc(100% + 10px);
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  .BorderCorner::before, .BorderCorner::after {
+    content: '';
+    position: absolute;
+    background: transparent;
+    border: 10px solid white;
 }

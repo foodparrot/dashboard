@@ -11,7 +11,9 @@ function Store() {
                 <div className="QR">
                     <div className="insideCircle">
                         <p className="online">Order Online!</p>
-                        <img className="storecode" variant="none" src="./images/QR.jpg" />
+                        <div class="BorderCorner">
+                          <img className="storecode" variant="none" src="./images/QR.jpg" />
+                        </div>
                         <p className="online1">Bismillah Restaurant</p>
                         <p className="online2">order.ofas.tech/bismillahrestaurant</p>
                         <img variant="none" src="./images/foodparrot.jpg" />
