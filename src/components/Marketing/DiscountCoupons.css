@@ -63,9 +63,30 @@
 }
 .inside3{
     padding: 0px;
+    margin: 10px;
 }
 .button1{
     margin: 0px;
     border-radius: 8px;
     padding: 10px 40px;
+}
+
+.btnc{
+   padding: 0px 0px 0px 25%;
+}
+
+@media only screen and  (max-width:800px) {
+    .btnc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        padding: 0px;
+    }
+    .inside2{
+        justify-content:center;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
 }

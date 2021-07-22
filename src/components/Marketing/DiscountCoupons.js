@@ -14,7 +14,7 @@ function DiscountCoupons () {
                 <div className="col-12 col-md-5">
                    <FiSearch className="search1" /> <input className="input2" type="search" placeholder="Search Coupons"/>
                 </div>
-                <div className="col-12 col-md-5">
+                <div className="col-12 col-md-5 btnc">
                    <Link to={"/createcoupon"} className="btn"><button className="button2">Create</button></Link>
                 </div>
               </div>
