@@ -16,7 +16,7 @@ function Store() {
                         </div>
                         <p className="online1">Bismillah Restaurant</p>
                         <p className="online2">order.ofas.tech/bismillahrestaurant</p>
-                        <img variant="none" src="./images/foodparrot.jpg" />
+                        <img className="logodown" variant="none" src="./images/foodparrot.jpg" />
                     </div>
                 </div>
             </div>
