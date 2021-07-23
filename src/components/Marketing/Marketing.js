@@ -10,14 +10,14 @@ function Marketing() {
             <div className="content">
                 <div className="row">
                  <div className="col-12 col-md-5 outer">
-                   <button className="row down">
+                  <Link to={"/marketingdesigns"} className="btn"><button className="row down">
                     <div>
                       <img className="image" variant="none" src='\images\marketing1.jpg' />
                     </div>
                     <div className=".head">
                       <p className="marketing">Marketing Designs</p>
                     </div>
-                  </button>
+                  </button></Link>
                  </div>
                  <div className="col-12 col-md-5 outer">
                   <Link to={"/discountcoupons"} className="btn"><button className="row down">

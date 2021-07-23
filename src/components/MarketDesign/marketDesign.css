@@ -1,0 +1,21 @@
+.outline{
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.designlogo{
+    margin: 20px 10px 20px 10px;
+}
+.cardb{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 109%;
+    color: #000000;
+}

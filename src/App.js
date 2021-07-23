@@ -20,6 +20,7 @@ import CreateCoupon from './components/Marketing/createCoupon';
 import DiscountCoupons from './components/Marketing/DiscountCoupons';
 import Channel from './components/Marketing/SaleChannel';
 import Store from './components/Marketing/QRCode';
+import MarketingDesign from './components/Marketing/MarketingDesigns';
 
 // import $ from 'jquery';
 // import jQuery from 'jquery';
@@ -50,6 +51,7 @@ class App extends React.Component {
           <Route path="/discountcoupons" component={DiscountCoupons}/>
           <Route path="/saleschannels" component={Channel}/>
           <Route path="/storeQRCode" component={Store}/>
+          <Route path="/marketingdesigns" component={MarketingDesign}/>
 				</Switch>
         </Parent>
 			</BrowserRouter>
