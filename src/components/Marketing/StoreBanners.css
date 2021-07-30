@@ -1,0 +1,122 @@
+.store{
+    display: flex;
+    align-items: center;
+    margin-left: 13%;
+}
+.filterhead{
+    padding: .5rem 1rem;
+    margin-right: 10px;
+}
+.filter{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 109%;
+    margin-bottom: 0px;
+}
+
+.edit1{
+    border-radius: 4px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    width: 150px;
+    background: #FFEBCC;
+    border: 1px solid #ff4625;
+    padding: 5px 10px;
+}
+.edit1 > a{
+    text-decoration: none;
+    color: #333333;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 109%;
+}
+.edit1:hover {
+    box-shadow: -2px 2px 10px -1px rgba(0,0,0,0.75);
+-webkit-box-shadow: -2px 2px 10px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 2px 10px -1px rgba(0,0,0,0.75);
+}
+.anc-tag-d1{
+    color: #FFFFFF;
+}
+
+.menu{
+    background: #E0E0E0;
+    min-width: 9rem;
+}
+
+.item{
+    padding: 5px 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 109%;
+}
+
+.newm{
+    background-color: rgb(0, 81, 255);
+    padding: 5px 15px;
+}
+
+.modal-content{
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.header1{
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-left: 5px;
+}
+
+.editablebtn{
+    background: #E0E0E0;
+    border-radius: 4px;
+    border: none;
+    color: #000000;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 109%;
+    padding: 10px 20px;
+    margin-right: 40px;
+}
+
+.updownload{
+    border: none;
+    background-color: transparent;
+    margin-right: 20px;
+}
+.bodyContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.buy{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 109%;
+    margin: 20px 0px 10px 0px;
+}
+.link{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 109%;
+    background: linear-gradient(to right, #FF692E 0%, #FFC537 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0px;
+}
+.saleimg{
+    width: 247px;
+    height: 247px;
+}

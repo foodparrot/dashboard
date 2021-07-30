@@ -21,6 +21,7 @@ import DiscountCoupons from './components/Marketing/DiscountCoupons';
 import Channel from './components/Marketing/SaleChannel';
 import Store from './components/Marketing/QRCode';
 import MarketingDesign from './components/Marketing/MarketingDesigns';
+import StoreBanner from './components/Marketing/StoreBanners';
 
 // import $ from 'jquery';
 // import jQuery from 'jquery';
@@ -52,6 +53,7 @@ class App extends React.Component {
           <Route path="/saleschannels" component={Channel}/>
           <Route path="/storeQRCode" component={Store}/>
           <Route path="/marketingdesigns" component={MarketingDesign}/>
+          <Route path="/storebanners" component={StoreBanner}/>
 				</Switch>
         </Parent>
 			</BrowserRouter>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './MarketingDesigns.css';
+import { Link } from "react-router-dom";
 import Design from '../MarketDesign/marketDesign';
 
 function MarketingDesign () {
@@ -10,13 +11,13 @@ function MarketingDesign () {
               <p className="name">Marketing Designs</p>
                 <div className="row around">
                   <div className="col-12 col-md-3 around1">
-                      <Design imgSrc='\images\business_card.png' title="Business Cards" />
+                    <Link to={""} className="btn"><Design imgSrc='\images\business_card.png' title="Business Cards" /></Link>
                   </div>
                   <div className="col-12 col-md-3 around1">
-                      <Design imgSrc='\images\store_banner.png' title="Store Banners"/>
+                    <Link to={"/storebanners"} className="btn"><Design imgSrc='\images\store_banner.png' title="Store Banners"/></Link>
                   </div>
                   <div className="col-12 col-md-3 around1">
-                      <Design imgSrc='\images\whatsapp_stories.png' title="WhatsApp Stories"/>
+                    <Link to={"/storebanners"} className="btn"><Design imgSrc='\images\whatsapp_stories.png' title="WhatsApp Stories"/></Link>
                   </div>
                 </div>
           </div>
