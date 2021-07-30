@@ -116,7 +116,25 @@
     -webkit-text-fill-color: transparent;
     margin-bottom: 0px;
 }
+.salespart{
+    margin: 5% 10%;
+}
+.saleImgBorder{
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 210px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .saleimg{
-    width: 247px;
-    height: 247px;
+    width: 150px;
+    height: 150px;
+}
+.additional{
+    border: 1px solid #FF692E;
+    background: #FFEBCC;
 }

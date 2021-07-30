@@ -3,6 +3,7 @@ import {AiOutlineCloseCircle} from 'react-icons/ai';
 import {FiDownload} from 'react-icons/fi';
 import {FiUpload} from 'react-icons/fi';
 import {FiLink} from 'react-icons/fi';
+import {BsPlusCircle} from 'react-icons/bs';
 import './StoreBanners.css';
 
 function StoreBanner () {
@@ -53,12 +54,46 @@ function StoreBanner () {
                            </button>
                          </div>
                          <div class="modal-body bodyContent">
-                            <img className="saleimg" variant="none" src='\images\blackfridaysale.png'/>
+                            <img variant="none" src='\images\blackfridaysale.png'/>
                             <p className="buy">BUY FROM</p>
                             <p className="link">order.ofas.tech/bismillahrestaurant <FiLink size={25} style={{marginLeft: 10}} /></p>
                          </div>
                         </div>
                       </div>
+                    </div>
+                </div>
+            </div>
+            <div className="row salespart">
+                <div className="col-12 col-md-4">
+                    <div className="saleImgBorder">
+                        <img className="saleimg" variant="none" src='\images\blackfridaysale.png'/>
+                    </div>
+                </div>
+                <div className="col-12 col-md-4">
+                    <div className="saleImgBorder">
+                        <img className="saleimg" variant="none" src='\images\blackfridaysale.png'/>
+                    </div>
+                </div>
+                <div className="col-12 col-md-4">
+                    <div className="saleImgBorder">
+                        <img className="saleimg" variant="none" src='\images\blackfridaysale.png'/>
+                    </div>
+                </div>
+            </div>
+            <div className="row salespart">
+                <div className="col-12 col-md-4">
+                    <div className="saleImgBorder">
+                        <img className="saleimg" variant="none" src='\images\blackfridaysale.png'/>
+                    </div>
+                </div>
+                <div className="col-12 col-md-4">
+                    <div className="saleImgBorder">
+                        <img className="saleimg" variant="none" src='\images\blackfridaysale.png'/>
+                    </div>
+                </div>
+                <div className="col-12 col-md-4">
+                    <div className="saleImgBorder additional">
+                        <BsPlusCircle style={{ stroke: "url(#orange-gradient)", width: '76px', height: '76px'}}/>
                     </div>
                 </div>
             </div>
