@@ -17,7 +17,7 @@ function MarketingDesign () {
                     <Link to={"/storebanners"} className="btn"><Design imgSrc='\images\store_banner.png' title="Store Banners"/></Link>
                   </div>
                   <div className="col-12 col-md-3 around1">
-                    <Link to={"/storebanners"} className="btn"><Design imgSrc='\images\whatsapp_stories.png' title="WhatsApp Stories"/></Link>
+                    <Link to={"/whatsappstories"} className="btn"><Design imgSrc='\images\whatsapp_stories.png' title="WhatsApp Stories"/></Link>
                   </div>
                 </div>
           </div>

@@ -1,14 +1,14 @@
 import React from 'react';
 import {BsPlusCircle} from 'react-icons/bs';
 import Overlay from './../SaleOverlay/overlay';
-import './StoreBanners.css';
+import './WhatsAppStories.css';
 
-function StoreBanner () {
+function WhatsAppStory () {
     return(
         <div>
           <p className="heading">Bismillah Restuarant</p>
           <div className="inner">
-            <p className="name">Store Banners</p>
+            <p className="name">WhatsApp Stories</p>
             <div className="row">
                 <div className="col-12 col-md-5 store">
                     <div className="filterhead">
@@ -38,34 +38,17 @@ function StoreBanner () {
             </div>
             <div className="row salespart">
                 <div className="col-12 col-md-4">
-                    <div className="saleImgBorder">
+                    <div>
                         <img className="saleimg" variant="none" src='\images\blackfridaysale.png'/>
                     </div>
                 </div>
                 <div className="col-12 col-md-4">
-                    <div className="saleImgBorder">
-                        <img className="saleimg" variant="none" src='\images\blackfridaysale.png'/>
+                    <div>
+                        <img variant="none" src='https://via.placeholder.com/750x1334'/>
                     </div>
                 </div>
                 <div className="col-12 col-md-4">
-                    <div className="saleImgBorder">
-                        <img className="saleimg" variant="none" src='\images\blackfridaysale.png'/>
-                    </div>
-                </div>
-            </div>
-            <div className="row salespart">
-                <div className="col-12 col-md-4">
-                    <div className="saleImgBorder">
-                        <img className="saleimg" variant="none" src='\images\blackfridaysale.png'/>
-                    </div>
-                </div>
-                <div className="col-12 col-md-4">
-                    <div className="saleImgBorder">
-                        <img className="saleimg" variant="none" src='\images\blackfridaysale.png'/>
-                    </div>
-                </div>
-                <div className="col-12 col-md-4">
-                    <div className="saleImgBorder additional">
+                    <div className="additional">
                         <BsPlusCircle style={{ stroke: "url(#orange-gradient)", width: '76px', height: '76px'}}/>
                     </div>
                 </div>
@@ -75,4 +58,4 @@ function StoreBanner () {
     )
 }
 
-export default StoreBanner;
+export default WhatsAppStory;

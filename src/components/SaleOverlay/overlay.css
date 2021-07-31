@@ -1,0 +1,96 @@
+.menu{
+    background: #E0E0E0;
+    min-width: 9rem;
+}
+
+.item{
+    padding: 5px 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 109%;
+}
+
+.newm{
+    background-color: rgb(0, 81, 255);
+    padding: 5px 15px;
+}
+.modal-content{
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.header1{
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-left: 5px;
+}
+
+.editablebtn{
+    background: #E0E0E0;
+    border-radius: 4px;
+    border: none;
+    color: #000000;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 109%;
+    padding: 10px 20px;
+    margin-right: 40px;
+}
+
+.updownload{
+    border: none;
+    background-color: transparent;
+    margin-right: 20px;
+}
+.bodyContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.buy{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 109%;
+    margin: 20px 0px 10px 0px;
+}
+
+.link{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 109%;
+    background: linear-gradient(to right, #FF692E 0%, #FFC537 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0px;
+}
+.salespart{
+    margin: 5% 10%;
+}
+.saleImgBorder{
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 210px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.saleimg{
+    width: 150px;
+    height: 150px;
+}
+.additional{
+    border: 1px solid #FF692E;
+    background: #FFEBCC;
+}

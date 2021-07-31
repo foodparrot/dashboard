@@ -22,6 +22,7 @@ import Channel from './components/Marketing/SaleChannel';
 import Store from './components/Marketing/QRCode';
 import MarketingDesign from './components/Marketing/MarketingDesigns';
 import StoreBanner from './components/Marketing/StoreBanners';
+import WhatsAppStory from './components/Marketing/WhatsAppStories';
 
 // import $ from 'jquery';
 // import jQuery from 'jquery';
@@ -54,6 +55,7 @@ class App extends React.Component {
           <Route path="/storeQRCode" component={Store}/>
           <Route path="/marketingdesigns" component={MarketingDesign}/>
           <Route path="/storebanners" component={StoreBanner}/>
+          <Route path="/whatsappstories" component={WhatsAppStory}/>
 				</Switch>
         </Parent>
 			</BrowserRouter>
