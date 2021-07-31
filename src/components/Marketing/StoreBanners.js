@@ -31,7 +31,7 @@ function StoreBanner () {
                     <button type="button" class="btn btn-primary newm" data-toggle="modal" data-target="#exampleModalCenter">Modal</button>
                     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                       <div class="modal-dialog modal-dialog-centered" role="document">
-                        <Overlay />
+                        <Overlay saleImg='.\images\blackfridaysale.png'/>
                       </div>
                     </div>
                 </div>

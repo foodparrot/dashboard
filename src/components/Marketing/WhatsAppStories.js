@@ -31,7 +31,7 @@ function WhatsAppStory () {
                     <button type="button" class="btn btn-primary newm" data-toggle="modal" data-target="#exampleModalCenter">Modal</button>
                     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                       <div class="modal-dialog modal-dialog-centered" role="document">
-                        <Overlay />
+                        <Overlay saleImg='https://via.placeholder.com/750x1334'/>
                       </div>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ function WhatsAppStory () {
                     </div>
                 </div>
                 <div className="col-12 col-md-4">
-                    <div className="additional">
+                    <div class="img-fluid" className="additional">
                         <BsPlusCircle style={{ stroke: "url(#orange-gradient)", width: '76px', height: '76px'}}/>
                     </div>
                 </div>

@@ -125,10 +125,11 @@
     box-sizing: border-box;
     border-radius: 20px;
     width: 210px;
-    height: 210px;
+    height: 210px !important;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
 }
 .saleimg{
     width: 150px;

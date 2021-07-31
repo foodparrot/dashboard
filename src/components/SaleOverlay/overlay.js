@@ -5,7 +5,7 @@ import {FiUpload} from 'react-icons/fi';
 import {FiLink} from 'react-icons/fi';
 import './overlay.css';
 
-function Overlay() {
+const Overlay = ({saleImg,...props}) => {
         return (
                     <div class="modal-content">
                          <div class="modal-header header1">
@@ -27,7 +27,7 @@ function Overlay() {
                            </button>
                          </div>
                          <div class="modal-body bodyContent">
-                            <img class="img-fluid" variant="none" src='\images\blackfridaysale.png'/>
+                            <img class="img-fluid" variant="none" src={saleImg}/>
                             <p className="buy">BUY FROM</p>
                             <p className="link">order.ofas.tech/bismillahrestaurant <FiLink size={25} style={{marginLeft: 10}} /></p>
                          </div>
