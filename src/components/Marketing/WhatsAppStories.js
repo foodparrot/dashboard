@@ -39,12 +39,12 @@ function WhatsAppStory () {
             <div className="row salespart">
                 <div className="col-12 col-md-4">
                     <div>
-                        <img className="saleimg" variant="none" src='\images\blackfridaysale.png'/>
+                        <img class="img-fluid" variant="none" src='https://via.placeholder.com/750x1334'/>
                     </div>
                 </div>
                 <div className="col-12 col-md-4">
                     <div>
-                        <img variant="none" src='https://via.placeholder.com/750x1334'/>
+                        <img class="img-fluid" variant="none" src='https://via.placeholder.com/750x1334'/>
                     </div>
                 </div>
                 <div className="col-12 col-md-4">

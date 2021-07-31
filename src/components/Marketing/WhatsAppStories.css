@@ -136,9 +136,9 @@
 }
 .additional{
     box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 13px;
     width: 210px;
-    height: 210px;
+    height: 370px;
     display: flex;
     align-items: center;
     justify-content: center;
