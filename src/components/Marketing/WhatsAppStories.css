@@ -130,18 +130,6 @@
     align-items: center;
     justify-content: center;
 }
-.saleimg{
-    width: 150px;
-    height: 150px;
-}
-.additional{
-    box-sizing: border-box;
-    border-radius: 13px;
-    width: 210px;
-    height: 370px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #FF692E;
-    background: #FFEBCC;
+.saleimg1{
+    margin-bottom: 15px;
 }

@@ -37,19 +37,19 @@ function WhatsAppStory () {
                 </div>
             </div>
             <div className="row salespart">
-                <div className="col-12 col-md-4">
+                <div className="col-12 col-md-4 saleimg1">
                     <div>
                         <img class="img-fluid" variant="none" src='https://via.placeholder.com/750x1334'/>
                     </div>
                 </div>
-                <div className="col-12 col-md-4">
+                <div className="col-12 col-md-4 saleimg1">
                     <div>
                         <img class="img-fluid" variant="none" src='https://via.placeholder.com/750x1334'/>
                     </div>
                 </div>
-                <div className="col-12 col-md-4">
-                    <div class="img-fluid" className="additional">
-                        <BsPlusCircle style={{ stroke: "url(#orange-gradient)", width: '76px', height: '76px'}}/>
+                <div className="col-12 col-md-4 saleimg1">
+                    <div>
+                    <img class="img-fluid" variant="none" src='https://via.placeholder.com/750x1334?text=plus-button' />
                     </div>
                 </div>
             </div>

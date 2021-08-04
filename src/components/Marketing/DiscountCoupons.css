@@ -20,8 +20,8 @@
     font-size: 20px;
     line-height: 109%;
     color: #BDBDBD;
-    padding: 30px;
-    padding-top: 50px;
+    padding-top: 0px;
+    padding-bottom: 30px;
     margin-bottom: 0px;
 }
 .search1{
@@ -54,12 +54,12 @@
 }
 .inside1{
     justify-content: space-between;
-    padding: 0px 10%;
+    padding: 0px 7%;
     margin-bottom: 50px;
 }
 .inside2{
     justify-content:space-around;
-    padding: 0px 8%;
+    padding: 0px 5%;
 }
 .inside3{
     padding: 0px;

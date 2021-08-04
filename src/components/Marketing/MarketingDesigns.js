@@ -11,7 +11,7 @@ function MarketingDesign () {
               <p className="name">Marketing Designs</p>
                 <div className="row around">
                   <div className="col-12 col-md-3 around1">
-                    <Link to={""} className="btn"><Design imgSrc='\images\business_card.png' title="Business Cards" /></Link>
+                    <Link to={"/businesscards"} className="btn"><Design imgSrc='\images\business_card.png' title="Business Cards" /></Link>
                   </div>
                   <div className="col-12 col-md-3 around1">
                     <Link to={"/storebanners"} className="btn"><Design imgSrc='\images\store_banner.png' title="Store Banners"/></Link>

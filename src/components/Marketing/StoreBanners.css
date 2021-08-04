@@ -135,7 +135,7 @@
     width: 150px;
     height: 150px;
 }
-.additional{
-    border: 1px solid #FF692E;
-    background: #FFEBCC;
+.additional1{
+    border: 1px solid #FF692E !important;
+    background: #FFEBCC !important;
 }

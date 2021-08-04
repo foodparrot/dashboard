@@ -65,7 +65,7 @@ function StoreBanner () {
                     </div>
                 </div>
                 <div className="col-12 col-md-4">
-                    <div className="saleImgBorder additional">
+                    <div className="saleImgBorder additional1">
                         <BsPlusCircle style={{ stroke: "url(#orange-gradient)", width: '76px', height: '76px'}}/>
                     </div>
                 </div>
