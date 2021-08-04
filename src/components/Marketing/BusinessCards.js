@@ -1,12 +1,12 @@
 import React from "react";
-import { ScrollMenu, VisibilityContext, Arrow } from "react-horizontal-scrolling-menu";
+import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 
 const getItems = () =>
   Array(20)
     .fill(0)
     .map((_, ind) => ({ id: `element-${ind}` }));
 
-function BusinessCard() {
+function BusinessCards() {
   const [items, setItems] = React.useState(getItems);
   const [selected, setSelected] = React.useState([]);
   const [position, setPosition] = React.useState(0);
@@ -46,23 +46,21 @@ function LeftArrow() {
   const { isFirstItemVisible, scrollPrev } = React.useContext(VisibilityContext)
 
   return (
-    <Arrow disabled={isFirstItemVisible} onClick={() => scrollPrev()}>
+    <h1 disabled={isFirstItemVisible} onClick={() => scrollPrev()}>
       Left
-    </Arrow>
+    </h1>
   );
 }
-export default LeftArrow;
 
 function RightArrow() {
   const { isLastItemVisible, scrollNext } = React.useContext(VisibilityContext)
 
   return (
-    <Arrow disabled={isLastItemVisible} onClick={() => scrollNext()}>
+    <h1 disabled={isLastItemVisible} onClick={() => scrollNext()}>
       Right
-    </Arrow>
+    </h1>
   );
 }
-export default RightArrow;
 
 function Card({
   onClick,
@@ -94,6 +92,4 @@ function Card({
   );
 }
 
-export default Card;
-
-export default BusinessCard;
+export default BusinessCards;
