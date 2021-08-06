@@ -1,5 +1,8 @@
 import React from "react";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
+import {IoIosArrowBack} from 'react-icons/io';
+import {IoIosArrowForward} from 'react-icons/io';
+import "./BusinessCards.css";
 
 const getItems = () =>
   Array(20)
@@ -24,6 +27,10 @@ function BusinessCards() {
   }
 
   return (
+    <div>
+    <p className="heading">Bismillah Restuarant</p>
+    <div className="inner">
+     <p className="name">Business Cards</p>
         <ScrollMenu
           LeftArrow={LeftArrow}
           RightArrow={RightArrow}
@@ -35,10 +42,13 @@ function BusinessCards() {
               key={id}
               onClick={handleClick(id)}
               selected={isItemSelected(id)}
+              className="cardbusiness"
             />)
           )}
 
         </ScrollMenu>
+        </div>
+    </div>
   );
 }
 
@@ -47,7 +57,7 @@ function LeftArrow() {
 
   return (
     <h1 disabled={isFirstItemVisible} onClick={() => scrollPrev()}>
-      Left
+      <IoIosArrowBack />
     </h1>
   );
 }
@@ -57,7 +67,7 @@ function RightArrow() {
 
   return (
     <h1 disabled={isLastItemVisible} onClick={() => scrollNext()}>
-      Right
+      <IoIosArrowForward />
     </h1>
   );
 }
@@ -69,26 +79,24 @@ function Card({
   itemId
 }) {
   const visibility = React.useContext(VisibilityContext)
+  const visible = visibility.isItemVisible(itemId);
 
   return (
     <div
       onClick={() => onClick(visibility)}
       style={{
-        width: "160px",
+        width: 'fit-content',
+        padding: "70px",
+        margin: '20px',
+        borderRadius: '50%',
+        backgroundColor: visible ? "white" : "transparent",
       }}
       tabIndex={0}
     >
-      <div className="card">
-        <div>{title}</div>
-        <div>visible: {JSON.stringify(!!visibility.isItemVisible(itemId))}</div>
-        <div>selected: {JSON.stringify(!!selected)}</div>
+      <div>
+        <img style={{width: '400px', height: '210px', border: 'none'}} variant="none" src='\images\businessCard.png'/>
       </div>
-      <div
-        style={{
-          height: "200px",
-        }}
-      />
-    </div>
+      </div>
   );
 }
 
