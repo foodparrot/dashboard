@@ -56,7 +56,7 @@ function LeftArrow() {
   const { isFirstItemVisible, scrollPrev } = React.useContext(VisibilityContext)
 
   return (
-    <h1 disabled={isFirstItemVisible} onClick={() => scrollPrev()}>
+    <h1 disabled={isFirstItemVisible} style={{display:"flex", alignItems:"center"}} onClick={() => scrollPrev()}>
       <IoIosArrowBack />
     </h1>
   );
@@ -66,7 +66,7 @@ function RightArrow() {
   const { isLastItemVisible, scrollNext } = React.useContext(VisibilityContext)
 
   return (
-    <h1 disabled={isLastItemVisible} onClick={() => scrollNext()}>
+    <h1 disabled={isLastItemVisible} style={{display:"flex", alignItems:"center"}} onClick={() => scrollNext()}>
       <IoIosArrowForward />
     </h1>
   );
@@ -86,16 +86,15 @@ function Card({
       onClick={() => onClick(visibility)}
       style={{
         width: 'fit-content',
-        padding: "70px",
-        margin: '20px',
+        padding: "17%",
+        margin: '0px 10% 0px 10%',
         borderRadius: '50%',
-        backgroundColor: visible ? "white" : "transparent",
+        backgroundColor: visible ? "white" : "transparent"
       }}
+      className={visible ? "visible_card":""}
       tabIndex={0}
     >
-      <div>
-        <img style={{width: '400px', height: '210px', border: 'none'}} variant="none" src='\images\businessCard.png'/>
-      </div>
+      <img class="business_card_img" alt="Card image"  variant="none" src='\images\businessCard.png'/>
       </div>
   );
 }
