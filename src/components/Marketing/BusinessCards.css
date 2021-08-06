@@ -18,7 +18,7 @@
   margin: 0px 22%;
 }
 .visible_card {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 @media screen and (max-width: 400px) {
   .business_card_img {
