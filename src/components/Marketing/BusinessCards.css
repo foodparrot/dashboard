@@ -1,19 +1,48 @@
 .cardB {
-    padding: 40px 40px !important;
+  background-color: #d8d7d7;
+  padding: 1% 0% 5% 0% !important;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
-.Arrow{
-    background-color: #d8d7d7;
-    padding: 0px;
+.business_card_img {
+  width: 3.5in;
+  height: 2in;
+}
+
+.Bcard{
+  padding: 3%;
+}
+
+.react-horizontal-scrolling-menu--item {
+  margin: 0px 8%;
+  display: flex;
+  justify-content: space-between;
+}
+.react-horizontal-scrolling-menu--separator {
+  width: 10px;
+  height: 10px;
+  margin: 0px 10%;
+  /*margin: 0px 22%;*/
+}
+.visible_card {
+  transform: scale(1.2);
 }
 
 .react-horizontal-scrolling-menu--scroll-container{
-    overflow: hidden;
+  overflow: hidden !important;
 }
-
-.arrows{
-    cursor: pointer;
+@media screen and (max-width: 400px) {
+  .business_card_img {
+    width: 1.7in;
+    height: 0.97in;
+  }
+  .inner{
+    height: 600px;
+  }
 }
-
-.react-horizontal-scrolling-menu--wrapper{
-    
+@media screen and (max-width: 501px) and (min-width: 401px) {
+  .business_card_img {
+    width: 2.2in;
+    height: 1.25in;
+  }
 }
