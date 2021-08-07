@@ -15,7 +15,6 @@ function BusinessCards() {
   const [position, setPosition] = React.useState(0);
 
   const isItemSelected = (id) => !!selected.find((el) => el === id);
-
   const handleClick = (id) => ({ getItemById, scrollToItem }) => {
     const itemSelected = isItemSelected(id)
 
@@ -29,8 +28,8 @@ function BusinessCards() {
   return (
     <div>
     <p className="heading">Bismillah Restuarant</p>
-    <div className="inner">
-     <p className="name">Business Cards</p>
+    <div className="inner Arrow">
+     <p className="name cardB">Business Cards</p>
         <ScrollMenu
           LeftArrow={LeftArrow}
           RightArrow={RightArrow}
@@ -56,7 +55,7 @@ function LeftArrow() {
   const { isFirstItemVisible, scrollPrev } = React.useContext(VisibilityContext)
 
   return (
-    <h1 disabled={isFirstItemVisible} onClick={() => scrollPrev()}>
+    <h1 className="arrows" disabled={isFirstItemVisible} onClick={() => scrollPrev()}>
       <IoIosArrowBack />
     </h1>
   );
@@ -66,7 +65,7 @@ function RightArrow() {
   const { isLastItemVisible, scrollNext } = React.useContext(VisibilityContext)
 
   return (
-    <h1 disabled={isLastItemVisible} onClick={() => scrollNext()}>
+    <h1 className="arrows" disabled={isLastItemVisible} onClick={() => scrollNext()}>
       <IoIosArrowForward />
     </h1>
   );
@@ -80,8 +79,10 @@ function Card({
 }) {
   const visibility = React.useContext(VisibilityContext)
   const visible = visibility.isItemVisible(itemId);
+  
 
   return (
+      <>
     <div
       onClick={() => onClick(visibility)}
       style={{
@@ -97,6 +98,7 @@ function Card({
         <img style={{width: '400px', height: '210px', border: 'none'}} variant="none" src='\images\businessCard.png'/>
       </div>
       </div>
+      </>
   );
 }
 

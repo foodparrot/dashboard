@@ -1,3 +1,19 @@
-.inner{
+.cardB {
+    padding: 40px 40px !important;
+}
+.Arrow{
     background-color: #d8d7d7;
+    padding: 0px;
+}
+
+.react-horizontal-scrolling-menu--scroll-container{
+    overflow: hidden;
+}
+
+.arrows{
+    cursor: pointer;
+}
+
+.react-horizontal-scrolling-menu--wrapper{
+    
 }
