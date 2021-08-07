@@ -37,7 +37,7 @@
     height: 0.97in;
   }
   .inner{
-    height: 600px;
+    height: 500px;
   }
 }
 @media screen and (max-width: 501px) and (min-width: 401px) {
