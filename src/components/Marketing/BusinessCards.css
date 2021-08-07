@@ -3,6 +3,7 @@
   padding: 1% 0% 5% 0% !important;
   padding-top: 10px;
   padding-bottom: 20px;
+  height: calc(99vh - calc(126px));
 }
 .business_card_img {
   width: 3.5in;
@@ -36,9 +37,9 @@
     width: 1.7in;
     height: 0.97in;
   }
-  .inner{
-    height: 500px;
-  }
+  .cardB{
+    height: calc(99vh - calc(184px));
+}
 }
 @media screen and (max-width: 501px) and (min-width: 401px) {
   .business_card_img {

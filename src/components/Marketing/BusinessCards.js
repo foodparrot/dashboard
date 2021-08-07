@@ -30,7 +30,7 @@ function BusinessCards() {
 
   return (
     <div>
-      <p className="heading">Bismillah Restuarant</p>
+      <p className="heading" style={{marginTop: '1vh'}}>Bismillah Restuarant</p>
       <div className="inner cardB">
         <p className="name Bcard">Business Cards</p>
         <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
