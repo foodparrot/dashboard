@@ -24,10 +24,10 @@ function Products() {
         
             <div className= "container flex-container-2 ">
                <div className="row">
-                    <div className="input-group-prepend col-12 col-md-6  ">
+                    <div className="input-group inv1 col-12 col-md-6  ">
                     <input type="text" className="form-control" placeholder="Search for a product"></input>
                             <div className="input-group-append">
-                                <button className="btn btn-secondary btninv" type="button">
+                                <button className="btn btn-secondary btninv" style={{background:' linear-gradient(94.08deg, #FFE13B 0.84%, #FF2525 115.93%)'}} type="button">
                                     <i><AiOutlineSearch /></i>
                                 </button>
                             </div>

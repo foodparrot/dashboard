@@ -21,11 +21,11 @@
     line-height: 109%;
     color: #000000;
 }
-.btn{
+/* .btn{
     background-color: transparent;
     text-decoration: none !important;
     outline: none;
-}
+} */
 
 
 @media only screen and  (max-width:800px) {
