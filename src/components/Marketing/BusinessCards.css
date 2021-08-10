@@ -1,6 +1,6 @@
 .cardB {
   background-color: #d8d7d7;
-  padding: 1% 0% 5% 0% !important;
+  /*padding: 1% 0% 5% 0% !important;*/
   padding-top: 10px;
   padding-bottom: 20px;
   height: calc(99vh - calc(126px));
