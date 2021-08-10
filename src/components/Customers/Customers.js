@@ -39,9 +39,10 @@ export class Customers extends Component {
                                     <div className='form-group form3'>
                                         <label for="phone">Phone</label>
                                         <input className='col-12' type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class='form-control'/>
-                                        <div className='searchicon'><AiOutlineSearch size={20}/></div>
+                                        {/* <div className='searchicon'><AiOutlineSearch size={20}/></div> */}
                                     </div>
                                 </div>
+                                <div className="searchicon col-12" style={{display:"flex",justifyContent:"center"}}><button type="button" class="btn btn-primary"  style={{background:'linear-gradient(94.08deg, #FFE13B 0.84%, #FF2525 115.93%)',border:"none",padding:"8px 5%"}}>Search</button></div>
                                 <div className='searchbtn'>
                                 <button type="button" class="btn btn-primary"  style={{background:'linear-gradient(94.08deg, #FFE13B 0.84%, #FF2525 115.93%)'}}>Search</button>
 

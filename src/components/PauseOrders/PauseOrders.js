@@ -1,6 +1,21 @@
 import React, { Component } from 'react';
 import '../PauseOrders/PauseOrders.css';
+import Switch from "react-switch";
 export class PauseOrders extends Component {
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+            delivery:true,
+            pickup:false
+           
+        }
+        // this.handleChange = this.handleChange.bind(this)
+    }
+    // handleChange(e){
+    //     console.log(e);
+    //     this.setState((prev) => ({ [e.target.id]: !prev[e.target.id]}))
+    // }
     render() {
         return (
             <div className='container'>
@@ -45,10 +60,7 @@ export class PauseOrders extends Component {
                             {/* toggler switch */}
                             <div class="row swtch">
                                 <div class="col-4 col-lg-3">
-                                    <label class="switch">
-                                        <input type="checkbox" id="togBtn"></input>
-                                        <div class="slider"></div>
-                                    </label>
+                                <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} />
                                 </div>
                                 <div class="col-8 col-lg-9">
                                     <p>Accepting Delivery Orders</p>
@@ -57,10 +69,7 @@ export class PauseOrders extends Component {
 
                             <div class="row swtch">
                                 <div class="col-4 col-lg-3">
-                                    <label class="switch">
-                                        <input type="checkbox" id="togBtn"></input>
-                                        <div class="slider"></div>
-                                    </label>
+                                <Switch onChange={(v)=>this.setState({pickup:v})} id="pickup" checked={this.state.pickup} />
                                 </div>
                                 <div class="col-8 col-lg-9">
                                     <p>Accepting Pickup Orders</p>

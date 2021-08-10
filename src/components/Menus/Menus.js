@@ -41,7 +41,7 @@ export class Menus extends Component {
                               <td>Menu</td>
                               <td></td>
                               <td>FoodParrot</td>
-                              <td className="offline">Offline</td>
+                              <td className="offline">Offline &ensp; <button style={{outline:"none",border:"1.5px solid #ff8000",borderRadius:"10%",padding:"3px"}}>Publish</button></td>
                               <td className="buttons"><a href="../View/View"><button className="btn btn-primary btn-sm view">View</button></a><button className="btn btn-outline-danger btn-sm del">Delete</button></td>
                           </tr>
                       </tbody>

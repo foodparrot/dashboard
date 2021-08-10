@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './Outlets.css';
 import { FaAngleDoubleLeft } from "react-icons/fa";
 import { FaAngleDoubleRight } from "react-icons/fa";
-
+import Switch from "react-switch";
 export class Outlets extends Component {
   render() {
     return (
@@ -25,17 +25,17 @@ export class Outlets extends Component {
                     <th scope="col" className="txt2">Status</th>
                     <th scope="col" className="txt2">Delivery</th>
                     <th scope="col" className="txt2">Pickup</th>
-                    <th scope="col" className="txt2">Dine-in</th>
+                    {/* <th scope="col" className="txt2">Dine-in</th> */}
                   </tr>
                 </thead>
                 <tbody>
                   <tr >
                     <td className="txt3"><img src="https://media-exp1.licdn.com/dms/image/C4E0BAQHikN6EXPd23Q/company-logo_200_200/0/1595359131127?e=2159024400&v=beta&t=S5MNjBDjiH433VCWzjPeiopNDhxGwmfcMk4Zf1P_m_s" style={{ width: "100px", height: "100px" }}></img></td>
                     <td className="txt3" style={{ whiteSpace: "nowrap" }}>Bismillah Outlet</td>
-                    <td className="txt3">Active</td>
-                    <td className="txt3">Enable</td>
-                    <td className="txt3">Enable</td>
-                    <td className="txt3">Disable</td>
+                    <td className="txt3"><Switch onChange={this.handleChange} checked={true} /></td>
+                    <td className="txt3"><Switch onChange={this.handleChange} checked={true} /></td>
+                    <td className="txt3"><Switch onChange={this.handleChange} checked={true} /></td>                   
+                    {/* <td className="txt3">Disable</td> */}
                   </tr>
                   <tr>
                     <td colSpan='6' className='leftalign'>Showing from 1 to 2 of 2 records

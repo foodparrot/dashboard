@@ -11,7 +11,7 @@ const Outlet = ({imgSrc,restaurant,area,...props}) => {
                 <div>
                    <img variant="none" src={imgSrc} />
                 </div>
-                <div className="details">
+                <div className="pl-2">
                     <p className="restaurant det">{restaurant}</p>
                     <p className="area det">{area}</p>
                 </div>

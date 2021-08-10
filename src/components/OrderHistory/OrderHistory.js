@@ -64,7 +64,7 @@ export class OrderHistory extends Component {
                                         </datalist>
                                 </div>
                                 <div className='col-12 col-sm-3 gapoh'>
-                                    <button type="button" class="btn btn-outline-success colorchange ">Search</button>
+                                    <button type="button" class="btn colorchange " style={{outline:"none",border:"none"}}>Search</button>
                                 </div>
                             </div>
                         </form>
