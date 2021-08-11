@@ -14,7 +14,7 @@
 .s-byid{
     padding:3%;
     border:none;
-    width:89%;
+    width:88%;
     background-color:#FBF6F6 ;
     
     
@@ -218,6 +218,7 @@
 .right-container{
     margin-top:1%;
    background-color:#FBF6F6;
+   overflow-y: scroll;
 }
 .details-buttons{
     position: sticky;

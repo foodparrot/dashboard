@@ -4,9 +4,15 @@ import { BsSearch } from "react-icons/bs";
 import Details from './Details';
 import withSizes from 'react-sizes'
 import Productoutput from './Productoutput';
+import { useParams } from 'react-router-dom';
+import OrderList from './OrderList';
 const DEF_NAV_HEIGHT = 80;
 function LiveOrders({ ...props }) {
     const [navBarHeight, setNavBarHeight] = useState(DEF_NAV_HEIGHT);
+    const {oid} = useParams()
+    useEffect(()=>{
+        // alert(JSON.stringify(oid))
+    },[oid])
     useEffect(() => {
         if (window && props.winHeight && window.document.getElementById('navLive')) {
             setNavBarHeight(window.document.getElementById('navLive').clientHeight || DEF_NAV_HEIGHT);
@@ -16,7 +22,7 @@ function LiveOrders({ ...props }) {
         }
     }, [props.winWidth, props.winHeight])
     return (
-        <div className="container-fluid " style={{ height: props.winHeight }}>
+        <div className="container-fluid " style={{ height: props.winHeight , overflow:"hidden"}}>
             <div id="navLive" className="row lvhead ord-outlet scroll-bar" style={{ maxHeight: "80px" }}>
                 <div className="col-md-2 ">
                     <button className="top-btns">All(0)</button>
@@ -36,31 +42,14 @@ function LiveOrders({ ...props }) {
             </div>
             <div className="container-fluid big-container">
                 <div className="row row-main-od">
-                    <div className="col-12 col-md-4 vert-div" style={{ height: (props.winHeight - navBarHeight) + "px", overflowY: "scroll" }}>
-
-                        <div className="row row-od1 class-bg">
-                            <input type="search" placeholder="Search by order id..." aria-describedby="button-od" className="s-byid" />
-                            <button className="button-od btn-order"><BsSearch /></button>
-                        </div>
-                        <Productoutput />
-                        <Productoutput />
-                        <Productoutput />
-                        <Productoutput />
-                        <Productoutput />
-                        <Productoutput />
-                        <Productoutput />
-                        <Productoutput />
-                        <Productoutput />
-                        <Productoutput />
-                        <Productoutput />
-                        {/* Desktop , Tablet Button */}
-
-                        <button type="button" className="btn-ref p-0 pb-2 "><button className="btn btn-lg innerRef">Refresh</button></button>
-                    </div>
-                    <button type="button" className="btn-mobile-ref p-0 pb-2"><button className="btn btn-lg innerRef">Refresh</button></button>
+                    {/* mobile oid==undefined show orders list else details, back btn */}
+                 
+                    {/* left side details */}
+                    <OrderList navBarHeight={navBarHeight} winHeight={props.winHeight}/>
                     {/* right side details */}
-                    {(props.winWidth < 768) ? <></> :
-                        <Details />}
+                    {/* props.winWidth < 768 */}
+                    {(typeof oid==='undefined'|| props.winWidth < 768)?<></> :
+                        <Details  navBarHeight={navBarHeight} winHeight={props.winHeight}/> }
                 </div>
             </div>
         </div>
