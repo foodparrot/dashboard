@@ -39,7 +39,8 @@ export class Inventory extends Component {
                         <thead>
                             <tr>
                                 <th scope="col">Product</th>
-                                <th scope="col">Price</th>
+                                <th scope="col">MRP</th>
+                                <th scope="col">Selling Price</th>
                                 <th scope="col">Availability</th>
                             </tr>
                         </thead>
@@ -47,14 +48,6 @@ export class Inventory extends Component {
                             <tr>
                                 <td scope="row">Dosa</td>
                                 <td>30/-</td>
-                                <td>
-                                <Switch onChange={this.handleChange} checked={true} />
-
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td scope="row">Dosa</td>
                                 <td>30/-</td>
                                 <td>
                                 <Switch onChange={this.handleChange} checked={true} />
@@ -64,6 +57,17 @@ export class Inventory extends Component {
 
                             <tr>
                                 <td scope="row">Dosa</td>
+                                <td>30/-</td>
+                                <td>30/-</td>
+                                <td>
+                                <Switch onChange={this.handleChange} checked={true} />
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td scope="row">Dosa</td>
+                                <td>30/-</td>
                                 <td>30/-</td>
                                 <td>
                                 <Switch onChange={this.handleChange} checked={true}/>
