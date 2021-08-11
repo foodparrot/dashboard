@@ -84,9 +84,11 @@ function Details({ navBarHeight, winHeight }) {
             </div>
 
             {/*bottom right buttons*/}
-            <div className="details-buttons">
-                <button type="button" className="btn btn-lg   btn-danger  btn-rej"><h5>Reject</h5></button>
-                <button type="button" className="btn btn-lg   btn-success  btn-suc"><h5>Accept</h5></button>
+            <div className="details-buttons mb-2">
+                {/* <button type="button" className="btn btn-lg   btn-danger  btn-rej"><h5>Reject</h5></button> */}
+                {/* <button type="button" className="btn btn-lg   btn-success  btn-suc"><h5>Accept</h5></button> */}
+                <button type="button" className="p-0 pb-3"><button className="btn btn-lg btn-danger  btn-rej">Reject</button></button>
+                <button type="button" className="p-0 pb-3"><button className="btn btn-lg btn-success  btn-suc">Accept</button></button>
             </div>
         </div>
 

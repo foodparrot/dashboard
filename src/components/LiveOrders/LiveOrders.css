@@ -182,6 +182,7 @@
     color: #DF0101 !important;
     background-color:#F5A9A9 !important;
     border:none;
+    width: 100%;
 
 }
 .vert-div{
@@ -195,6 +196,7 @@
     background-color: #7CFC00 !important;
     border-color: #088A08!important ;
     color:#fff !important;
+    width: 100%;
 }
 .btn-suc:hover{
     border-color:#4f9b04  !important ;
@@ -205,6 +207,12 @@
 .class-bg{
     background-color:#FBF6F6;
     margin-top:4%;
+    
+}
+.searchshadow{
+    box-shadow: -2px 0px 4px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 0px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 0px 4px 0px rgba(0,0,0,0.75);
 }
 .red-line{
     width:100%;

@@ -6,7 +6,7 @@ function OrderList({ navBarHeight, winHeight }) {
         <>
             <div className="col-12 col-md-4 vert-div" style={{ height: (winHeight - navBarHeight) + "px", overflowY: "scroll" }}>
 
-                <div className="row row-od1 class-bg" style={{position:"sticky",top:"0",zIndex:"1000",border:"1px solid gray",borderRadius:"5px"}}>
+                <div className="row row-od1 class-bg searchshadow" style={{position:"sticky",top:"0px",zIndex:"1000",borderRadius:"5px"}}>
                     <input type="search" placeholder="Search by order id..." aria-describedby="button-od" className="s-byid" />
                     <button className="button-od btn-order"><BsSearch /></button>
                 </div>
