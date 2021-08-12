@@ -213,6 +213,17 @@
     box-shadow: -2px 0px 4px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: -2px 0px 4px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 0px 4px 0px rgba(0,0,0,0.75);
+    border-radius: 5px;
+}
+.searchrow{
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    background-color: white;
+    padding: 8px 10px 0px 10px ;
+}
+.searchbox , .filterlive{
+   cursor: pointer;
 }
 .red-line{
     width:100%;

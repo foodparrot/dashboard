@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import ProductReport from './ProductReport';
-
-
 function Details({ navBarHeight, winHeight }) {
     const { oid } = useParams();
     useEffect(() => {
