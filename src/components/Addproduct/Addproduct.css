@@ -92,8 +92,9 @@
     border: 1px solid;
     padding:4%;
 }
-.mrp {
-    margin-right:2%;
+
+.selected-outlet{
+    margin-right: 2%;
 }
 .row-content , .row-content-btm{
     border: 1px solid;
@@ -235,6 +236,7 @@
    }
    .prod-last-btns{
        margin-left:12%;
+       
    }
    .btn-last-prod{
        padding: 3% 3% !important;

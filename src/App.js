@@ -24,8 +24,11 @@ import MarketingDesign from './components/Marketing/MarketingDesigns';
 import StoreBanner from './components/Marketing/StoreBanners';
 import WhatsAppStory from './components/Marketing/WhatsAppStories';
 import BusinessCards from './components/Marketing/BusinessCards';
+<<<<<<< HEAD
 import CreateOutlet1 from './components/Outlets/CreateOutlet1';
 
+=======
+>>>>>>> c5a184741b80444284429e4958d42035c924134f
 // import $ from 'jquery';
 // import jQuery from 'jquery';
 class App extends React.Component {
@@ -36,10 +39,10 @@ class App extends React.Component {
        <Sidebar/>
        <Parent>
 				<Switch>
-	  <Route path="/"  exact component={Dashboard} />
+	        <Route path="/"  exact component={Dashboard} />
           <Route path="/dashboard"  component={Dashboard} />
-          <Route path="/liveorders"   component={LiveOrders} />
-          <Route path="/Details/Details" component={Details}/>
+          <Route path="/liveorders"   exact component={LiveOrders} />
+          <Route path="/liveorders/:oid"  component={LiveOrders} />
           <Route path="/PauseOrders" component={PauseOrders}/>
           <Route path="/Customers" component={Customers}/>
           <Route path="/menu/menus" component={Menus}/>

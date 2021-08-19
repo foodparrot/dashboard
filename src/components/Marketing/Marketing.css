@@ -41,12 +41,8 @@
 .outer{
     margin: 25px 10px;
 }
-.btn{
-    padding: 0px;
-}
-.btn:hover{
-    text-decoration: none !important;
-}
+
+
 .down{
     padding: 10px;
     margin-bottom: 5px;

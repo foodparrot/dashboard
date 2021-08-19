@@ -14,19 +14,20 @@
 .s-byid{
     padding:3%;
     border:none;
-    width:89%;
+    width:88%;
     background-color:#FBF6F6 ;
     
     
 }
 .top-btns {
-    color:#79786c;
+    /* color:#79786c; */
+    color: black;
     text-decoration:none;
     white-space: nowrap;
     margin: 0px !important;
     padding: 4px;
     border-radius: 10px;
-    border: solid rgb(192, 76, 76) 1px;
+    border: solid gray 1px;
     outline: none !important;
     font-size: 0.9em;
 }
@@ -34,15 +35,21 @@
 .top-btns:active,
 .top-btns:hover{
     color: black;
-    background: rgb(223 226 197 / 65%) !important;
+    /* background:  !important; */
     /* border: none !important; */
-    border:solid 1px #ffa500c4 !important;
+    border:solid 1px  orangered !important;
     outline: none !important;
     /* font-weight: 600; */
     /* font-size: 0.93em; */
     margin: auto 8px !important; 
     transform: scale(1.1);
-    
+    transform-origin: 100% 50% 0;
+   transition-duration: 0.3s;
+   -o-transition-timing-function:ease-in-out;
+   -ms-trasition-timing-function:ease-in-out;
+   -webkit-transition-timing-function: ease-in-out;
+   -moz-animation-timing-function: ease-in-out;
+
 }
 /* .ord-outlet > div:active, 
 .ord-outlet > div:hover  {
@@ -108,7 +115,10 @@
 }
 
 .details{
-    border-radius: 8%;
+    border-radius: 10%;
+    border: none;
+    color: white;
+    background:linear-gradient(94.08deg, #FFE13B 0.84%, #FF2525 115.93%);
 }
 
 .btn-ref{
@@ -116,8 +126,10 @@
     bottom: 0px;
     background-color: #fff  !important;
     color:#F86853  !important;
-    border-color:#F86853;
+    /* border-color:#F86853; */
     width: 100%;
+    border: none;
+    outline: none;
 }
 .btn-mobile-ref{
     display: none;
@@ -126,6 +138,7 @@
     .big-container{
         margin-top: 30px;
     }
+
     #navLive{
         position: fixed !important;
         top: 58px;
@@ -139,20 +152,29 @@
     .btn-mobile-ref{
         position: fixed;
         left:0px;
-        bottom: 5px;
+        /* bottom: 5px; */
+        bottom:0.01rem;
         width: 96%;
         margin: 0px 2%;
         background-color: #fff  !important;
-        color:#F86853  !important;
-        border-color:#F86853;
         display: block;
+        outline: none;
+        border: none;
     }
     .btn-ref{
         display:none;
     }
     
 }
-.btn-ref:hover{
+/* .btn-ref:hover{
+    color:#fff !important;
+    background-color:salmon !important;
+} */
+.innerRef{
+    border: 1px solid #F86853 !important;
+    width: 100%;
+}
+.innerRef:hover{
     color:#fff !important;
     background-color:salmon !important;
 }
@@ -160,6 +182,7 @@
     color: #DF0101 !important;
     background-color:#F5A9A9 !important;
     border:none;
+    width: 100%;
 
 }
 .vert-div{
@@ -173,6 +196,7 @@
     background-color: #7CFC00 !important;
     border-color: #088A08!important ;
     color:#fff !important;
+    width: 100%;
 }
 .btn-suc:hover{
     border-color:#4f9b04  !important ;
@@ -183,6 +207,23 @@
 .class-bg{
     background-color:#FBF6F6;
     margin-top:4%;
+    
+}
+.searchshadow{
+    box-shadow: -2px 0px 4px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 0px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 0px 4px 0px rgba(0,0,0,0.75);
+    border-radius: 5px;
+}
+.searchrow{
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    background-color: white;
+    padding: 8px 10px 0px 10px ;
+}
+.searchbox , .filterlive{
+   cursor: pointer;
 }
 .red-line{
     width:100%;
@@ -196,6 +237,7 @@
 .right-container{
     margin-top:1%;
    background-color:#FBF6F6;
+   overflow-y: scroll;
 }
 .details-buttons{
     position: sticky;
@@ -236,11 +278,7 @@
         position: inherit !important;
     }
     .top-btns {
-        margin: 0px !important;
         padding: 2px;
-        border-radius: 10px;
-        border: solid rgb(192, 76, 76) 1px;
-        outline: none !important;
     }
     .ord-outlet > div {
         max-width: fit-content !important;
