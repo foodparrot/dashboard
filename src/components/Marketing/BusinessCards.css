@@ -15,7 +15,7 @@
 }
 
 .react-horizontal-scrolling-menu--item {
-  margin: 0px 8%;
+  margin: 0px 2%;
   display: flex;
   justify-content: space-between;
 }

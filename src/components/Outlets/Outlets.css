@@ -12,9 +12,10 @@ white-space: nowrap;
 }
 .dis {
   float: right;
-  margin-left: 0.5%;
+  margin-left: 5px !important;
   font-size: medium;
-  background-color: rgb(255, 196, 2);
+  background-color: rgb(255, 196, 2) !important;
+  padding: 5px 10px !important;
 }
 .txt2 {
   padding-top: 3%;

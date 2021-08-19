@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './Outlets.css';
 import { FaAngleDoubleLeft } from "react-icons/fa";
 import { FaAngleDoubleRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export class Outlets extends Component {
   render() {
@@ -13,7 +14,7 @@ export class Outlets extends Component {
                 <span className="out1 col">Outlets</span>
                 
                 <input type="text" class="form-control txt1 col col-md-3" placeholder="Search outlet by name" />
-                <button type="button" class="btn col col-md-2 dis">Add new </button>
+                <Link to={"/createoutlets"} className="txt1" style={{border: 'none'}}><button type="button" class="btn col dis">Add new </button></Link>
               </div>
             </div>
             <div className="tab9 table-responsive" style={{borderRadius:"10px"}}>

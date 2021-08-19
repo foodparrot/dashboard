@@ -1,0 +1,49 @@
+.innerB{
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+.sideBar{
+    border: 1px solid #FF692E;
+    width: 243px;
+    height: 769px;
+    border-radius: 8px;
+    background-color: #F9F9F9;
+    padding: 10px;
+}
+.create1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 109%;
+    margin: 1rem 0rem;
+    color: #000000;
+}
+.c2{
+    text-align: center;
+    color: #333333;
+}
+.mainContent{
+    padding: 20px 7%;
+}
+.create2{
+    margin: 0px 5px;
+}
+.create3{
+    margin-bottom: 40px;
+}
+.input1{
+    width: 290px;
+}
+.outletimg{
+    width: 290px;
+    height: 170px;
+    margin-bottom: 20px;
+}
+.createInner{
+    padding: 0px 15px;
+}
+.images{
+    margin-bottom: 10px;
+}
