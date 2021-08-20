@@ -1,13 +1,18 @@
 .innerB{
-    padding: 0px;
+    padding: 0px 20px 40px 20px;
     display: flex;
     flex-direction: row;
+}
+.innerC{
+    padding: 0px;
+    margin: 0px;
+    width:100%;
 }
 .sideBar{
     border: 1px solid #FF692E;
     width: 243px;
     height: 769px;
-    border-radius: 8px;
+    border-radius: 5px;
     background-color: #F9F9F9;
     padding: 10px;
 }
@@ -34,7 +39,7 @@
     margin-bottom: 40px;
 }
 .input1{
-    width: 290px;
+    width: 325px;
 }
 .outletimg{
     width: 290px;
@@ -46,4 +51,13 @@
 }
 .images{
     margin-bottom: 10px;
+}
+.buttonS{
+    margin-top: 20px;
+}
+.sidebarOptn{
+    margin-top: 30px;
+}
+.color3{
+    font-size: 15px;
 }

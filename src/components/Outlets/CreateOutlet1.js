@@ -8,10 +8,27 @@ const CreateOutlet1 = () => {
     return(
         <div>
           <p className="heading">Bismillah Restuarant</p>
-          <div className="inner innerB">
-              <div className="sideBar">
+          <div className="innerB">
+            <div className="sideBar">
                   <p className="create1 c2">Create an Outlet</p>
-              </div>
+                  <div className="sidebarOptn">
+                  <form>
+                   <div>
+                    <input type="radio" id="automatic" name="application_name" value="automatic" checked />
+                    <label className="code2 color color3" for="automatic">Basic Information</label>
+                   </div>
+                   <div>
+                    <input type="radio" id="manual" name="application_name" value="manual" />
+                    <label className="code2 color3" for="manual">Address</label>
+                   </div>
+                   <div>
+                    <input type="radio" id="hidden_code" name="application_name" value="hidden_code" />
+                    <label className="code2 color3" for="hidden_code">Ordering Modes</label>
+                   </div>
+                  </form>
+                  </div>
+            </div>
+            <div className="inner innerC">
               <div className="mainContent">
                 <p className="create1">Basic Information</p>
                   <div class="row create2">
@@ -37,7 +54,14 @@ const CreateOutlet1 = () => {
                         <input className="input1" type="text" name="mobile" id="mobile" placeholder="Enter your number here" />
                     </div>
                   </div>
+                  <div class="row button buttonS">
+                    <div className="innercomponent ebtn">
+                           <br></br>
+                        <button className="upbtn sparabtn">Save Changes</button>
+                    </div>
+                    </div>
               </div>
+            </div>
           </div>
         </div>
     );

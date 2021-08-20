@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import * as Icon from "react-icons/fi";
-import Checkbox from "react-custom-checkbox";
+import Checkbox from 'react-custom-checkbox';
 import { IoCloseSharp } from "react-icons/io5";
 function ProductReport() {
   const checkBoxRef = useRef();
