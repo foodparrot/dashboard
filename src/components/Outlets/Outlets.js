@@ -2,12 +2,8 @@ import React, { Component } from 'react'
 import './Outlets.css';
 import { FaAngleDoubleLeft } from "react-icons/fa";
 import { FaAngleDoubleRight } from "react-icons/fa";
-<<<<<<< HEAD
-import { Link } from "react-router-dom";
-
-=======
 import Switch from "react-switch";
->>>>>>> c5a184741b80444284429e4958d42035c924134f
+import {Link} from 'react-router-dom';
 export class Outlets extends Component {
   render() {
     return (
