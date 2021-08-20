@@ -33,7 +33,7 @@ const CreateOutlet1 = () => {
                 <p className="create1">Basic Information</p>
                   <div class="row create2">
                     <div className="innercomponent createInner">
-                        <p className="images">Cover Image<FiCamera style={{fontSize: '1.3em', marginLeft: 100, color: '#828282'}}  /><HiOutlinePencilAlt style={{fontSize: '1.5em', marginLeft: 40, color: '#828282'}} /></p>
+                        <p className="images">Cover Image<FiCamera style={{fontSize: '1.3em', marginLeft: 130, color: '#828282'}}  /><HiOutlinePencilAlt style={{fontSize: '1.5em', marginLeft: 50, color: '#828282'}} /></p>
                         <img className="outletimg" src='\images\CreateOutlet.jpg' />
                     </div>
                   </div>
