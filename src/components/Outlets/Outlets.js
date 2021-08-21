@@ -12,9 +12,8 @@ export class Outlets extends Component {
             <div className="container">
               <div className="row fst">
                 <span className="out1 col">Outlets</span>
-                
                 <input type="text" class="form-control txt1 col col-md-3" placeholder="Search outlet by name" />
-                <Link to={"/createoutlets"} className="txt1" style={{border: 'none'}}><button type="button" class="btn col dis">Add new </button></Link>
+                <Link to={"/createoutlets1"} className="txt1" style={{border: 'none'}}><button type="button" class="btn col dis">Add new </button></Link>
               </div>
             </div>
             <div className="tab9 table-responsive" style={{borderRadius:"10px"}}>

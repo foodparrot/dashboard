@@ -25,6 +25,8 @@ import StoreBanner from './components/Marketing/StoreBanners';
 import WhatsAppStory from './components/Marketing/WhatsAppStories';
 import BusinessCards from './components/Marketing/BusinessCards';
 import CreateOutlet1 from './components/Outlets/CreateOutlet1';
+import CreateOutlet2 from './components/Outlets/CreateOutlet2';
+import CreateOutlet3 from './components/Outlets/CreateOutlet3';
 // import $ from 'jquery';
 // import jQuery from 'jquery';
 class App extends React.Component {
@@ -58,7 +60,9 @@ class App extends React.Component {
           <Route path="/storebanners" component={StoreBanner}/>
           <Route path="/whatsappstories" component={WhatsAppStory}/>
           <Route path="/businesscards" component={BusinessCards} />
-          <Route path="/createoutlets" component={CreateOutlet1} />
+          <Route path="/createoutlets1" component={CreateOutlet1} />
+          <Route path="/createoutlets2" component={CreateOutlet2} />
+          <Route path="/createoutlets3" component={CreateOutlet3} />
 				</Switch>
         </Parent>
 			</BrowserRouter>

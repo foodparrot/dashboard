@@ -2,7 +2,7 @@ import React from 'react';
 import './CreateOutlet1.css';
 import {FiCamera} from 'react-icons/fi';
 import {HiOutlinePencilAlt} from 'react-icons/hi';
-
+import {Link} from 'react-router-dom';
 
 const CreateOutlet1 = () => {
     return(
@@ -14,16 +14,18 @@ const CreateOutlet1 = () => {
                   <div className="sidebarOptn">
                   <form>
                    <div className="optn">
-                    <input type="radio" id="automatic" name="application_name" value="automatic" checked />
-                    <label className="code2 color color3" for="automatic">Basic Information</label>
+                    <input type="radio" id="Basic_Information" name="basic_info" value="basic information" checked />
+                    <label className="code2 color color3">Basic Information</label>
                    </div>
                    <div className="optn">
-                    <input type="radio" id="manual" name="application_name" value="manual" />
-                    <label className="code2 color3" for="manual">Address</label>
+                   <Link to={"/createoutlets2"} className="txt1" style={{border: 'none'}}> <input type="radio" id="address" name="address" value="address" />
+                    <label className="code2 color3">Address</label>
+                    </Link>
                    </div>
                    <div className="optn">
-                    <input type="radio" id="hidden_code" name="application_name" value="hidden_code" />
-                    <label className="code2 color3" for="hidden_code">Ordering Modes</label>
+                   <Link to={"/createoutlets3"} className="txt1" style={{border: 'none'}}><input type="radio" id="ordering_modes" name="ordering_modes" value="ordering modes" />
+                    <label className="code2 color3">Ordering Modes</label>
+                    </Link>
                    </div>
                   </form>
                   </div>
@@ -40,18 +42,18 @@ const CreateOutlet1 = () => {
                   <div class="row create2 create3">
                     <div className="col-12 col-md-5 innercomponent">
                         <label>Outlet Name</label><br></br>
-                        <input className="input1" type="text" name="fullname" id="full_name" placeholder="Enter your name here" />
+                        <input className="input1" type="text" name="outlet_name" id="outletname" placeholder="Enter your name here" />
                     </div>
                   </div>
                 <p className="create1">Contact Information</p>
                   <div class="row create2">
                     <div className="col-12 col-md-5 innercomponent">
                         <label>Email</label><br></br>
-                        <input className="input1" type="text" name="mobile" id="mobile" placeholder="Enter your email here" />
+                        <input className="input1" type="text" name="email" id="Email" placeholder="Enter your email here" />
                     </div>
                     <div className="col-12 col-md-5 innercomponent">
                         <label>Phone Number</label><br></br>
-                        <input className="input1" type="text" name="mobile" id="mobile" placeholder="Enter your number here" />
+                        <input className="input1" type="text" name="phone_number" id="phoneNumber" placeholder="Enter your number here" />
                     </div>
                   </div>
                   <div class="row button buttonS">
@@ -59,7 +61,7 @@ const CreateOutlet1 = () => {
                            <br></br>
                         <button className="upbtn sparabtn">Save Changes</button>
                     </div>
-                    </div>
+                  </div>
               </div>
             </div>
           </div>
