@@ -1,5 +1,5 @@
 .innerB{
-    padding: 0px 20px 40px 20px;
+    margin: 0px 20px 40px 20px;
     display: flex;
     flex-direction: row;
 }
@@ -7,11 +7,11 @@
     padding: 0px;
     margin: 0px;
     width:100%;
+    box-shadow: inset 0px 4px 21px rgba(0, 0, 0, 0.15);
 }
 .sideBar{
     border: 1px solid #FF692E;
     width: 243px;
-    height: 769px;
     border-radius: 5px;
     background-color: #F9F9F9;
     padding: 10px;
@@ -38,9 +38,6 @@
 .create3{
     margin-bottom: 40px;
 }
-.input1{
-    width: 325px;
-}
 .outletimg{
     width: 325px;
     height: 183px;
@@ -58,6 +55,6 @@
 .sidebarOptn{
     margin-top: 30px;
 }
-.color3{
-    font-size: 15px;
+.sidebarOptn .optn{
+    margin-bottom: 20px;
 }

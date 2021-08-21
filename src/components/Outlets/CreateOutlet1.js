@@ -8,31 +8,31 @@ const CreateOutlet1 = () => {
     return(
         <div>
           <p className="heading">Bismillah Restuarant</p>
-          <div className="innerB">
-            <div className="sideBar">
+          <div className="row innerB">
+            <div className="col-sm-3 sideBar">
                   <p className="create1 c2">Create an Outlet</p>
                   <div className="sidebarOptn">
                   <form>
-                   <div>
+                   <div className="optn">
                     <input type="radio" id="automatic" name="application_name" value="automatic" checked />
                     <label className="code2 color color3" for="automatic">Basic Information</label>
                    </div>
-                   <div>
+                   <div className="optn">
                     <input type="radio" id="manual" name="application_name" value="manual" />
                     <label className="code2 color3" for="manual">Address</label>
                    </div>
-                   <div>
+                   <div className="optn">
                     <input type="radio" id="hidden_code" name="application_name" value="hidden_code" />
                     <label className="code2 color3" for="hidden_code">Ordering Modes</label>
                    </div>
                   </form>
                   </div>
             </div>
-            <div className="inner innerC">
+            <div className="col inner innerC">
               <div className="mainContent">
                 <p className="create1">Basic Information</p>
                   <div class="row create2">
-                    <div className="innercomponent createInner">
+                    <div className="col-12 col-md-5 innercomponent createInner">
                         <p className="images">Cover Image<FiCamera style={{fontSize: '1.3em', marginLeft: 130, color: '#828282'}}  /><HiOutlinePencilAlt style={{fontSize: '1.5em', marginLeft: 50, color: '#828282'}} /></p>
                         <img className="outletimg" src='\images\CreateOutlet.jpg' />
                     </div>
@@ -45,11 +45,11 @@ const CreateOutlet1 = () => {
                   </div>
                 <p className="create1">Contact Information</p>
                   <div class="row create2">
-                    <div className="col-12 col-md-6 innercomponent">
+                    <div className="col-12 col-md-5 innercomponent">
                         <label>Email</label><br></br>
                         <input className="input1" type="text" name="mobile" id="mobile" placeholder="Enter your email here" />
                     </div>
-                    <div className="col-12 col-md-6 innercomponent">
+                    <div className="col-12 col-md-5 innercomponent">
                         <label>Phone Number</label><br></br>
                         <input className="input1" type="text" name="mobile" id="mobile" placeholder="Enter your number here" />
                     </div>

@@ -11,7 +11,7 @@
 .inner{
     margin: 30px 30px 30px 20px;
     background: #F9F9F9;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 4px 21px rgba(0, 0, 0, 0.15) !important;
     border-radius: 8px;
 }
 .head{
@@ -113,9 +113,16 @@ input[type="checkbox"] {
     color: #BDBDBD;
 }
 .color{
-    background: linear-gradient(to right, #FF692E 0%, #FFC537 100%);
+    background-color: red;
+    background-image: linear-gradient(to right,rgb(243, 115, 53), rgb(253, 200, 48));
+    background-size: 100%;
+  background-repeat: repeat;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+    /*background: linear-gradient(to right,rgb(243, 115, 53), rgb(253, 200, 48) text);*/
+    font-size: 20px !important;
 }
 .ordertype{
     margin-bottom: 20px;
