@@ -44,7 +44,7 @@ export class CreateOutlet3 extends Component {
               <div className="mainContent">
                   <div className="row nme1">
                     <div className="col-12 col-md-1">
-                      <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} />
+                      <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} onColor="#70CC49"/>
                     </div>
                     <div className="col-12 col-md-3">
                       <p className="nme">Delivery</p>
@@ -90,7 +90,7 @@ export class CreateOutlet3 extends Component {
                         <p className="create1 detl2">Sunday</p>
                       </div>
                       <div className="col-12 col-md-2 Outlettime">
-                        <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} />
+                        <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} onColor="#70CC49" />
                       </div>
                       <div className="col-12 col-md-2 Outlettime">
                         <select className="form-control optnbox" id="selectOpeningTimeFrom">
@@ -110,7 +110,7 @@ export class CreateOutlet3 extends Component {
                         <p className="create1 detl2">Monday</p>
                       </div>
                       <div className="col-12 col-md-2 Outlettime">
-                        <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} />
+                        <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} onColor="#70CC49"/>
                       </div>
                       <div className="col-12 col-md-2 Outlettime">
                         <select className="form-control optnbox" id="selectOpeningTimeFrom">
@@ -130,7 +130,7 @@ export class CreateOutlet3 extends Component {
                         <p className="create1 detl2">Tuesday</p>
                       </div>
                       <div className="col-12 col-md-2 Outlettime">
-                        <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} />
+                        <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} onColor="#70CC49"/>
                       </div>
                       <div className="col-12 col-md-2 Outlettime">
                         <select className="form-control optnbox" id="selectOpeningTimeFrom">
@@ -150,7 +150,7 @@ export class CreateOutlet3 extends Component {
                         <p className="create1 detl2">Wednesday</p>
                       </div>
                       <div className="col-12 col-md-2 Outlettime">
-                        <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} />
+                        <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} onColor="#70CC49"/>
                       </div>
                       <div className="col-12 col-md-2 Outlettime">
                         <select className="form-control optnbox" id="selectOpeningTimeFrom">
@@ -170,7 +170,7 @@ export class CreateOutlet3 extends Component {
                         <p className="create1 detl2">Thursday</p>
                       </div>
                       <div className="col-12 col-md-2 Outlettime">
-                        <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} />
+                        <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} onColor="#70CC49"/>
                       </div>
                       <div className="col-12 col-md-2 Outlettime">
                         <select className="form-control optnbox" id="selectOpeningTimeFrom">
@@ -190,7 +190,7 @@ export class CreateOutlet3 extends Component {
                         <p className="create1 detl2">Friday</p>
                       </div>
                       <div className="col-12 col-md-2 Outlettime">
-                        <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} />
+                        <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} onColor="#70CC49"/>
                       </div>
                       <div className="col-12 col-md-2 Outlettime">
                         <select className="form-control optnbox" id="selectOpeningTimeFrom">
@@ -210,7 +210,7 @@ export class CreateOutlet3 extends Component {
                         <p className="create1 detl2">Saturday</p>
                       </div>
                       <div className="col-12 col-md-2 Outlettime">
-                        <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} />
+                        <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} onColor="#70CC49"/>
                       </div>
                       <div className="col-12 col-md-2 Outlettime">
                         <select className="form-control optnbox" id="selectOpeningTimeFrom">
