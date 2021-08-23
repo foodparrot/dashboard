@@ -4,6 +4,7 @@
     font-size: 15px;
     line-height: 109%;
     color: #BDBDBD;
+    margin-bottom: 0px;
 }
 .time{
     padding-right: 0px;
@@ -19,4 +20,47 @@
 }
 .optn1{
     margin-bottom: 10px;
+}
+.optn2{
+    margin-bottom: 15px;
+}
+.optn3{
+    margin-top: 40px;
+}
+.optn4{
+    margin-top: 10px;
+}
+.nme1{
+    align-items: center;
+    margin: 20px 5px;
+}
+.nme{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 109%;
+    color: #828282;
+    margin: 0px 0px 5px 20px ;
+}
+.boxdetl{
+    margin: 10px 20px;
+}
+.detl{
+    line-height: 30px;
+}
+.detl2{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4F4F4F;
+    margin: 0px;
+}
+.optnbox{
+    padding: 0px 5px;
+    width: 95px;
+}
+.Outlettime{
+    display: flex;
+    align-items: center;
 }

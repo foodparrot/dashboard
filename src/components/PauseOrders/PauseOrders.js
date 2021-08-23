@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../PauseOrders/PauseOrders.css';
 import Switch from "react-switch";
+
 export class PauseOrders extends Component {
     constructor(props) {
         super(props)
