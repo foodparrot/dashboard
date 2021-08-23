@@ -35,8 +35,8 @@ const CreateOutlet2 = () => {
                   <div class="row create2 create4">
                     <div className="col-12 col-md-5 innercomponent">
                         <label>Location</label><br></br>
-                        <FiSearch style={{fontSize:"1em", position:'absolute', color: '#828282', margin:'10px 10px 20px 10px', left:'20px'}}/>
-                        <input className="input1" type="text" name="location" id="location" placeholder="Enter your location here" />
+                        <FiSearch style={{fontSize:"1em", position:'absolute', color: '#828282', margin:'12px 0px 10px 10px',zIndex: 2 ,left:'20px'}}/>
+                        <input className="input1 srch" type="text" name="location" id="location" placeholder="Enter your location here" />
                     </div>
                   </div>
                   <div>
