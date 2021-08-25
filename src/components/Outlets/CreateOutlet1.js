@@ -15,16 +15,16 @@ const CreateOutlet1 = () => {
                   <form>
                    <div className="optn">
                     <input type="radio" id="Basic_Information" name="basic_info" value="basic information" checked />
-                    <label className="code2 color color3">Basic Information</label>
+                    <label className="code2 color color3 color4">Basic Information</label>
                    </div>
                    <div className="optn">
                    <Link to={"/createoutlets2"} className="txt1" style={{border: 'none'}}> <input type="radio" id="address" name="address" value="address" />
-                    <label className="code2 color3">Address</label>
+                    <label className="code2 color3 color4">Address</label>
                     </Link>
                    </div>
                    <div className="optn">
                    <Link to={"/createoutlets3"} className="txt1" style={{border: 'none'}}><input type="radio" id="ordering_modes" name="ordering_modes" value="ordering modes" />
-                    <label className="code2 color3">Ordering Modes</label>
+                    <label className="code2 color3 color4">Ordering Modes</label>
                     </Link>
                    </div>
                   </form>
