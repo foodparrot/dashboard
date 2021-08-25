@@ -46,7 +46,7 @@ export class CreateOutlet3 extends Component {
                     <div className="col-12 col-md-1">
                       <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} onColor="#70CC49"/>
                     </div>
-                    <div className="col-12 col-md-3">
+                    <div className="col-12 col-md-2">
                       <p className="nme">Delivery</p>
                     </div>
                   </div>
@@ -74,20 +74,20 @@ export class CreateOutlet3 extends Component {
                     </div>
                   </div>
                   <div className="boxdetl">
-                    <div className="row">
-                      <div className="col-12 col-md-6">
+                    <div className="row boxdetl1">
+                      <div>
                         <p className="create1 detl">Day</p>
                       </div>
-                      <div className="col-12 col-md-2">
+                      <div>
                         <p className="create1 detl">From</p>
                       </div>
-                      <div className="col-12 col-md-2">
-                        <p className="create1 detl">To</p>
+                      <div>
+                        <p className="create1 detl detl3">To</p>
                       </div>
                     </div>
                     <div className="row optn2">
                       <div className="col-12 col-md-4 Outlettime">
-                        <p className="create1 detl2">Sunday</p>
+                        <p className="create1 detl2">Sun</p>
                       </div>
                       <div className="col-12 col-md-2 Outlettime">
                         <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} onColor="#70CC49" />
@@ -107,7 +107,7 @@ export class CreateOutlet3 extends Component {
                     </div>
                     <div className="row optn2">
                       <div className="col-12 col-md-4 Outlettime">
-                        <p className="create1 detl2">Monday</p>
+                        <p className="create1 detl2">Mon</p>
                       </div>
                       <div className="col-12 col-md-2 Outlettime">
                         <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} onColor="#70CC49"/>
