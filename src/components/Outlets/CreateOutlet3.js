@@ -42,11 +42,11 @@ export class CreateOutlet3 extends Component {
             </div>
             <div className="col inner innerC">
               <div className="mainContent">
-                  <div className="row nme1">
-                    <div className="col-12 col-md-1">
+                  <div className="row boxdetl1 nme1">
+                    <div>
                       <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} onColor="#70CC49"/>
                     </div>
-                    <div className="col-12 col-md-2">
+                    <div>
                       <p className="nme">Delivery</p>
                     </div>
                   </div>
@@ -75,150 +75,150 @@ export class CreateOutlet3 extends Component {
                   </div>
                   <div className="boxdetl">
                     <div className="row boxdetl1">
-                      <div>
-                        <p className="create1 detl">Day</p>
+                      <div className="detl">
+                        <p className="create1 ">Day</p>
                       </div>
-                      <div>
-                        <p className="create1 detl">From</p>
+                      <div className="detl1">
+                        <p className="create1">From</p>
                       </div>
-                      <div>
-                        <p className="create1 detl detl3">To</p>
+                      <div className="detl1">
+                        <p className="create1">To</p>
                       </div>
                     </div>
-                    <div className="row optn2">
-                      <div className="col-12 col-md-4 Outlettime">
+                    <div className="row boxdetl1 optn2">
+                      <div className="detl  Outlettime">
                         <p className="create1 detl2">Sun</p>
                       </div>
-                      <div className="col-12 col-md-2 Outlettime">
+                      <div className="detl Outlettime">
                         <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} onColor="#70CC49" />
                       </div>
-                      <div className="col-12 col-md-2 Outlettime">
+                      <div className="detl Outlettime">
                         <select className="form-control optnbox" id="selectOpeningTimeFrom">
                             <option>01:05</option>
                             <option>01:10</option>
                         </select>
                       </div>
-                      <div className="col-12 col-md-2 Outlettime">
+                      <div className="detl Outlettime">
                         <select className="form-control optnbox" id="selectClosingTimeTo">
                             <option>01:10</option>
                             <option>01:20</option>
                         </select>
                       </div>
                     </div>
-                    <div className="row optn2">
-                      <div className="col-12 col-md-4 Outlettime">
+                    <div className="row boxdetl1 optn2">
+                      <div className="detl  Outlettime">
                         <p className="create1 detl2">Mon</p>
                       </div>
-                      <div className="col-12 col-md-2 Outlettime">
+                      <div className="detl Outlettime">
                         <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} onColor="#70CC49"/>
                       </div>
-                      <div className="col-12 col-md-2 Outlettime">
+                      <div className="detl Outlettime">
                         <select className="form-control optnbox" id="selectOpeningTimeFrom">
                             <option>01:05</option>
                             <option>01:10</option>
                         </select>
                       </div>
-                      <div className="col-12 col-md-2 Outlettime">
+                      <div className="detl Outlettime">
                         <select className="form-control optnbox" id="selectClosingTimeTo">
                             <option>01:10</option>
                             <option>01:20</option>
                         </select>
                       </div>
                     </div>
-                    <div className="row optn2">
-                      <div className="col-12 col-md-4 Outlettime">
-                        <p className="create1 detl2">Tuesday</p>
+                    <div className="row boxdetl1 optn2">
+                      <div className="detl Outlettime">
+                        <p className="create1 detl2">Tue</p>
                       </div>
-                      <div className="col-12 col-md-2 Outlettime">
+                      <div className="detl Outlettime">
                         <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} onColor="#70CC49"/>
                       </div>
-                      <div className="col-12 col-md-2 Outlettime">
+                      <div className="detl Outlettime">
                         <select className="form-control optnbox" id="selectOpeningTimeFrom">
                             <option>01:05</option>
                             <option>01:10</option>
                         </select>
                       </div>
-                      <div className="col-12 col-md-2 Outlettime">
+                      <div className="detl Outlettime">
                         <select className="form-control optnbox" id="selectClosingTimeTo">
                             <option>01:10</option>
                             <option>01:20</option>
                         </select>
                       </div>
                     </div>
-                    <div className="row optn2">
-                      <div className="col-12 col-md-4 Outlettime">
-                        <p className="create1 detl2">Wednesday</p>
+                    <div className="row boxdetl1 optn2">
+                      <div className="detl Outlettime">
+                        <p className="create1 detl2">Wed</p>
                       </div>
-                      <div className="col-12 col-md-2 Outlettime">
+                      <div className="detl Outlettime">
                         <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} onColor="#70CC49"/>
                       </div>
-                      <div className="col-12 col-md-2 Outlettime">
+                      <div className="detl Outlettime">
                         <select className="form-control optnbox" id="selectOpeningTimeFrom">
                             <option>01:05</option>
                             <option>01:10</option>
                         </select>
                       </div>
-                      <div className="col-12 col-md-2 Outlettime">
+                      <div className="detl Outlettime">
                         <select className="form-control optnbox" id="selectClosingTimeTo">
                             <option>01:10</option>
                             <option>01:20</option>
                         </select>
                       </div>
                     </div>
-                    <div className="row optn2">
-                      <div className="col-12 col-md-4 Outlettime">
-                        <p className="create1 detl2">Thursday</p>
+                    <div className="row boxdetl1 optn2">
+                      <div className="detl Outlettime">
+                        <p className="create1 detl2">Thu</p>
                       </div>
-                      <div className="col-12 col-md-2 Outlettime">
+                      <div className="detl Outlettime">
                         <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} onColor="#70CC49"/>
                       </div>
-                      <div className="col-12 col-md-2 Outlettime">
+                      <div className="detl Outlettime">
                         <select className="form-control optnbox" id="selectOpeningTimeFrom">
                             <option>01:05</option>
                             <option>01:10</option>
                         </select>
                       </div>
-                      <div className="col-12 col-md-2 Outlettime">
+                      <div className="detl Outlettime">
                         <select className="form-control optnbox" id="selectClosingTimeTo">
                             <option>01:10</option>
                             <option>01:20</option>
                         </select>
                       </div>
                     </div>
-                    <div className="row optn2">
-                      <div className="col-12 col-md-4 Outlettime">
-                        <p className="create1 detl2">Friday</p>
+                    <div className="row boxdetl1 optn2">
+                      <div className="detl Outlettime">
+                        <p className="create1 detl2">Fri</p>
                       </div>
-                      <div className="col-12 col-md-2 Outlettime">
+                      <div className="detl Outlettime">
                         <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} onColor="#70CC49"/>
                       </div>
-                      <div className="col-12 col-md-2 Outlettime">
+                      <div className="detl Outlettime">
                         <select className="form-control optnbox" id="selectOpeningTimeFrom">
                             <option>01:05</option>
                             <option>01:10</option>
                         </select>
                       </div>
-                      <div className="col-12 col-md-2 Outlettime">
+                      <div className="detl Outlettime">
                         <select className="form-control optnbox" id="selectClosingTimeTo">
                             <option>01:10</option>
                             <option>01:20</option>
                         </select>
                       </div>
                     </div>
-                    <div className="row optn2">
-                      <div className="col-12 col-md-4 Outlettime">
-                        <p className="create1 detl2">Saturday</p>
+                    <div className="row boxdetl1 optn2">
+                      <div className="detl Outlettime">
+                        <p className="create1 detl2">Sat</p>
                       </div>
-                      <div className="col-12 col-md-2 Outlettime">
+                      <div className="detl Outlettime">
                         <Switch onChange={(v)=>this.setState({delivery:v})} id="delivery" checked={this.state.delivery} onColor="#70CC49"/>
                       </div>
-                      <div className="col-12 col-md-2 Outlettime">
+                      <div className="detl Outlettime">
                         <select className="form-control optnbox" id="selectOpeningTimeFrom">
                             <option>01:05</option>
                             <option>01:10</option>
                         </select>
                       </div>
-                      <div className="col-12 col-md-2 Outlettime">
+                      <div className="detl Outlettime">
                         <select className="form-control optnbox" id="selectClosingTimeTo">
                             <option>01:10</option>
                             <option>01:20</option>
