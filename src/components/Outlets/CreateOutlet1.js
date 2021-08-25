@@ -35,7 +35,7 @@ const CreateOutlet1 = () => {
                 <p className="create1">Basic Information</p>
                   <div class="row create2">
                     <div className="col-12 innercomponent createInner">
-                        <p className="images">Cover Image<FiCamera style={{fontSize: '1.3em', marginLeft: 130, color: '#828282'}}  /><HiOutlinePencilAlt style={{fontSize: '1.5em', marginLeft: 50, color: '#828282'}} /></p>
+                        <p className="images">Cover Image<FiCamera style={{fontSize: '1.3em', marginLeft: "20%", color: '#828282'}}  /><HiOutlinePencilAlt style={{fontSize: '1.5em', marginLeft: "7%", color: '#828282'}} /></p>
                         <img className="img-fluid outletimg" src='\images\CreateOutlet.jpg' />
                     </div>
                   </div>
