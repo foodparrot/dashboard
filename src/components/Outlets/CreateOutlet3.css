@@ -70,9 +70,11 @@
 }
 .optnbox{
     padding: 0px 5px;
-    width: 95px;
+    width: 19vw;
+    max-width: 95px;
 }
 .Outlettime{
     display: flex;
     align-items: center;
 }
+
