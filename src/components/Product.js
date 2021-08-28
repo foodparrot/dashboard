@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Popup from 'reactjs-popup';
+import './product.css';
 
 function product() {
+    const [smShow, setSmShow] = useState(false);
+
     return (
                    <div className="col-12 col-md-5 box1">
                         <div className="row">
@@ -8,11 +12,29 @@ function product() {
                                 <img className="img-fluid" src="https://via.placeholder.com/100"></img>
                             </div>
                             <div className="col-8 items">
-                                <div> Cart2 
-                                    <div className="dot">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                <div> Cart2
+                                    <div className="dot tooltipBoundary">
+                                    <Popup trigger=
+                                        {<button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
                                         <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-                                        </svg>
+                                        </svg></button>}
+                                        position={['right top']}
+                                        closeOnDocumentClick
+                                        keepTooltipInside=".tooltipBoundary">
+                                        <div className="menu menunew">
+                                           <div className="menu-item items itemsmenu"><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button></div>
+                                           <div className="menu-item items itemsmenu"> Outlets</div>
+                                           <div className="menu-item items itemsmenu"> Edit</div>
+                                           <div className="menu-item items itemsmenu itemsmenu1"> DELETE</div>
+                                           <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>
+                                        </div>
+                                    </Popup>
                                     </div>
                                 </div>
                                 <div>3 Products</div>
@@ -28,4 +50,4 @@ function product() {
     )
 }
 
-export default product
+export default product;

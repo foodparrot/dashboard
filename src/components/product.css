@@ -1,0 +1,26 @@
+.dot:hover{
+    cursor: pointer;
+}
+.dot button{
+    border: none;
+    background-color: white;
+    outline: none;
+}
+
+.menunew{
+    background: #f0f6fe !important;
+    border: 1px solid #a5bedfe3;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.itemsmenu{
+    margin: 0px 0px 20px 10px !important;
+}
+.itemsmenu:hover{
+    cursor: pointer;
+}
+.itemsmenu1{
+    margin: 0px 0px 0px 10px !important;
+    color: red;
+}
