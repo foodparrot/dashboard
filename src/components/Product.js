@@ -3,8 +3,11 @@ import Popup from 'reactjs-popup';
 import './product.css';
 
 function product() {
-    const [smShow, setSmShow] = useState(false);
+  const [open, setOpen] = useState(false);
 
+  const eventModal = () => {
+    setOpen((o) => true);
+  }
     return (
                    <div className="col-12 col-md-5 box1">
                         <div className="row">
@@ -22,17 +25,17 @@ function product() {
                                         closeOnDocumentClick
                                         keepTooltipInside=".tooltipBoundary">
                                         <div className="menu menunew">
-                                           <div className="menu-item items itemsmenu"><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button></div>
+                                           <div className="menu-item items itemsmenu"><button onClick={eventModal} type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button></div>
                                            <div className="menu-item items itemsmenu"> Outlets</div>
                                            <div className="menu-item items itemsmenu"> Edit</div>
                                            <div className="menu-item items itemsmenu itemsmenu1"> DELETE</div>
                                            <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      ...
-    </div>
-  </div>
-</div>
+                                             <div class="modal-dialog modal-sm">
+                                             <div class="modal-content">
+                                                ...
+                                             </div>
+                                             </div>
+                                           </div>
                                         </div>
                                     </Popup>
                                     </div>
