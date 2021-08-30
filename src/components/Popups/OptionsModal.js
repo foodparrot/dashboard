@@ -2,12 +2,12 @@ import React, {useState, } from "react";
 import {HiDotsVertical} from "react-icons/hi"
 import Popup from "reactjs-popup"
 import "./optionsModal.css"
-function OptionsModal() {
+function OptionsModal(props) {
     const [open, setOpen] = useState(false);
 
   return (
     <Popup
-      className="managerProfile"
+      className={props.className}
       trigger={
         <button
           className="share-btn"
