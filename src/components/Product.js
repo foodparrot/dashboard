@@ -86,7 +86,7 @@ function product () {
     </div>
   )
   const FooterOutlets = () => (
-    <div className="w-100">
+    <div>
         <Button onClick={onCloseO}>Close</Button>
     </div>
   )
