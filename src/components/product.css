@@ -14,13 +14,44 @@
     padding: 10px;
 }
 
-.itemsmenu{
-    margin: 0px 0px 20px 10px !important;
-}
 .itemsmenu:hover{
     cursor: pointer;
 }
 .itemsmenu1{
-    margin: 0px 0px 0px 10px !important;
     color: red;
+}
+
+.searchP{
+    border: 1px solid #b2b8bd;
+}
+.optionsP{
+    margin: 20px 0px;
+}
+.optionP{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #959595;
+    padding-right: 50px;
+    margin-bottom: 15px;
+}
+.nameP{
+    margin-bottom: 5px;
+}
+.priceP p{
+    margin-bottom: 0px;
+}
+
+.w-100 {
+    justify-content: right;
+}
+.available{
+    float: right;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width:415px) {
+   .titlePO{
+       font-size: 25px;
+   }
 }

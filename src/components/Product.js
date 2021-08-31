@@ -1,8 +1,90 @@
-import React, { useState } from 'react';
-import Popup from 'reactjs-popup';
+import React, { useState, useRef } from 'react';
+import BootstrapModal from './Popups/BootstrapModal';
+import { Button } from "react-bootstrap";
+import OptionsModal from './Popups/OptionsModal';
+import Option from './Popups/Option';
+import {BsSearch} from 'react-icons/bs';
 import './product.css';
 
 function product() {
+
+  const [openP, setOpenP] = useState(false);
+  const [openO, setOpenO] = useState(false);
+    const onCloseP = () => setOpenP(false);
+    const onCloseO = () => setOpenO(false);
+    const popRef = useRef();
+
+    const BodyProducts = () => (
+      <div>
+        <div class="input-group mb-3 searchshadow">
+           <input type="text" className="form-control searchP" placeholder="Search for Products"></input>
+           <div class="input-group-append searchbox">
+                        <span class="input-group-text"><BsSearch /></span>
+                    </div>
+        </div>
+        <div className="optionsP">
+          <div className="optionP">
+            <div>
+              <input type="checkbox" id="product_1" name="Product_1" value="Product_1" checked/>
+              <label className="nameP" for="product_1">Product 1</label>
+            </div>
+            <div className="priceP">
+              <p>40.00 RS</p>
+            </div>
+          </div>
+          <div className="optionP">
+            <div>
+              <input type="checkbox" id="product_2" name="Product_2" value="Product_2"/>
+              <label className="nameP" for="product_2">Product 2</label>
+            </div>
+            <div className="priceP">
+              <p>40.00 RS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+
+    const BodyOutlets = () => (
+      <div>
+        <div className="optionsP">
+          <div className="optionP">
+           <div>
+             <p>Outlet 1</p>
+           </div>
+           <div></div>
+          </div>
+          <div className="optionP">
+           <div>
+            <p>Outlet 2</p>
+           </div>
+           <div></div>
+          </div>
+        </div>
+      </div>
+    )
+    const TitleProducts = () => (
+      <h1 className="titlePO">Add Products to Cart1 Category</h1>
+    )
+    const TitleOutlets = () => (
+      <>
+        <h1 className="titlePO">Cart 1</h1>
+        <p className="available">Available 2 of 2 Outlets</p>
+      </>
+    )
+
+  const FooterProducts = () => (
+    <div className="row justify-content-between w-100">
+        <Button onClick={onCloseP}>Cancel</Button>
+        <Button onClick={() => { alert("saved") }}>Add 1 products</Button>
+    </div>
+  )
+  const FooterOutlets = () => (
+    <div className="w-100">
+        <Button onClick={onCloseO}>Close</Button>
+    </div>
+  )
+
     return (
                    <div className="col-12 col-md-5 box1">
                         <div className="row">
@@ -12,40 +94,26 @@ function product() {
                             <div className="col-8 items">
                                 <div> Cart2
                                     <div className="dot tooltipBoundary">
-                                    <Popup trigger=
-                                        {<button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-                                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-                                        </svg></button>}
-                                        position={['right top']}
-                                        closeOnDocumentClick
-                                        keepTooltipInside=".tooltipBoundary">
-                                        <div className="menu menunew">
-                                           <div className="menu-item items itemsmenu"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Launch demo modal</button></div>
-                                           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                             <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-                                           <div className="menu-item items itemsmenu"> Outlets</div>
-                                           <div className="menu-item items itemsmenu"> Edit</div>
-                                           <div className="menu-item items itemsmenu itemsmenu1"> DELETE</div>
-                                        </div>
-                                    </Popup>
+                                    <OptionsModal  ref={popRef}>
+                                      <Option className="itemsmenu"onClick={() => {
+                                         // to close the OptionsModal
+                                        popRef.current.close();
+                                        setOpenP(o => !o);
+                                        }}>Add Products</Option>
+                                      <Option className="itemsmenu" onClick={() => {
+                                         // to close the OptionsModal
+                                        popRef.current.close();
+                                        setOpenO(o => !o);
+                                        }}>Outlets</Option>
+                                      <Option className="itemsmenu">Edit</Option>
+                                      <Option className="itemsmenu itemsmenu1">DELETE</Option>
+                                      </OptionsModal>
+                                      <BootstrapModal title={<TitleProducts />} onHide={onCloseP} show={openP} footer={<FooterProducts />}>
+                                          <BodyProducts />
+                                      </BootstrapModal>
+                                      <BootstrapModal title={<TitleOutlets />} onHide={onCloseO} show={openO} footer={<FooterOutlets />}>
+                                          <BodyOutlets />
+                                      </BootstrapModal>
                                     </div>
                                 </div>
                                 <div>3 Products</div>
