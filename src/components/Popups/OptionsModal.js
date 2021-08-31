@@ -1,18 +1,29 @@
-import React, {useState, } from "react";
-import {HiDotsVertical} from "react-icons/hi"
-import Popup from "reactjs-popup"
-import "./optionsModal.css"
-function OptionsModal(props) {
-    const [open, setOpen] = useState(false);
+import React, {
+  useState,
+  useRef,
+  forwardRef,
+  useImperativeHandle,
+} from "react";
+import { HiDotsVertical } from "react-icons/hi";
+import Popup from "reactjs-popup";
+import "./optionsModal.css";
+import Option from "./Option";
+const optionType = (<Option />).type;
+const OptionsModal = forwardRef((props, ref) => {
+  const [open, setOpen] = useState(false);
+  const popUpRef = useRef();
+  useImperativeHandle(ref, () => ({
+    close() {
+      setOpen(false);
+      popUpRef.current.close();
+    },
+  }));
 
   return (
     <Popup
-      className={props.className}
+      className={props.className ? props.className : ""}
       trigger={
-        <button
-          className="share-btn"
-          style={{ position: "absolute", right: "10px" }}
-        >
+        <button className="options-btn">
           <HiDotsVertical style={{ fontSize: "1.5em" }} />
         </button>
       }
@@ -28,27 +39,24 @@ function OptionsModal(props) {
       ]}
       open={open}
       closeOnDocumentClick
-      onClose={()=>setOpen(false)}
+      onClose={() => setOpen(false)}
       onClick={() => setOpen((o) => !o)}
       nested
-    //   ref={popUpRef}
+      ref={popUpRef}
     >
       <ul style={{ listStyle: "none", padding: "5px" }}>
-        <li
-          onClick={()=>alert('kk')}
-          style={{
-            border: "none",
-            outline: "none",
-            color: "white",
-            backgroundColor: "none",
-            background: "none",
-          }}
-        >
-          Add something
-        </li>
+        {props.children.map((child, index) => {
+          if (child.type === optionType) {
+            return React.cloneElement(child, { ...child.props, key: index });
+          } else {
+            alert("Requires Popup of Option type element");
+            console.error("Requires Popup of Option type element");
+            throw new Error("Requires Popup of Option type element");
+          }
+        })}
       </ul>
     </Popup>
   );
-}
+});
 
 export default OptionsModal;

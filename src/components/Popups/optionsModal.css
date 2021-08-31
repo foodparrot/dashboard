@@ -1,29 +1,27 @@
-.popup-content  {
-    background-color: #292d3e !important;
-    color: #fff !important;
-    border: 1px solid #464545 !important;
-    padding-left: 0px;
-    border-radius: 5px;
-    box-shadow: 0 2px 11px rgb(230 230 230);
-    z-index: 1024 !important;
-
+.popup-content {
+  background-color: #292d3e !important;
+  color: #fff !important;
+  border: 1px solid #464545 !important;
+  padding-left: 0px;
+  border-radius: 5px;
+  box-shadow: 0 2px 11px rgb(230 230 230);
+  z-index: 1024 !important;
 }
 .popup-content > ui {
-    padding:0px !important;
+  padding: 0px !important;
 }
-.popup-content > div
-{
-    color: #292d3e !important;
-}
-
-.share-btn{
-    border:none !important;
-    outline: none !important;
-    padding: 0px !important;
-    background-color: transparent !important;
+.popup-content > div {
+  color: #292d3e !important;
 }
 
-.share-btn > svg {
-    color: rgb(118 111 111);
-    font-size: 1.5em;
+.options-btn {
+  border: none !important;
+  outline: none !important;
+  padding: 0px !important;
+  background-color: transparent !important;
+}
+
+.options-btn > svg {
+  color: rgb(118 111 111);
+  font-size: 1.5em;
 }
