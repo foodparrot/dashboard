@@ -4,15 +4,17 @@ import { Button } from "react-bootstrap";
 import OptionsModal from './Popups/OptionsModal';
 import Option from './Popups/Option';
 import {BsSearch} from 'react-icons/bs';
+import Switch from "react-switch";
 import './product.css';
 
-function product() {
+function product () {
 
   const [openP, setOpenP] = useState(false);
   const [openO, setOpenO] = useState(false);
     const onCloseP = () => setOpenP(false);
     const onCloseO = () => setOpenO(false);
     const popRef = useRef();
+
 
     const BodyProducts = () => (
       <div>
@@ -49,16 +51,20 @@ function product() {
       <div>
         <div className="optionsP">
           <div className="optionP">
-           <div>
-             <p>Outlet 1</p>
-           </div>
-           <div></div>
+            <div>
+              <p>Outlet 1</p>
+            </div>
+            <div>
+              <Switch  checked={false} onColor="#70CC49"/>
+            </div>
           </div>
           <div className="optionP">
-           <div>
-            <p>Outlet 2</p>
-           </div>
-           <div></div>
+            <div>
+              <p>Outlet 2</p>
+            </div>
+            <div>
+              <Switch  checked={true} onColor="#70CC49"/>
+            </div>
           </div>
         </div>
       </div>
