@@ -1,0 +1,16 @@
+.iconimg{
+    border: 1px solid black;
+    font-size: 8em;
+    display:flex;
+    justify-content: center;
+    padding: 20px 30px;
+}
+
+.imgs{
+    display: flex;
+    align-items: center;
+}
+
+.categ{
+    margin-bottom: 50px;
+}

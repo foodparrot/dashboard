@@ -22,7 +22,7 @@ function Addproduct() {
             <div className="container prod-images">
 
                 <div className="row row-5">
-                    <div>Product images(upto 8)</div>
+                    <div>Product images(upto 8)</div> 
                 </div>
 
 
