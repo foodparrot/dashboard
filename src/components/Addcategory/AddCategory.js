@@ -48,7 +48,7 @@ function Addcategory() {
                         </div>
 
                         <div className="last-prod col-5 col-md-4 ">
-                          <button className="btn btn-last-prod" type="submit">Add Product</button>
+                          <button className="btn btn-last-prod" type="submit">Save</button>
                         </div>
                      </div>
                 </div>
