@@ -45,6 +45,13 @@
     font-size: 15px;
     margin-bottom: 0px;
 }
+.editoptn{
+    color: white;
+}
+.editoptn:hover{
+    color: white;
+    text-decoration: none;
+}
 
 @media screen and (max-width:415px) {
    .titlePO{

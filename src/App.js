@@ -29,6 +29,7 @@ import CreateOutlet2 from './components/Outlets/CreateOutlet2';
 import CreateOutlet3 from './components/Outlets/CreateOutlet3';
 import TestModal from './components/TestModal';
 import Addcategory from './components/Addcategory/AddCategory';
+import Editcategory from './components/Editcategory/EditCategory';
 
 // import $ from 'jquery';
 // import jQuery from 'jquery';
@@ -68,6 +69,7 @@ class App extends React.Component {
           <Route path="/createoutlets3" component={CreateOutlet3} />
           <Route path="/modal" component={TestModal} />
           <Route path="/Addcategory/Addcategory" component={Addcategory}/>
+          <Route path="/Editcategory/Editcategory" component={Editcategory}/>
 				</Switch>
         </Parent>
 			</BrowserRouter>

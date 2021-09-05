@@ -5,6 +5,7 @@ import OptionsModal from './Popups/OptionsModal';
 import Option from './Popups/Option';
 import {BsSearch} from 'react-icons/bs';
 import Switch from "react-switch";
+import { Link } from "react-router-dom";
 import './product.css';
 
 function product () {
@@ -82,7 +83,7 @@ function product () {
   const FooterProducts = () => (
     <div className="row justify-content-between w-100">
         <Button onClick={onCloseP}>Cancel</Button>
-        <Button onClick={() => { alert("saved") }}>Add 1 products</Button>
+        <Button onClick={() => { alert("saved") }}>Add 1 product</Button>
     </div>
   )
   const FooterOutlets = () => (
@@ -111,7 +112,7 @@ function product () {
                                         popRef.current.close();
                                         setOpenO(o => !o);
                                         }}>Outlets</Option>
-                                      <Option className="itemsmenu">Edit</Option>
+                                      <Option className="itemsmenu"><Link className="editoptn" to={"../Editcategory/Editcategory"}>Edit</Link></Option>
                                       <Option className="itemsmenu itemsmenu1">DELETE</Option>
                                       </OptionsModal>
                                       <BootstrapModal title={<TitleProducts />} onHide={onCloseP} show={openP} footer={<FooterProducts />}>

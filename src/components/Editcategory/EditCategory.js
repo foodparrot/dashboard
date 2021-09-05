@@ -1,15 +1,15 @@
 import React from 'react';
 import { FiCamera } from 'react-icons/fi';
-import './AddCategory.css';
+import './EditCategory.css';
 
-function Addcategory() {
+function Editcategory() {
     return (
         <div className="container-fluid ">
             <div className='row header'>
                 <p>Bismillah Outlet</p>
             </div>
             <div className="container catalouge">
-                <p className="heading"><b>Add new category</b></p>
+                <p className="heading"><b>Edit category</b></p>
             </div>
 
             {/*images*/}
@@ -57,4 +57,4 @@ function Addcategory() {
     )
 }
 
-export default Addcategory;
+export default Editcategory;

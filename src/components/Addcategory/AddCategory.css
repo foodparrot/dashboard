@@ -14,3 +14,15 @@
 .categ{
     margin-bottom: 50px;
 }
+
+.btn-save{
+    background: none;
+    padding: 3% 17%;
+    background-color:#A9F5A9;
+    color:black;
+    opacity: 5px;
+    border-radius:4%;
+    margin-top:2%;
+    margin-left:-20%;
+    border-color:#01DF3A;
+}
