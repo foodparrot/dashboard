@@ -5,7 +5,7 @@ import { BsSearch } from "react-icons/bs";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { RiShareForwardLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import Product from '../Product';
+import ProductCard from '../ProductCard/Productcard';
 import { AiOutlineSearch } from "react-icons/ai";
 function Products() {
     return (
@@ -43,10 +43,10 @@ function Products() {
                     Item-1*/}
                 <div className="container">
                     <div className="row " style={{ justifyContent: "space-around" }}>
-                        <Product />
-                        <Product />
-                        <Product />
-                        <Product />
+                        <ProductCard />
+                        <ProductCard />
+                        <ProductCard />
+                        <ProductCard />
                     </div>
                 </div>
 

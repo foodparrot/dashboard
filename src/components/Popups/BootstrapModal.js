@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react'
 import { Button, Modal } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+
 function BootstrapModal(props) {
   const DefaultFooter = () => (
     <Button onClick={props.onHide}>Close</Button>

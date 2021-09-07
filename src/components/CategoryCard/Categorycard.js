@@ -1,14 +1,14 @@
 import React, { useState, useRef } from 'react';
-import BootstrapModal from './Popups/BootstrapModal';
+import BootstrapModal from '../Popups/BootstrapModal';
 import { Button } from "react-bootstrap";
-import OptionsModal from './Popups/OptionsModal';
-import Option from './Popups/Option';
+import OptionsModal from '../Popups/OptionsModal';
+import Option from '../Popups/Option';
 import {BsSearch} from 'react-icons/bs';
 import Switch from "react-switch";
 import { Link } from "react-router-dom";
-import './product.css';
+import './Categorycard.css';
 
-function product () {
+function CategoryCard () {
 
   const [openP, setOpenP] = useState(false);
   const [openO, setOpenO] = useState(false);
@@ -136,4 +136,4 @@ function product () {
     )
 }
 
-export default product;
+export default CategoryCard;

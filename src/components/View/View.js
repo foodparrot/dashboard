@@ -1,5 +1,5 @@
 import React , {Component} from 'react';
-import Product from '../Product';
+import CategoryCard from '../CategoryCard/Categorycard';
 import './View.css';
 import { Link } from "react-router-dom";
 
@@ -40,20 +40,16 @@ export class View extends Component {
                </div>
                <div className="container box0">
                    <div className="row" style={{justifyContent:"space-around"}}>
-                     <Product/>
-                     <Product/>
-                     <Product/>
-                     <Product/>
+                     <CategoryCard/>
+                     <CategoryCard/>
+                     <CategoryCard/>
+                     <CategoryCard/>
                      </div>
                </div>
-                
-            
-            </div>
-        </div>         
-        );
 
-        
+            </div>
+        </div>
+        );
     }
-    
 }
 export default View

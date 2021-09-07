@@ -1,0 +1,60 @@
+.dot:hover{
+    cursor: pointer;
+}
+.dot button{
+    border: none;
+    background-color: white;
+    outline: none;
+}
+
+.menunew{
+    background: #f0f6fe !important;
+    border: 1px solid #a5bedfe3;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.itemsmenu:hover{
+    cursor: pointer;
+}
+.itemsmenu1{
+    color: red;
+}
+
+.searchP{
+    border: 1px solid #b2b8bd;
+}
+.optionsP{
+    margin: 20px 0px;
+}
+.optionP{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #959595;
+    padding-right: 50px;
+    margin-bottom: 15px;
+}
+.nameP{
+    margin-bottom: 5px;
+}
+.priceP p{
+    margin-bottom: 0px;
+}
+.available{
+    float: right;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+.editoptn{
+    color: white;
+}
+.editoptn:hover{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width:415px) {
+   .titlePO{
+       font-size: 25px;
+   }
+}
