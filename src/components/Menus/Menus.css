@@ -2,6 +2,7 @@
   background: #F9F9F9;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
+    padding: 5px 20px;
 }
 .flex-container10 {
   margin-top: 5%;
@@ -24,6 +25,8 @@ border-radius: 10px;
   border: none;
   border-radius: 5px;
   outline: none;
+  margin-left: 40px;
+  outline-style: none;
 }
 .buttons {
   display: flex;

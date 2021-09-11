@@ -1,17 +1,22 @@
 import React , {Component} from 'react'
 import './Menus.css'
+import { Link } from "react-router-dom";
+
 export class Menus extends Component {
     render(){
         return(
             <div className="container-fluid ">
                  
-                        <p style={{fontSize:'1.2em', fontWeight:'600'}}>Bismillah Outlet</p>                        
-            <div></div>     
+                        <p style={{fontSize:'1.2em', fontWeight:'600'}}>Bismillah Outlet</p>
+            <div></div>
             <div className="container menupal">
           {/*first line*/}
             <div className="flex-container flex-container10">
                 <div className="flex-item item10"><b>Menu</b></div>
-                <div className="flex-item item20"><button type="button" class="grad">Create</button></div>
+                <div>
+                    <Link to={"../menus/Importmenu"}><button type="button" class="grad">Import menu</button></Link>
+                    <Link to={"../menus/Createmenu"}><button type="button" class="grad">Create</button></Link>
+                </div>
                </div>
            {/*table*/}  
                <div className="table-responsive-md ">

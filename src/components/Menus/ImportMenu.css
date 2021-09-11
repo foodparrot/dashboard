@@ -1,0 +1,39 @@
+.Import{
+    padding: 0px;
+}
+.form-control{
+    border: 1px solid black;
+    border-radius: 0px;
+}
+
+.search2{
+    position: absolute;
+    margin: 5px 10px;
+    color: #0b85f1;
+    height: 1.4em;
+    width: 1.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchInp{
+    font-size: 15px;
+    padding: 10px 10px 10px 45px;
+    border-radius: 0px;
+    width: 100%;
+}
+.inputs1{
+    align-items: center;
+    justify-content: center;
+}
+.selected{
+    padding: 3px 10px;
+    background-color: #f0a30a;
+    border-radius: 5px;
+    border: 1px solid #bd7000;
+}
+.select-label{
+    margin-left: 10px;
+    margin-bottom: 0px;
+}

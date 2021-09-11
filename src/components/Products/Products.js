@@ -18,7 +18,7 @@ function Products() {
                 <div className="container catalouge">
                     <p className="heading"><b>All products</b></p>
                 </div>
- 
+
                 <div className="container flex-container-2 ">
                     <div className="row">
                         <div className="input-group col-12 col-md-6">

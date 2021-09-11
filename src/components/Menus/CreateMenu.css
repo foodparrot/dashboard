@@ -1,0 +1,40 @@
+.item1{
+    margin-top: 20px;
+}
+.main-content{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0px;
+}
+.input-section{
+    margin: 0px 5%;
+}
+.inputs{
+    align-items: center;
+    margin: 40px 0px;
+}
+.name-input{
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 0px;
+    width: 100%;
+}
+.notes-input{
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline-style: none;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7% 0px;
+}
+.btn{
+    padding: 5px 15px;
+}
+.btns button{
+    margin-left: 20px;
+}
