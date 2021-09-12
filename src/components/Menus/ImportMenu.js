@@ -1,9 +1,12 @@
 import React , {Component} from 'react';
 import './ImportMenu.css';
 import { FiSearch } from 'react-icons/fi';
+import MenusCard from '../MenusCard/MenusCard';
 
 export class ImportMenu extends Component {
+
     render(){
+      const Checked = 'true';
         return(
             <div className="container-fluid ">
                     <div className='row header'>
@@ -53,6 +56,12 @@ export class ImportMenu extends Component {
                           <label className="selected">1 Selected</label>
                       </div>
                   </div>
+                  <div className="container">
+                    <div className="row card-row" style={{ justifyContent: "space-around" }}>
+                        <MenusCard />
+                        <MenusCard checked={Checked}/>
+                    </div>
+                </div>
                   <div className="row btns">
                       <button type="button" class="grad">Cancel</button>
                       <button type="button" class="btn btn-success">Import</button>
