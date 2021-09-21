@@ -1,6 +1,5 @@
 import React , { useState, useRef } from 'react'
 import './Menus.css'
-import OptionsModal from '../Popups/OptionsModal';
 import BootstrapModal from '../Popups/BootstrapModal';
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -19,7 +18,7 @@ import { Link } from "react-router-dom";
 
           const FooterDelete = () => (
             <div>
-              <Button onClick={onCloseD}>Delete</Button>
+              <Button variant="danger" onClick={onCloseD}>Delete</Button>
             </div>
           )
 

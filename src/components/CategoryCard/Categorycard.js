@@ -99,7 +99,7 @@ function CategoryCard () {
   )
   const FooterDelete = () => (
     <div>
-      <Button onClick={onCloseD}>Delete</Button>
+      <Button variant="danger" onClick={onCloseD}>Delete</Button>
     </div>
   )
 
