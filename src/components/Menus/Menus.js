@@ -1,14 +1,31 @@
-import React , {Component} from 'react'
+import React , { useState, useRef } from 'react'
 import './Menus.css'
+import OptionsModal from '../Popups/OptionsModal';
+import BootstrapModal from '../Popups/BootstrapModal';
+import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-export class Menus extends Component {
-    render(){
+    function Menus () {
+
+        const [openD, setOpenD] = useState(false);
+        const onCloseD = () => setOpenD(false);
+        const popRef = useRef();
+
+        const BodyDelete = () => (
+            <div>
+              <p>Are you sure you want to delete ?</p>
+            </div>
+          )
+
+          const FooterDelete = () => (
+            <div>
+              <Button onClick={onCloseD}>Delete</Button>
+            </div>
+          )
+
         return(
             <div className="container-fluid ">
-                 
-                        <p style={{fontSize:'1.2em', fontWeight:'600'}}>Bismillah Outlet</p>
-            <div></div>
+                     <p style={{fontSize:'1.2em', fontWeight:'600'}}>Bismillah Outlet</p>
             <div className="container menupal">
           {/*first line*/}
             <div className="flex-container flex-container10">
@@ -39,7 +56,13 @@ export class Menus extends Component {
                               <td></td>
                               <td>FoodParrot</td>
                               <td className="live" >Live</td>
-                              <td className="buttons"><a href="../View/View"><button className="btn btn-primary btn-sm view">View</button></a><button className="btn btn-outline-danger btn-sm del">Delete</button></td>
+                              <td className="buttons"><a href="../View/View"><button className="btn btn-primary btn-sm view">View</button></a><button className="btn btn-outline-danger btn-sm del"
+                              onClick={() => {
+                               setOpenD(o => !o);
+                               }}>Delete</button></td>
+                              <BootstrapModal onHide={onCloseD} show={openD} footer={<FooterDelete />}>
+                                <BodyDelete />
+                              </BootstrapModal>
                           </tr>
                           <tr>
                               <td></td>
@@ -47,7 +70,13 @@ export class Menus extends Component {
                               <td></td>
                               <td>FoodParrot</td>
                               <td className="offline">Offline &ensp; <button style={{outline:"none",border:"1.5px solid #ff8000",borderRadius:"10%",padding:"3px"}}>Publish</button></td>
-                              <td className="buttons"><a href="../View/View"><button className="btn btn-primary btn-sm view">View</button></a><button className="btn btn-outline-danger btn-sm del">Delete</button></td>
+                              <td className="buttons"><a href="../View/View"><button className="btn btn-primary btn-sm view">View</button></a><button className="btn btn-outline-danger btn-sm del"
+                              onClick={() => {
+                               setOpenD(o => !o);
+                               }}>Delete</button></td>
+                               <BootstrapModal onHide={onCloseD} show={openD} footer={<FooterDelete />}>
+                                <BodyDelete />
+                              </BootstrapModal>
                           </tr>
                       </tbody>
                    </table>
@@ -55,11 +84,7 @@ export class Menus extends Component {
 
             </div>
             </div>
-         
         );
 
-        
     }
-    
-}
 export default Menus

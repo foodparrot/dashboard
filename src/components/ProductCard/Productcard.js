@@ -11,7 +11,9 @@ import './Productcard.css';
 function ProductCard () {
 
   const [openO, setOpenO] = useState(false);
+  const [openD, setOpenD] = useState(false);
     const onCloseO = () => setOpenO(false);
+    const onCloseD = () => setOpenD(false);
     const popRef = useRef();
 
 
@@ -37,6 +39,11 @@ function ProductCard () {
         </div>
       </div>
     )
+    const BodyDelete = () => (
+      <div>
+        <p>Are you sure you want to delete ?</p>
+      </div>
+    )
     const TitleOutlets = () => (
       <>
         <h1 className="titlePO">Cart 1</h1>
@@ -48,7 +55,11 @@ function ProductCard () {
         <Button onClick={onCloseO}>Close</Button>
     </div>
   )
-
+  const FooterDelete = () => (
+    <div>
+      <Button onClick={onCloseD}>Delete</Button>
+    </div>
+  )
     return (
                    <div className="col-12 col-md-5 box1">
                         <div className="row">
@@ -64,10 +75,17 @@ function ProductCard () {
                                         popRef.current.close();
                                         setOpenO(o => !o);
                                         }}>Outlets</Option>
-                                      <Option className="itemsmenu itemsmenu1">DELETE</Option>
+                                      <Option className="itemsmenu itemsmenu1" onClick={() => {
+                                           // to close the OptionsModal
+                                          popRef.current.close();
+                                          setOpenD(o => !o);
+                                          }}>DELETE</Option>
                                       </OptionsModal>
                                       <BootstrapModal title={<TitleOutlets />} onHide={onCloseO} show={openO} footer={<FooterOutlets />}>
                                           <BodyOutlets />
+                                      </BootstrapModal>
+                                      <BootstrapModal onHide={onCloseD} show={openD} footer={<FooterDelete />}>
+                                            <BodyDelete />
                                       </BootstrapModal>
                                     </div>
                                 </div>

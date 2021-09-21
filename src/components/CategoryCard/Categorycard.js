@@ -12,10 +12,11 @@ function CategoryCard () {
 
   const [openP, setOpenP] = useState(false);
   const [openO, setOpenO] = useState(false);
+  const [openD, setOpenD] = useState(false);
     const onCloseP = () => setOpenP(false);
     const onCloseO = () => setOpenO(false);
+    const onCloseD = () => setOpenD(false);
     const popRef = useRef();
-
 
     const BodyProducts = () => (
       <div>
@@ -70,6 +71,11 @@ function CategoryCard () {
         </div>
       </div>
     )
+    const BodyDelete = () => (
+      <div>
+        <p>Are you sure you want to delete ?</p>
+      </div>
+    )
     const TitleProducts = () => (
       <h1 className="titlePO">Add Products to Cart1 Category</h1>
     )
@@ -89,6 +95,11 @@ function CategoryCard () {
   const FooterOutlets = () => (
     <div>
         <Button onClick={onCloseO}>Close</Button>
+    </div>
+  )
+  const FooterDelete = () => (
+    <div>
+      <Button onClick={onCloseD}>Delete</Button>
     </div>
   )
 
@@ -113,13 +124,20 @@ function CategoryCard () {
                                         setOpenO(o => !o);
                                         }}>Outlets</Option>
                                       <Option className="itemsmenu"><Link className="editoptn" to={"../Editcategory/Editcategory"}>Edit</Link></Option>
-                                      <Option className="itemsmenu itemsmenu1">DELETE</Option>
+                                      <Option className="itemsmenu itemsmenu1" onClick={() => {
+                                           // to close the OptionsModal
+                                          popRef.current.close();
+                                          setOpenD(o => !o);
+                                          }}>DELETE</Option>
                                       </OptionsModal>
                                       <BootstrapModal title={<TitleProducts />} onHide={onCloseP} show={openP} footer={<FooterProducts />}>
                                           <BodyProducts />
                                       </BootstrapModal>
                                       <BootstrapModal title={<TitleOutlets />} onHide={onCloseO} show={openO} footer={<FooterOutlets />}>
                                           <BodyOutlets />
+                                      </BootstrapModal>
+                                      <BootstrapModal onHide={onCloseD} show={openD} footer={<FooterDelete />}>
+                                            <BodyDelete />
                                       </BootstrapModal>
                                     </div>
                                 </div>
