@@ -4,7 +4,7 @@ import Productoutput from './Productoutput'
 function OrderList({ navBarHeight, winHeight }) {
     return (
         <>
-            <div className="col-12 col-md-4 vert-div" style={{ height: (winHeight - navBarHeight) + "px", overflowY: "scroll" }}>
+            <div className="col-12 col-md-4 vert-div" style={{ height: (winHeight - navBarHeight) + "px", overflowY: "scroll",display:"flex",flexDirection:"column" }}>
                 {/* <button className="btn btn-primary">Filter</button> */}
                 {/* <div className="row row-od1 class-bg searchshadow" style={{ position: "sticky", top: "0px", zIndex: "1000", borderRadius: "5px" }}>
                         <input type="search" placeholder="Search by order id..." aria-describedby="button-od" className="s-byid" />

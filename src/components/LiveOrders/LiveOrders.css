@@ -123,6 +123,7 @@
 
 .btn-ref{
     position: sticky;
+    margin-top: auto;
     bottom: 0px;
     background-color: #fff  !important;
     color:#F86853  !important;
