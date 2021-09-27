@@ -53,9 +53,14 @@ class App extends React.Component {
           <Route path="/Customers" component={Customers}/>
           <Route path="/menu/menus" component={Menus}/>
           <Route path="/View/View" component={View}/>
-          <Route path="/Products/Products" component={Products}/>
+          <Route path="/products/all" component={Products}/>
           <Route path="/products/new" component={Addproduct}/>
           <Route path="/products/edit" component={EditProduct}/>
+          <Route path="/products/category" component={categoryProducts}/>
+          <Route path="/category/new" component={Addcategory}/>
+          <Route path="/category/edit" component={Editcategory}/>
+          <Route path="/menus/Createmenu" component={CreateMenu}/>
+          <Route path="/menus/Importmenu" component={ImportMenu}/>
           <Route path="/outlets" component={Outlets}/>
           <Route path="/OrderHistory" component={OrderHistory}/>
           <Route path="/Inventory" component={Inventory}/>
@@ -73,11 +78,6 @@ class App extends React.Component {
           <Route path="/createoutlets2" component={CreateOutlet2} />
           <Route path="/createoutlets3" component={CreateOutlet3} />
           <Route path="/modal" component={TestModal} />
-          <Route path="/Addcategory/Addcategory" component={Addcategory}/>
-          <Route path="/Editcategory/Editcategory" component={Editcategory}/>
-          <Route path="/menus/Createmenu" component={CreateMenu}/>
-          <Route path="/menus/Importmenu" component={ImportMenu}/>
-          <Route path="/categoryProducts" component={categoryProducts}/>
 				</Switch>
         </Parent>
 			</BrowserRouter>
