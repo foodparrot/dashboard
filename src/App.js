@@ -32,6 +32,7 @@ import Addcategory from './components/Addcategory/AddCategory';
 import Editcategory from './components/Editcategory/EditCategory';
 import CreateMenu from './components/Menus/CreateMenu';
 import ImportMenu from './components/Menus/ImportMenu';
+import categoryProducts from './components/categoryProducts/categoryProducts';
 
 // import $ from 'jquery';
 // import jQuery from 'jquery';
@@ -74,7 +75,7 @@ class App extends React.Component {
           <Route path="/Editcategory/Editcategory" component={Editcategory}/>
           <Route path="/menus/Createmenu" component={CreateMenu}/>
           <Route path="/menus/Importmenu" component={ImportMenu}/>
-
+          <Route path="/categoryProducts" component={categoryProducts}/>
 				</Switch>
         </Parent>
 			</BrowserRouter>

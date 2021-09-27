@@ -1,0 +1,33 @@
+.heading1{
+    margin: 0px;
+}
+.catal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.pencil{
+    border: 2px solid #a3a3a3;
+    padding: 5px;
+    border-radius: 4px;
+}
+.pencilIcon{
+    height: 3em;
+    width: 3em;
+}
+.searchP{
+    border-radius: 5px;
+    border-color: black;
+}
+.searchArea{
+    margin: 20px 10px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:768px) {
+  .add-product{
+      margin: 10px;
+  }
+}

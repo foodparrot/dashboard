@@ -52,7 +52,26 @@
     color: white;
     text-decoration: none;
 }
-
+.sha{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+.right-arrow-p{
+    margin-bottom: 0px;
+}
+.right-arrow{
+    height: 1.5em;
+    width: 1.5em;
+}
+.view-link{
+    color: black;
+}
+.view-link:hover{
+    text-decoration: none;
+    color: black;
+}
 @media screen and (max-width:415px) {
    .titlePO{
        font-size: 25px;
