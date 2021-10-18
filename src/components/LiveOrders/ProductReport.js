@@ -51,10 +51,13 @@ function ProductReport() {
           />
         </div>
         <div className="col-4">
+          <div>
           <img
             className="img-cls"
             src="https://s3.amazonaws.com/company-photo.theladders.com/2262/4dadaf63-837d-414e-ae95-edd81a72a486.png"
           ></img>
+          <div style={{paddingLeft:"10px"}}>#1234_1</div>
+          </div>
         </div>
         <div className="col-6">
           <div
@@ -74,9 +77,11 @@ function ProductReport() {
               <span className="col-3 p-0" style={{ minWidth: "max-content" }}>
                 <span class="badge badge-light">1</span>&ensp; X25000000
               </span>
-              <span className="col-3 p-0" style={{ fontWeight: "700" }}>
-                2500000/-
+              <span className="col-3 p-0">
+                <div style={{ fontWeight: "700" }}>2500000/-</div>
+                <div>Delivered</div>                
               </span>
+              
             </div>
           </div>
         </div>
