@@ -78,8 +78,8 @@ function ProductReport() {
                 <span class="badge badge-light">1</span>&ensp; X25000000
               </span>
               <span className="col-3 p-0">
-                <div style={{ fontWeight: "700" }}>2500000/-</div>
-                <div>Delivered</div>                
+                <span style={{ fontWeight: "700" }}>2500000/-</span>
+                <span>Delivered</span>                
               </span>
               
             </div>
