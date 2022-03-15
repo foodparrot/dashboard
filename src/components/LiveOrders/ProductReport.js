@@ -42,12 +42,12 @@ function ProductReport() {
             reference={checkBoxRef}
             onChange={handleCheckBox}
             size={20}
-            icon={
-              <>
-                {/* <IoCloseSharp/> */}
-                <Icon.FiCheck />
-              </>
-            }
+            // icon={
+            //   <>
+            //     {/* <IoCloseSharp/> */}
+            //     <Icon.FiCheck />
+            //   </>
+            // }
           />
         </div>
         <div className="col-4">

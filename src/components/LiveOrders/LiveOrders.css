@@ -1,3 +1,28 @@
+.backButton{
+    border: 2px solid orangered;
+    border-radius: 50%;
+    margin: 2px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .backButton:hover{
+    border: 2px solid orangered;
+    border-radius: 50%;
+    width: 25px;
+    margin: 2px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+@media screen and (min-width:769px) {
+    .backButton{
+        display:none;
+    }
+}
 .lvhead  {
     background: #FBF6F6;
     font-size: 1em;
