@@ -150,8 +150,8 @@ function Addproduct() {
                 <button
                   type="button"
                   class="btn btn-unit col-3 "
-                  data-toggle="modal"
-                  data-target="#exampleModalCenter"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalCenter"
                 >
                   unit
                 </button>
@@ -170,7 +170,7 @@ function Addproduct() {
                   <button
                     type="button"
                     class="close"
-                    data-dismiss="modal"
+                    data-bs-dismiss="modal"
                     aria-label="Close"
                   >
                     <span aria-hidden="true">&times;</span>
@@ -341,16 +341,16 @@ function Addproduct() {
             <div className=" col-11  add-vars btn-col-dd">
               <a
                 className="btn "
-                href="#collapseExample"
-                data-toggle="collapse"
+                data-bs-target="#collapseExample"
+                data-bs-toggle="collapse"
               >
                 variant
                 <FaPencilAlt />
               </a>
               <span
                 className="btn btn-dup"
-                href="#collapseExample"
-                data-toggle="collapse"
+                data-bs-target="#collapseExample"
+                data-bs-toggle="collapse"
               >
                 <MdArrowDropUp />
               </span>
@@ -406,7 +406,7 @@ function Addproduct() {
             </button>
           </div>
 
-          <div className="row row-ano-size">
+          <div className="row-ano-size">
             <button class="ano-btn add-ano-var" type="button">
               Add another variant{" "}
             </button>
@@ -417,13 +417,13 @@ function Addproduct() {
         <div className="container nav navbar colors ">
           <div className="row row-clrs">
             <div className=" add-clrs dropup btn-col-dd">
-              <a class="btn " href="#collapseExample2" data-toggle="collapse">
+              <a class="btn " data-bs-target="#collapseExample2" data-bs-toggle="collapse">
                 Add colours{" "}
               </a>
               <span
                 className="btn btn-dup btn-dup-clr"
-                href="#collapseExample2"
-                data-toggle="collapse"
+                data-bs-target="#collapseExample2"
+                data-bs-toggle="collapse"
               >
                 <MdArrowDropUp />
               </span>
@@ -432,52 +432,21 @@ function Addproduct() {
         </div>
 
         <div className="container collapse last-row" id="collapseExample2">
-          {/* <div className="row row-last-row ">
-                        <div className="col-11 col-md-3  colour1">
-                            <div className="row row-last-clr">
-                                <label for="colour1">Colour123</label>
-                                <input type="text" class="form-control" name="colour1" id="colour1" placeholder="" />
-                            </div>
-                        </div>
-                        <button class=" red-rem-btn" type="button">REMOVE </button>
-                        <div className="col-11 offset-md-3 col-md-3  colour2">
-                            <div className="row row-last-clr">
-                                <label for="colour2 ">Colour2</label>
-                                <input type="text" class="form-control" name="colour2" id="colour2" placeholder="" />
-                            </div>
-                        </div>
-                        <button class="red-rem-btn" type="button">REMOVE </button>
-                    </div> */}
-          <div className="container nav navbar dropdown_cls">
-            <div className="row" style={{ padding: "2% 0" }}>
-              <div className="col-12 month dropdown">
-                <a
-                  href="#"
-                  class="dropdown-toggle anc-tag-d "
-                  data-toggle="dropdown"
-                >
-                  select varient
-                </a>
-                <div class="dropdown-menu">
-                  <a href="#" class="dropdown-item" value="varient1">
-                    varient1
-                  </a>
-                  <a href="#" class="dropdown-item" value="varient2">
-                    varient2
-                  </a>
-                  <a href="#" class="dropdown-item" value="varient3">
-                    varient3
-                  </a>
-                </div>
-              </div>
-            </div>
+          <div className="col-3 " style={{padding:"5px 0"}}>
+          <select className="form-select"  aria-label="Default select example">
+            <option selected>Select varient</option>
+            <option value="1">varient1</option>
+            <option value="2">varient2</option>
+            <option value="3">varient3</option>
+          </select>
+          
           </div>
           <div>
             <div style={styles.swatch}>
               <div style={styles.colorcode} />
             </div>
           </div>
-          <div className="row row-ano-clr">
+          <div className="row-ano-clr">
             <Popup
               className="subModal"
               onOpen={() => setDisplayColorPicker(true)}
@@ -515,13 +484,13 @@ function Addproduct() {
         <div className="container nav navbar addons ">
           <div className="row row-clrs">
             <div className=" add-clrs dropup btn-col-dd">
-              <a class="btn " href="#collapseExample3" data-toggle="collapse">
+              <a class="btn " data-bs-target="#collapseExample3" data-bs-toggle="collapse">
                 Addons{" "}
               </a>
               <span
                 className="btn btn-dup btn-dup-add"
-                href="#collapseExample3"
-                data-toggle="collapse"
+                data-bs-target="#collapseExample3"
+                data-bs-toggle="collapse"
               >
                 <MdArrowDropUp />
               </span>
@@ -561,7 +530,7 @@ function Addproduct() {
             </button>
           </div>
 
-          <div className="row row-ano-adon">
+          <div className="row-ano-adon">
             <button class="ano-btn add-ano-btn" type="button">
               Add another Addon{" "}
             </button>
