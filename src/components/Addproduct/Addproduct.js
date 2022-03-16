@@ -113,7 +113,7 @@ function Addproduct() {
         {/*select outlet*/}
         <div class="  category container">
           <div className="row">
-            <div className="col-10 col-md-5">
+            <div className="col-6 col-md-6">
               <div className="row" style={{ flexDirection: "column" }}>
                 <label
                   className="selected-outlet"
@@ -125,37 +125,38 @@ function Addproduct() {
                   type="button"
                   class="btn btn-unit col-12 p-1"
                   style={{ alignSelf: "flex-start" }}
-                  data-toggle="modal"
-                  data-target="#exampleModal"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 >
                   Outlet
                 </button>
               </div>
             </div>
-            <div className=" col-10 offset-md-2 col-md-5 ">
-              <div className=" chose-cat row">
-                <div className="col-12">
-                  <label for=" col-12 Choose category quantity">Quantity</label>
-                </div>
+            <div className="col-md-6">
+              <div className="col-12 chose-cat">
+                <label for="Choose category quantity">Quantity</label>
               </div>
-
-              <div className="row unit">
-                <input
-                  type="text"
-                  class="form-control col-3"
-                  name="quantity"
-                  id=" quantity"
-                  placeholder=""
-                />
-                <button
-                  type="button"
-                  class="btn btn-unit col-3 "
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModalCenter"
-                >
-                  unit
-                </button>
-                <div className="offset-1">per (q) (unit)</div>
+              <div className="col-12 unit m-0 d-flex">
+                <div className="col-4">
+                  <input
+                    type="text"
+                    className="form-control"
+                    name="quantity"
+                    id=" quantity"
+                    placeholder=""
+                  />
+                </div>
+                <div className="col-2 m-0 ms-2">
+                  <button
+                    type="button"
+                    class="btn btn-unit m-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModalCenter"
+                  >
+                    unit
+                  </button>
+                </div>
+                <div className="col-4 w-100 m-0">per (q) (unit)</div>
               </div>
             </div>
           </div>
@@ -255,7 +256,7 @@ function Addproduct() {
                   <button
                     type="button"
                     class="close"
-                    data-dismiss="modal"
+                    data-bs-dismiss="modal"
                     aria-label="Close"
                   >
                     <span aria-hidden="true">&times;</span>
@@ -417,7 +418,11 @@ function Addproduct() {
         <div className="container nav navbar colors ">
           <div className="row row-clrs">
             <div className=" add-clrs dropup btn-col-dd">
-              <a class="btn " data-bs-target="#collapseExample2" data-bs-toggle="collapse">
+              <a
+                class="btn "
+                data-bs-target="#collapseExample2"
+                data-bs-toggle="collapse"
+              >
                 Add colours{" "}
               </a>
               <span
@@ -432,14 +437,13 @@ function Addproduct() {
         </div>
 
         <div className="container collapse last-row" id="collapseExample2">
-          <div className="col-3 " style={{padding:"5px 0"}}>
-          <select className="form-select"  aria-label="Default select example">
-            <option selected>Select varient</option>
-            <option value="1">varient1</option>
-            <option value="2">varient2</option>
-            <option value="3">varient3</option>
-          </select>
-          
+          <div className="col-3 " style={{ padding: "5px 0" }}>
+            <select className="form-select" aria-label="Default select example">
+              <option selected>Select varient</option>
+              <option value="1">varient1</option>
+              <option value="2">varient2</option>
+              <option value="3">varient3</option>
+            </select>
           </div>
           <div>
             <div style={styles.swatch}>
@@ -484,7 +488,11 @@ function Addproduct() {
         <div className="container nav navbar addons ">
           <div className="row row-clrs">
             <div className=" add-clrs dropup btn-col-dd">
-              <a class="btn " data-bs-target="#collapseExample3" data-bs-toggle="collapse">
+              <a
+                class="btn "
+                data-bs-target="#collapseExample3"
+                data-bs-toggle="collapse"
+              >
                 Addons{" "}
               </a>
               <span
