@@ -30,7 +30,7 @@ function Products() {
                             </div>
                         </div>
                         <div className="col-12  col-md-5 add-btn">
-                            <Link to={"../Addproduct/Addproduct"}><button className=" new-product">Add New Product</button></Link>
+                            <Link to={"/products/new"}><button className=" new-product">Add New Product</button></Link>
                         </div></div>
                 </div>
 
