@@ -1,16 +1,33 @@
-import React, { useState } from "react";
+"use strict";
+import React, { useState, useEffect } from "react";
 import "../Addproduct/Addproduct.css";
 import { IconContext } from "react-icons";
 import { FaPencilAlt } from "react-icons/fa";
 import { HiInformationCircle } from "react-icons/hi";
 import { MdArrowDropUp } from "react-icons/md";
-import reactCSS from 'reactcss'
-import { SketchPicker } from 'react-color'
+import reactCSS from "reactcss";
+import { SketchPicker } from "react-color";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
+import { IoCloseSharp } from "react-icons/io5";
 function Addproduct() {
+  const contentStyle = {
+    maxWidth: "600px",
+    width: "90%",
+  };
   const [displayColorPicker, setDisplayColorPicker] = useState(false);
-  const [color, setColor] = useState({ r: 255, g: 255, b: 255, a: 1 });
+  const [color, setColor] = useState("#333");
+  useEffect(() => {
+    const popupContentEle = document.querySelector(".subModal-content");
+    if (popupContentEle) {
+      popupContentEle.style.setProperty("border", color, "important");
+      popupContentEle.style.setProperty("background-color", color, "important");
+      popupContentEle.style.setProperty("background", color, "important");
+    }
+  }, [color, displayColorPicker]);
+
   const handleClick = () => {
-    setDisplayColorPicker(!displayColorPicker);
+    setDisplayColorPicker(true);
   };
 
   const handleClose = () => {
@@ -18,7 +35,8 @@ function Addproduct() {
   };
 
   const handleChange = (color) => {
-    setColor(color.rgb);
+    setColor(color.hex);
+    console.log(color);
   };
   const styles = reactCSS({
     default: {
@@ -26,7 +44,7 @@ function Addproduct() {
         width: "36px",
         height: "14px",
         borderRadius: "2px",
-        background: `rgba(${color.r}, ${color.g}, ${color.b}, ${color.a})`,
+        backgroundColor: `${color}`,
       },
       swatch: {
         padding: "5px",
@@ -36,16 +54,14 @@ function Addproduct() {
         display: "inline-block",
         cursor: "pointer",
       },
-      popover: {
-        position: "absolute",
-        zIndex: "2",
-      },
+      //   popover: {
+      //     position: "absolute",
+      //     zIndex: "2",
+      //   },
       cover: {
-        position: "fixed",
-        top: "0px",
-        right: "0px",
-        bottom: "0px",
-        left: "0px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
       },
     },
   });
@@ -268,7 +284,7 @@ function Addproduct() {
           </div>
         </div>
         {/*rates*/}
-        <div className="container rates">
+        {/* <div className="container rates">
           <div className="row ">
             <div className="col-12 col-md-5  mrp">
               <div className="row row-mrp">
@@ -295,7 +311,7 @@ function Addproduct() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/*Product description*/}
         <div className="prod-desc">
           <label for="Product Name">Product description</label>
@@ -398,7 +414,6 @@ function Addproduct() {
         </div>
 
         {/*colors div*/}
-
         <div className="container nav navbar colors ">
           <div className="row row-clrs">
             <div className=" add-clrs dropup btn-col-dd">
@@ -433,29 +448,72 @@ function Addproduct() {
                         </div>
                         <button class="red-rem-btn" type="button">REMOVE </button>
                     </div> */}
+          <div className="container nav navbar dropdown_cls">
+            <div className="row" style={{ padding: "2% 0" }}>
+              <div className="col-12 month dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle anc-tag-d "
+                  data-toggle="dropdown"
+                >
+                  select varient
+                </a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item" value="varient1">
+                    varient1
+                  </a>
+                  <a href="#" class="dropdown-item" value="varient2">
+                    varient2
+                  </a>
+                  <a href="#" class="dropdown-item" value="varient3">
+                    varient3
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
           <div>
-          {displayColorPicker}
             <div style={styles.swatch}>
               <div style={styles.colorcode} />
             </div>
-            {displayColorPicker ? (
-              <div style={styles.popover}>
-                <div style={styles.cover} onClick={handleClose} />
-                <SketchPicker
-                  color={color}
-                  onChange={handleChange}
-                />
-              </div>
-            ) : null}
           </div>
           <div className="row row-ano-clr">
-            <button
-              class="ano-btn add-ano-clr"
-              type="button"
-              onClick={handleClick}
+            <Popup
+              className="subModal"
+              onOpen={() => setDisplayColorPicker(true)}
+              onClose={() => setDisplayColorPicker(false)}
+              trigger={
+                <button class="ano-btn add-ano-clr" type="button">
+                  Add another colour
+                </button>
+              }
+              modal
             >
-              Add another colour
-            </button>
+              {(close) => (
+                <div style={{ background: `${color}` }}>
+                  <button className="closeColorBtn" onClick={close}>
+                    &times;
+                  </button>
+                  <div className="content">
+                    <div style={styles.cover}>
+                      <SketchPicker color={color} onChange={handleChange} />
+                    </div>
+                  </div>
+                  <div
+                    className="actions"
+                    style={{ display: "flex", justifyContent: "center" }}
+                  >
+                    <button className="addColour">Add colour</button>
+                  </div>
+                </div>
+              )}
+            </Popup>
           </div>
         </div>
 
