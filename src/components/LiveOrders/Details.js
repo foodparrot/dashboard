@@ -32,7 +32,6 @@ function Details({ navBarHeight, winHeight }) {
       </div>
       <div className="container">
         <div
-          className="row"
           style={{ display: "flex", justifyContent: "space-between" }}
         >
           <div>Order#12345 {oid}</div>
@@ -61,7 +60,6 @@ function Details({ navBarHeight, winHeight }) {
           </div>
         </div>
         <div
-          className="row"
           style={{ display: "flex", justifyContent: "space-between" }}
         >
           <div>Today,10:45</div>
