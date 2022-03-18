@@ -15,14 +15,24 @@ function Dashboard() {
   });
   return (
     <div className="container-fluid ">
-      <div className="row headerd">
-        <p>Bismillah Outlet</p>
+      <div className="container-fluid row rowps-1">
+        <p>Bismillah</p>
       </div>
 
       <div className="container-fluid dashboard">
-        <p className="heading">Dashboard</p>
-        {/* dropdown */}
-
+      <p className="paraps">Dashboard</p>
+          <div class="form-group col-12 col-md-4">
+            <label for="selectOutletToPause" style={{ whiteSpace: "nowrap" }}>
+              Select outlet
+            </label>
+            
+            <select class="form-select mb-2" aria-label="Default select example">
+              <option value="1">Outlet 1</option>
+              <option value="2">Outlet 2</option>
+              <option value="3">Outlet 3</option>
+            </select>
+          </div>
+          
         {/* current month*/}
         <div className="col-md-3 mb-2">
           <select class="form-select month" aria-label="Default select example">
@@ -44,35 +54,34 @@ function Dashboard() {
 
         {/*grids  */}
         <div className="container cardsdashboard">
-            <div className="col-12 col-md-3 p-2">
+          <div className="col-12 col-md-3 p-2">
             <div className="card carddashboard">
               <div className="row rowd1 ">Total Orders</div>
               <div className="row rowd1">0</div>
               <div className="row rowd1">Orders</div>
             </div>
-            </div>
-            <div className="col-12 col-md-3 p-2">
+          </div>
+          <div className="col-12 col-md-3 p-2">
             <div className="card carddashboard">
               <div className="row rowd1 ">Total Sales</div>
               <div className="row rowd1">0.00</div>
               <div className="row rowd1">Sales</div>
             </div>
-            </div>
-            <div className="col-12 col-md-3 p-2">
+          </div>
+          <div className="col-12 col-md-3 p-2">
             <div className="card carddashboard">
               <div className="row rowd1 ">Average basket value</div>
               <div className="row rowd1">0.00</div>
               <div className="row rowd1">Value</div>
             </div>
-            </div>
-            <div className="col-12 col-md-3 p-2">
+          </div>
+          <div className="col-12 col-md-3 p-2">
             <div className="card carddashboard ">
               <div className="row rowd1 ">Average order rating</div>
               <div className="row rowd1">0.00</div>
               <div className="row rowd1">Score</div>
             </div>
-            </div>
-        
+          </div>
         </div>
 
         <div className="cust">

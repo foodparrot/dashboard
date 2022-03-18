@@ -27,7 +27,7 @@ import { Link } from "react-router-dom";
                      <p style={{fontSize:'1.2em', fontWeight:'600'}}>Bismillah Outlet</p>
             <div className="container menupal">
           {/*first line*/}
-            <div className="flex-container flex-container10">
+            <div className="flex-container container">
                 <div className="flex-item item10"><b>Menu</b></div>
                 <div>
                     <Link to={"../menus/Importmenu"}><button type="button" class="grad">Import menu</button></Link>

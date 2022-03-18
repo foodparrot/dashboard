@@ -6,15 +6,20 @@ export class Inventory extends Component {
   render() {
     return (
       <div className="container-fluid">
-        <p style={{ fontWeight: "500", fontSize: "1.3em" }}>Bismillah</p>
+        <div className="container-fluid row rowps-1">
+          <p>Bismillah</p>
+        </div>
         <div className=" container upperdivInv">
-        <p className="paraps">Inventory</p>
+          <p className="paraps">Inventory</p>
           <div class="form-group col-12 col-md-4">
             <label for="selectOutletToPause" style={{ whiteSpace: "nowrap" }}>
               Select outlet
             </label>
-            
-            <select class="form-select mb-2" aria-label="Default select example">
+
+            <select
+              class="form-select mb-2"
+              aria-label="Default select example"
+            >
               <option value="1">Outlet 1</option>
               <option value="2">Outlet 2</option>
               <option value="3">Outlet 3</option>
@@ -27,21 +32,21 @@ export class Inventory extends Component {
                   type="text"
                   className="form-control"
                   placeholder="Search for a product"
-                  style={{border:"1px solid #b9bbbd"}}
                 ></input>
-                
-                  <button
-                    className="btn btn-secondary input-group-text"
-                    type="button"
-                    style={{
-                      background:
-                        " linear-gradient(94.08deg, #FFE13B 0.84%, #FF2525 115.93%)",
-                    }}
-                  >
-                    <i>
-                      <AiOutlineSearch />
-                    </i>
-                  </button>
+
+                <button
+                  className="btn btn-secondary input-group-text"
+                  type="button"
+                  style={{
+                    background:
+                      " linear-gradient(94.08deg, #FFE13B 0.84%, #FF2525 115.93%)",
+                    border: "none",
+                  }}
+                >
+                  <i>
+                    <AiOutlineSearch />
+                  </i>
+                </button>
               </div>
             </div>
           </div>

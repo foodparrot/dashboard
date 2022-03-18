@@ -4,11 +4,26 @@ export class OrderHistory extends Component {
   render() {
     return (
       <div className="container-fluid">
-        <p style={{ fontWeight: "500", fontSize: "1.3em" }}>Bismillah Outlet</p>
+        <div className="container-fluid row rowps-1">
+          <p>Bismillah</p>
+        </div>
         <div className="ohpallette">
-          <div className="col-12 col-md-6 po1">Customers</div>
+          
           {/* Form */}
           <div className="container">
+          <p className="paraps">Customers</p>
+          <div class="form-group col-12 col-md-4">
+            <label for="selectOutletToPause" style={{ whiteSpace: "nowrap" }}>
+              Select outlet
+            </label>
+            
+            <select class="form-select mb-2" aria-label="Default select example">
+              <option value="1">Outlet 1</option>
+              <option value="2">Outlet 2</option>
+              <option value="3">Outlet 3</option>
+            </select>
+          </div>
+          
             <div className="box boxstyling">
               <form action="">
                 <div className="row formgrping">
