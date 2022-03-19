@@ -4,6 +4,7 @@
 
 [![Gitpod Write-Code-Online](https://img.shields.io/badge/Gitpod-write--online--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/foodparrot/dashboard)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c5f322e7-2046-43e8-863f-52fad97d5355/deploy-status)](https://app.netlify.com/sites/dashboard-ofas/deploys)
 =======
 >>>>>>> parent of d894ed3 (update)
 # Getting Started with Create React Ap
