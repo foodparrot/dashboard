@@ -1,0 +1,8 @@
+._loading_overlay_overlay {
+    position: fixed;
+    z-index: 1011;
+  }
+  ._loading_overlay_wrapper {
+      width: 100vw;
+  }
+  

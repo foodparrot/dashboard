@@ -3,7 +3,7 @@ import './Parent.css';
 import withSizes from 'react-sizes';
 function Parent(props) {
     return (
-        <div id="rootParentComponent" style={{height: `${props.winHeight}px`,overflowY:"scroll",width:"100%"}}>
+        <div id="rootParentComponent" style={{ height: `100vh`, overflowY: "auto", width: "100%", overflowX: "auto" }}>
             {props.children}
         </div>
     )

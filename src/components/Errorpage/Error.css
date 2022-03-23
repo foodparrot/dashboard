@@ -1,0 +1,16 @@
+.errorContent{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.errorGif{
+    width: 100%;
+    height: auto;
+}
+@media screen and (min-width:1000px){
+.errorGif{
+    width: 60%;
+    height: auto;
+}
+}

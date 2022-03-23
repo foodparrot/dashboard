@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useParams,Link } from "react-router-dom";
 import ProductReport from "./ProductReport";
 import * as Icon from "react-icons/fi";
-import { MdArrowBackIosNew } from "react-icons/md";
+import { IoChevronBack } from "react-icons/io5";
 import Checkbox from "react-custom-checkbox";
 import "./LiveOrders.css";
 
@@ -28,7 +28,7 @@ function Details({ navBarHeight, winHeight }) {
       style={{ height: winHeight - navBarHeight + "px", overflowY: "scroll" }}
     >
       <div className="backButton">
-      <Link to="/liveorders" style={{color:"black"}}><MdArrowBackIosNew width="18px" /></Link>        
+      <Link to="/liveorders" style={{color:"black"}}><IoChevronBack width="18px" /></Link>        
       </div>
       <div className="container">
         <div

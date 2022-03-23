@@ -34,15 +34,15 @@ import Editcategory from "./components/Editcategory/EditCategory";
 import CreateMenu from "./components/Menus/CreateMenu";
 import ImportMenu from "./components/Menus/ImportMenu";
 import categoryProducts from "./components/categoryProducts/categoryProducts";
-
-// import $ from 'jquery';
-// import jQuery from 'jquery';
+import AppLayout from "./components/AppLayout/AppLayout";
+import PrivateOutlet from "./components/PrivateOutlet";
+import Errorpage from "./components/Errorpage"
 const App = () => {
   return (
     <BrowserRouter>
-      <Sidebar />
-      <Parent>
         <Routes>
+        <Route element={<AppLayout />}>
+        <Route element={<PrivateOutlet />}>
           <Route path="/" element={<Dashboard />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/liveorders" exact element={<LiveOrders />} />
@@ -76,8 +76,10 @@ const App = () => {
           <Route path="/createoutlets2" element={<CreateOutlet2 />} />
           <Route path="/createoutlets3" element={<CreateOutlet3 />} />
           <Route path="/modal" element={<TestModal />} />
+          </Route>
+          <Route path="*" element={<Errorpage />} />
+          </Route>
         </Routes>
-      </Parent>
     </BrowserRouter>
   );
 };
