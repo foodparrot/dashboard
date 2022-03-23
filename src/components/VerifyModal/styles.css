@@ -1,0 +1,31 @@
+
+.otpInputStyle {
+    width: 3rem !important;
+    height: 3rem;
+    margin: 0 1rem;
+    font-size: 2rem;
+    border-radius: 4px;
+    background: #d5cd8f;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .timer {
+    font-family: "Montserrat";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .timer > .text {
+    color: #aaa;
+  }
+  
+  .timer > .value {
+    font-size: 40px;
+  }

@@ -13,3 +13,14 @@ const AppLayout = (props) => {
   );
 };
 export default AppLayout
+//  open={!isEmailOrPhoneVerified()}
+// email=>labl1
+// otp input
+// Email | phone veirifation label tilte
+// 1-email
+// 2-phone
+// timer common
+// API is comming 
+// otp is common (state)
+// send or resend is common
+// email:false email ask?
