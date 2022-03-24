@@ -1,4 +1,4 @@
-import React, { useEffect, useState, forwardRef } from "react";
+import React, { useEffect, useState, forwardRef, useRef } from "react";
 import { useImmer } from "use-immer";
 import Modal from "react-bootstrap/Modal";
 import { Button } from "react-bootstrap";
@@ -9,7 +9,7 @@ import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 import { useUserStore } from "../../stores"
 import "./styles.css"
 import TickAnimation from "./TickAnimation";
-const OTP_TIME = 10;
+const OTP_TIME = 180;
 const handlRequestOTP = async (setForm) => {
     setForm(draft => void (draft.loading = true));
     const r = await fetch("/api/business/verify-otp");
@@ -29,7 +29,7 @@ const handlRequestOTP = async (setForm) => {
 }
 const RenderTime = ({ remainingTime, setForm, timer }) => {
     if (remainingTime === 0 && timer === 0) {
-        return (<div style={{display:"flex",flexDirection:"column"}}>
+        return (<div style={{ display: "flex", flexDirection: "column" }}>
             <div className="timer">Time up</div>
             <Button variant="info" onClick={() => handlRequestOTP(setForm)}>
                 Resend
@@ -62,7 +62,7 @@ const RenderFirstTime = ({ form, setForm }) => {
 
 const RenderWhileOTPSent = ({ form, setForm }) => {
     return (
-        <Modal.Body style={{padding:"0"}}>
+        <Modal.Body style={{ padding: "0" }}>
             <p style={{ fontFamily: 'Urbanist', fontWeight: "600", fontSize: "1.2rem", textAlign: "center" }}>{form.message}</p>
             <div className="d-flex justify-content-center">
                 <CountdownCircleTimer
@@ -97,6 +97,7 @@ const VerifyModal = () => {
     const [open, setOpen] = useState(false);
     const { isEmailVerified, isNumberVerified } = useUserStore(state => state.data);
     const setVerified = useUserStore(state => state.setVerified);
+    const tickRef = useRef(null);
     useEffect(() => {
         if (!isEmailVerified || !isNumberVerified) {
             setForm(draft => {
@@ -136,14 +137,19 @@ const VerifyModal = () => {
                         draft.timer = -1;
                     });
                     setVerified({ email: true });
+                    tickRef.current.open();
                 }
                 else if (isEmailVerified && !isNumberVerified) {
                     setVerified({ phone: true });
-                    setOpen(false);
+                    tickRef.current.open(() => {
+                        setOpen(false);
+                    });
                 }
                 else if (!isEmailVerified && isNumberVerified) {
                     setVerified({ email: true });
-                    setOpen(false);
+                    tickRef.current.open(() => {
+                        setOpen(false);
+                    });
                 }
                 else {
                     setOpen(false);
@@ -168,7 +174,7 @@ const VerifyModal = () => {
                         {form.verifyMode === "email" ? "Email" : "Phone"} Verification
                     </Modal.Title>
                 </Modal.Header>
-                <TickAnimation/>
+                <TickAnimation ref={tickRef} />
                 {form.loading ? <img className="w-50 ms-auto me-auto" alt="loading" src="/images/timer.gif" /> :
                     <>
                         {

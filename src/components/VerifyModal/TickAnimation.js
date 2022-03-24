@@ -1,12 +1,40 @@
-import React, { useEffect, forwardRef } from 'react'
+import React, { useEffect, forwardRef, useState, useCallback } from 'react'
 import "./tickAnimation.css"
 
 const TickAnimation = (props, ref) => {
+    const [open, setOpen] = useState(false);
+    const [callBack, setCallBack] = useState({ delay: 0, run: () => { } });
+    const tickRef = {
+        ref: null,
+        open: function (cb) {
+            this.ref.style.display = "flex";
+            if (cb instanceof Function) {
+                setCallBack({ ...callBack, run: cb, delay: 50 });
+                setOpen(true);
+            }
+            else {
+                setOpen(true);
+            }
+
+        }
+    };
+    ref.current = tickRef;
     useEffect(() => {
-        window.$("#verify-modal-tick").fadeOut(4000);
-    })
+        if (open) {
+            window.$("#verify-modal-tick").fadeOut(4000, function () {
+                setTimeout(() => {
+                    callBack.run();
+                    setCallBack({ ...callBack, run: () => { }, delay: 0 });
+                    setOpen(false);
+                }, callBack.delay)
+            });
+        }
+        else {
+            window.$("#verify-modal-tick").hide();
+        }
+    }, [open])
     return (
-        <div id="verify-modal-tick" ref={ele=>}>
+        <div id="verify-modal-tick" ref={ele => tickRef.ref = ele}>
             <div className="icon-animated icon-animated-tick" tabindex="-1" aria-hidden="true">
                 <svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                     <circle cx="50" cy="50" r="50" />
