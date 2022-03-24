@@ -22,7 +22,7 @@
 	fill: #60D154;
 	animation-fill-mode: forwards;
     animation-name: circle-pulse;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     animation-iteration-count: 1;
 }
 
@@ -30,7 +30,7 @@
 	fill: #fff;
 	animation-fill-mode: forwards;
     animation-name: tick-swipe1;
-    animation-duration: 0.7s;
+    animation-duration: 0.5s;
     animation-iteration-count: 1;
     transform: scaleX(0);
     transform-origin: left bottom;
@@ -41,7 +41,7 @@
 	fill: #fff;
 	animation-fill-mode: forwards;
     animation-name: tick-swipe2;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
     transform: scaleY(0);
     transform-origin: right bottom;

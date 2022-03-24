@@ -9,7 +9,7 @@ const TickAnimation = (props, ref) => {
         open: function (cb) {
             this.ref.style.display = "flex";
             if (cb instanceof Function) {
-                setCallBack({ ...callBack, run: cb, delay: 50 });
+                setCallBack({ ...callBack, run: cb, delay: 25 });
                 setOpen(true);
             }
             else {
@@ -21,7 +21,7 @@ const TickAnimation = (props, ref) => {
     ref.current = tickRef;
     useEffect(() => {
         if (open) {
-            window.$("#verify-modal-tick").fadeOut(4000, function () {
+            window.$("#verify-modal-tick").delay(1500).fadeOut(400, function () {
                 setTimeout(() => {
                     callBack.run();
                     setCallBack({ ...callBack, run: () => { }, delay: 0 });

@@ -10,8 +10,10 @@ import { AiOutlineSearch } from "react-icons/ai";
 function Products() {
   return (
     <div className="container-fluid ">
-      <p style={{ fontSize: "1.2em", fontWeight: "600" }}>Bismillah Outlet</p>
-
+      
+      <div className="container-fluid row rowps-1">
+          <p>Bismillah</p>
+        </div>
       <div className="propal">
         <div className="container flex-container-2 ">
         <p className="paraps">All products</p>

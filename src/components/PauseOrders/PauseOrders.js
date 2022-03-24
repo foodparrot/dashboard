@@ -10,12 +10,8 @@ export class PauseOrders extends Component {
       delivery: true,
       pickup: false,
     };
-    // this.handleChange = this.handleChange.bind(this)
+
   }
-  // handleChange(e){
-  //     console.log(e);
-  //     this.setState((prev) => ({ [e.target.id]: !prev[e.target.id]}))
-  // }
   render() {
     return (
       <div className="container">

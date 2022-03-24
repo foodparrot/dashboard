@@ -1,18 +1,7 @@
 import React from "react";
 import "../Dashboard/dashboard.css";
 function Dashboard() {
-  window.$(".dropdown-item").click(function () {
-    window
-      .$(this)
-      .parents(".dropdown")
-      .find(".dropdown-toggle")
-      .html(window.$(this).text());
-    window
-      .$(this)
-      .parents(".dropdown")
-      .find(".dropdown-toggle")
-      .val(window.$(this).data("value"));
-  });
+  
   return (
     <div className="container-fluid ">
       <div className="container-fluid row rowps-1">

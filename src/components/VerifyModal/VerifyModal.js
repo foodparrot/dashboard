@@ -135,6 +135,7 @@ const VerifyModal = () => {
                     setForm(draft => {
                         draft.verifyMode = 'phone';
                         draft.timer = -1;
+                        draft.otp = "";
                     });
                     setVerified({ email: true });
                     tickRef.current.open();

@@ -9,7 +9,8 @@
   justify-content: space-between;
 }
 .item10 {
-  font-size: 20px;
+  font-size: 1.3em;
+  font-weight: 700;
 }
 .menutab{
   border: none !important;
@@ -48,7 +49,7 @@ border-radius: 10px;
   color: #0040ff;
 }
 .table10 {
-  margin-top: 8%;
+  
   border: 2px ridge;
   text-align: center;
   width: 100%;
