@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, forwardRef } from 'react'
 import "./tickAnimation.css"
 
-const TickAnimation = () => {
+const TickAnimation = (props, ref) => {
     useEffect(() => {
         window.$("#verify-modal-tick").fadeOut(4000);
     })
     return (
-        <div id="verify-modal-tick">
+        <div id="verify-modal-tick" ref={ele=>}>
             <div className="icon-animated icon-animated-tick" tabindex="-1" aria-hidden="true">
                 <svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                     <circle cx="50" cy="50" r="50" />
@@ -25,4 +25,4 @@ const TickAnimation = () => {
     )
 }
 
-export default TickAnimation
+export default forwardRef(TickAnimation)
