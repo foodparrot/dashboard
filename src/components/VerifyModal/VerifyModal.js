@@ -9,7 +9,7 @@ import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 import { useUserStore } from "../../stores"
 import "./styles.css"
 import TickAnimation from "./TickAnimation";
-const OTP_TIME = 180;
+const OTP_TIME = 10;
 const handlRequestOTP = async (setForm) => {
     setForm(draft => void (draft.loading = true));
     const r = await fetch("/api/business/verify-otp");
@@ -29,12 +29,12 @@ const handlRequestOTP = async (setForm) => {
 }
 const RenderTime = ({ remainingTime, setForm, timer }) => {
     if (remainingTime === 0 && timer === 0) {
-        return (<>
-            <div className="timer">Time Up-{timer}</div>
+        return (<div style={{display:"flex",flexDirection:"column"}}>
+            <div className="timer">Time up</div>
             <Button variant="info" onClick={() => handlRequestOTP(setForm)}>
                 Resend
             </Button>
-        </>);
+        </div>);
     }
     const minutes = Math.floor(remainingTime / 60)
     const seconds = remainingTime % 60
@@ -54,7 +54,7 @@ const RenderFirstTime = ({ form, setForm }) => {
             <p style={{ fontFamily: 'Urbanist', fontWeight: "600", fontSize: "1.2rem", textAlign: "center" }}>{form.message}</p>
             <h3>Verify your {form.verifyMode} by sending OTP</h3>
             <Button variant="info" onClick={() => handlRequestOTP(setForm)}>
-                Resend
+                Send
             </Button>
         </Modal.Body>
     )
@@ -62,7 +62,7 @@ const RenderFirstTime = ({ form, setForm }) => {
 
 const RenderWhileOTPSent = ({ form, setForm }) => {
     return (
-        <Modal.Body>
+        <Modal.Body style={{padding:"0"}}>
             <p style={{ fontFamily: 'Urbanist', fontWeight: "600", fontSize: "1.2rem", textAlign: "center" }}>{form.message}</p>
             <div className="d-flex justify-content-center">
                 <CountdownCircleTimer
@@ -94,7 +94,7 @@ const RenderWhileOTPSent = ({ form, setForm }) => {
 
 const VerifyModal = () => {
     const [form, setForm] = useImmer({ loading: false, message: "", timer: -1, expiry: 0, otp: "", verifyMode: "" });
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
     const { isEmailVerified, isNumberVerified } = useUserStore(state => state.data);
     const setVerified = useUserStore(state => state.setVerified);
     useEffect(() => {
@@ -177,7 +177,7 @@ const VerifyModal = () => {
                 }
                 <Modal.Footer className="d-flex justify-content-center">
                     {form.loading ? <></> : <>
-                        <Button variant="danger" disabled={(form.timer === -1 || form.timer === 0)} onClick={handleOTPConfirmation}>
+                        <Button variant="success" disabled={(form.timer === -1 || form.timer === 0)} onClick={handleOTPConfirmation}>
                             Confirm
                         </Button>
                     </>}
