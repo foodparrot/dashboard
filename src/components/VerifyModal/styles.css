@@ -1,10 +1,11 @@
 
 .otpInputStyle {
-    width: 3rem !important;
-    height: 3rem;
+    width: 3.5rem !important;
+    height: 3.5rem;
     margin: 0 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-radius: 4px;
+    padding: 10px 10px;
     background: #d5cd8f;
     border: 1px solid rgba(0, 0, 0, 0.3);
     -webkit-touch-callout: none;
@@ -20,6 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1.5rem;
   }
   
   .timer > .text {
@@ -29,3 +31,19 @@
   .timer > .value {
     font-size: 40px;
   }
+  @media screen and (max-width:991px) {
+    .otpInputStyle{
+      width: 2.5rem !important;
+      height: 2.5rem;
+      font-size: 1.2rem;
+    }
+  }
+  @media screen and (max-width:527px) {
+    .otpInputStyle{
+      width: 1.6rem !important;
+      height: 1.6rem;
+      margin:0px 5px;
+      font-size: 1rem;
+    }
+  }
+  
