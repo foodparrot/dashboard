@@ -36,14 +36,6 @@ export class PauseOrders extends Component {
               <div className="disp">
                 <div className="col-12 col-md-6">Bismillah outlet1</div>
                 <div className="disp1">
-                  {/* <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked></input>
-                                        <label class="form-check-label" for="inlineRadio1">Delivery</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"></input>
-                                        <label class="form-check-label" for="inlineRadio2">Pickup</label>
-                                    </div> */}
                   <div class="radio-item">
                     <input
                       type="radio"
