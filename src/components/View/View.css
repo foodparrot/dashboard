@@ -1,3 +1,7 @@
+.savBtn{
+  display: flex;
+  align-items: end;
+}
 .header {
   background: rgb(220, 215, 215);
   justify-content: center;
