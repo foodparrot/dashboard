@@ -9,7 +9,7 @@ import { Container, SelectContainer,Label} from './style'
 // import Select, { components } from 'react-select';
 
 function Profile() {
-  const [user,setUser]=useState({firstName:"",lastName:"",countryCode:"",mobile:"",password:"",currentPassword:""})
+  // const [user,setUser]=useState({firstName:"",lastName:"",countryCode:"",mobile:"",password:"",currentPassword:""})
   const handleProfile=()=>{
 
   }
