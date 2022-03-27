@@ -8,6 +8,7 @@ import { Container, SelectContainer, Label } from './style'
 import { useUserStore } from '../../stores'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import parseNumber from "libphonenumber-js";
 // import { Label, Input, Spacing, Button, Flex } from './styles';
 // import Select, { components } from 'react-select';
 const toastOptions = {
@@ -24,12 +25,25 @@ function Profile() {
   const profileRef = useRef(null);
   const passwordRef=useRef(null);
   const [pass,setPass]=useState("");
-  const [mobile, setMobile] = useState({ countryCode: "IN", number: "" });
-  const {email,firstName,lastName} = useUserStore((state) => state.data);
+  const {email,firstName,lastName,contact:{number,country,national}} = useUserStore((state) => state.data);
+  const [mobile, setMobile] = useState({ countryCode: country, number: number });
+  
+  const login =useUserStore((state)=>state.login);
+
   const handleProfile = async (e) => {
     e.preventDefault();
     const children = Array.from(profileRef.current.elements);
     const allValid = children.every(node => node.reportValidity());
+    if(!allValid){
+      return toast.error("incorrect infromation detected",toastOptions);
+    }
+    const contact = profileRef.current.querySelector("[name='contact'");
+    const contactInfo = parseNumber(mobile.number, mobile.countryCode.toUpperCase());
+    if (!mobile.number || !contactInfo || (contactInfo && !contactInfo.isPossible())) {
+       contact.setCustomValidity("Please type valid number");
+       contact.reportValidity();
+       return contact.setCustomValidity("Please type valid number");
+    }
     // console.log(profileRef.current.elements);
     console.log({
       "number": mobile.number,
@@ -53,6 +67,8 @@ function Profile() {
       });
       if (r.status == 200) {
         console.log("sucess")
+        const res  = await r.json();
+        login(res.user);
         toast.success("Account information updated", toastOptions);
         profileRef.current.reset();
       }
@@ -68,6 +84,9 @@ function Profile() {
     e.preventDefault();
     const children = Array.from(passwordRef.current.elements);
     const allValid = children.every(node => node.reportValidity());
+    if(!allValid){
+      return toast.error("Incorrect information",toastOptions);
+    }
     try {
       const r = await fetch("/api/business/profile", {
         method: "PUT",
@@ -80,7 +99,7 @@ function Profile() {
           "currentPassword": passwordRef.current.elements['currentPassword'].value
         })
       });
-      if (r.status == 200) {
+      if (r.status === 200) {
         toast.success("password updated", toastOptions);
         passwordRef.current.reset();
       }
@@ -134,11 +153,13 @@ function Profile() {
 
                     <SelectContainer>
                       <PhoneInput
-                        country='in'
+                        country={mobile.countryCode}
                         onlyCountries={['in']}
                         autoComplete="off"
-                        name="countryCode"
+                        name="contact"
                         inputProps={{ required: "true", name: "contact" }}
+                        value={mobile.number}
+                        
                         onChange={(value, data, event, formattedValue) => {
                           setMobile({ countryCode: data.countryCode, number: "+" + value });
                           event.target.setCustomValidity("");
@@ -151,7 +172,7 @@ function Profile() {
                 <div class="row button">
                   <div className="innercomponent ebtn">
                     <br></br>
-                    <button className="upbtn sparabtn">Update Info</button>
+                    <button className="upbtn sparabtn" type='submit'>Update Info</button>
                   </div>
                 </div>
                 </form>
@@ -168,7 +189,8 @@ function Profile() {
               <div class="row">
                 <div className="col-sm innercomponent">
                   <label> Current password </label><br></br>
-                  <input className="input1" type="password" required name='currentPassword' placeholder="Enter your old password here"></input>
+                  <input className="input1" type="password" pattern={`^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$`}
+                    title="At least 1 Uppercase,1 Lowercase,1 Number,1 Symbol, symbol allowed --> !@#$%^&*_=+-,Min 8 chars and Max 12 chars" required name='currentPassword' placeholder="Enter your old password here"></input>
                 </div>
               </div>
               <div class="row">
