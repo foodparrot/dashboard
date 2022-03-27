@@ -9,7 +9,7 @@ export class Inventory extends Component {
         <div className="container-fluid row rowps-1">
           <p>Bismillah</p>
         </div>
-        <div className=" container upperdivInv">
+        <div className=" container-fluid upperdivInv">
           <p className="paraps">Inventory</p>
           <div class="form-group col-12 col-md-4">
             <label for="selectOutletToPause" style={{ whiteSpace: "nowrap" }}>

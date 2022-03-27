@@ -27,7 +27,7 @@ function Menus() {
       <div className="container-fluid row rowps-1">
         <p>Bismillah</p>
       </div>
-      <div className="container propal">
+      <div className="container-fluid propal">
         {/*first line*/}
         <div className="flex-container container" style={{paddingTop:"3%"}}>
           <div className="flex-item item10"><p>Menu</p></div>

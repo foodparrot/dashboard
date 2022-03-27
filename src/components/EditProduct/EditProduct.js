@@ -14,7 +14,7 @@ function EditProduct() {
                 <p>Bismillah Outlet</p>
             </div>
 
-            <div className="container catalouge">
+            <div className="container-fluid catalouge">
                 <p className="heading"><b>Edit product</b></p>
             </div>
 

@@ -18,7 +18,7 @@ export class PauseOrders extends Component {
         <div className="container-fluid row rowps-1">
           <p>Bismillah</p>
         </div>
-        <div className="container ps">
+        <div className="container-fluid ps">
           <p className="paraps">Pause New Orders</p>
           <div class="form-group col-12 col-md-4">
             <label for="selectOutletToPause" style={{ whiteSpace: "nowrap" }}>

@@ -8,7 +8,7 @@ function Editcategory() {
             <div className='row header'>
                 <p>Bismillah Outlet</p>
             </div>
-            <div className="container catalouge">
+            <div className="container-fluid catalouge">
                 <p className="heading"><b>Edit category</b></p>
             </div>
 

@@ -566,7 +566,7 @@ function Addproduct() {
       <div className="container-fluid row rowps-1">
         <p>Bismillah</p>
       </div>
-      <div className="container ps">
+      <div className="container-fluid ps">
         <p className="paraps">Add product</p>
         <div className="container prod-images">
           <div className="row row-5">

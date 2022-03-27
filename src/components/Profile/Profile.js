@@ -121,7 +121,7 @@ function Profile() {
       <div className="container-fluid row rowps-1">
         <p>Bismillah</p>
       </div>
-      <div className="container ps">
+      <div className="container-fluid ps">
         <p className="paraps">Profile</p>
         <div className="personal">
           <p className="para1">Personal Information</p>

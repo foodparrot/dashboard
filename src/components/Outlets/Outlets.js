@@ -24,7 +24,7 @@ export class Outlets extends Component {
         <div className="container-fluid row rowps-1">
           <p>Bismillah</p>
         </div>
-        <div className="container ps">
+        <div className="container-fluid ps">
           <p className="paraps">Outlets</p>
           <div className="row ">
             <div className="col-md-6">

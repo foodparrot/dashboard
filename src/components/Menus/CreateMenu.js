@@ -8,7 +8,7 @@ export class CreateMenu extends Component {
           <div className="container-fluid row rowps-1">
             <p>Bismillah</p>
           </div>
-          <div className="container ps">
+          <div className="container-fluid ps">
             <p className="paraps">Create Menu</p>
             <div className="input-section">
               <div className="row inputs">

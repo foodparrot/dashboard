@@ -8,7 +8,7 @@ function Addcategory() {
             <div className='row header'>
                 <p>Bismillah Outlet</p>
             </div>
-            <div className="container catalouge">
+            <div className="container-fluid catalouge">
                 <p className="heading"><b>Add new category</b></p>
             </div>
 
