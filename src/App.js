@@ -37,11 +37,15 @@ import categoryProducts from "./components/categoryProducts/categoryProducts";
 import AppLayout from "./components/AppLayout/AppLayout";
 import PrivateOutlet from "./components/PrivateOutlet";
 import Errorpage from "./components/Errorpage"
+import SampleQuery from "./components/sampleQuery";
+import SampleQuerySuspense from "./components/sampleQuery/suspense";
 const App = () => {
   return (
     <BrowserRouter>
         <Routes>
         <Route element={<AppLayout />}>
+        <Route element={<SampleQuery/>} path="/query"/>
+        <Route element={<SampleQuerySuspense/> } path="/query2"/>
         <Route element={<PrivateOutlet />}>
           <Route path="/" element={<Dashboard />} />
           <Route path="/dashboard" element={<Dashboard />} />
