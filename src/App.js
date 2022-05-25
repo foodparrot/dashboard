@@ -46,7 +46,7 @@ const App = () => {
         <Route element={<AppLayout />}>
         <Route element={<SampleQuery/>} path="/query"/>
         <Route element={<SampleQuerySuspense/> } path="/query2"/>
-        {/* <Route element={<PrivateOutlet />}> */}
+        <Route element={<PrivateOutlet />}>
           <Route path="/" element={<Dashboard />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/liveorders" exact element={<LiveOrders />} />
@@ -80,7 +80,7 @@ const App = () => {
           <Route path="/createoutlets2" element={<CreateOutlet2 />} />
           <Route path="/createoutlets3" element={<CreateOutlet3 />} />
           <Route path="/modal" element={<TestModal />} />
-          {/* </Route> */}
+          </Route>
           <Route path="*" element={<Errorpage />} />
           </Route>
         </Routes>
